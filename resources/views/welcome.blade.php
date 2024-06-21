@@ -172,7 +172,7 @@
                         margin: 0;
                         padding: 0;
                         border: 0;
-                        box-sizing: border-box; /* Añadido para evitar problemas de dimensiones */
+                        box-sizing: border-box; 
                     }
                 
                     .btn-wsp {
@@ -181,7 +181,7 @@
                         height: 55px;
                         line-height: 55px;
                         bottom: 30px;
-                        right: 30px; /* Ajustado para que esté en la esquina derecha */
+                        right: 30px; 
                         background: #25d366;
                         color: #FFF;
                         border-radius: 50px;
@@ -193,11 +193,11 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        text-decoration: none; /* Añadido para evitar subrayado en el enlace */
+                        text-decoration: none; 
                     }
                 
                     .btn-wsp i {
-                        margin-left: 5px; /* Espacio entre el icono y el borde del botón */
+                        margin-left: 5px; 
                     }
                 
                     .btn-wsp:hover {
@@ -208,8 +208,8 @@
                         .btn-wsp {
                             width: 63px;
                             height: 63px;
-                            line-height: 66px; /* Ajustado para centrar verticalmente el icono */
-                            right: 20px; /* Ajustado para dispositivos más pequeños */
+                            line-height: 66px;
+                            right: 20px; 
                         }
                     }
                 </style>
@@ -218,13 +218,7 @@
                 
                     <a href="https://wa.me/7224958550?text=Hola%20quisiera%20más%20información" class="btn-wsp" target="_blank">
                         <img src="https://cdn-icons-png.flaticon.com/128/15707/15707820.png" alt="WhatsApp icon">
-                    </a>
-                    
-                    
-                    
-                    
-                
-                <!-- Asegúrate de incluir la biblioteca Font Awesome para el icono de WhatsApp -->
+                    </a>   
                 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
                 
                 </body>
