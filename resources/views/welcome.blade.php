@@ -1240,7 +1240,9 @@
             <header id="masthead" class="site-header responsive-max-width has-title-and-tagline has-menu" role="banner">
                 <div class="site-branding">
                     <p class="site-title">
-                        <a href="{{ route('welcome') }}" rel="home" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 30px; color: #7D47C1;">
+                        <a href="{{ route('welcome') }}" rel="home" style="font-family: Cambria, Cochin, Georgia,
+                         Times, 'Times New Roman', serif; font-size: 30px; 
+                         color: #784F96;">
                             <img src="img/brand/FONDO-1.png" alt="Merrash Logo" style="vertical-align: middle; margin-right: 10px; width: 50px;" /> Merrash
                         </a>
                     </p>
@@ -1323,7 +1325,7 @@
                     <main id="main" class="site-main">
                         <article id="post-23" class="post-23 page type-page status-publish hentry entry">
                             <div style="display: flex; justify-content: center; margin-top: 13px;">
-                                <h5 style="display: flex; align-items: center; align-self: center; font-size: 25px; font-weight: bold; color: #7D47C1;">Nuestros Servicios</h5>
+                                <h5 style="display: flex; align-items: center; align-self: center; font-size: 25px; font-weight: bold; color: #784F96 ;">Nuestros Servicios</h5>
                             </div>                            
                             <header class="entry-header responsive-max-width">
                                 <h1 class="entry-title">Home</h1>
@@ -1487,8 +1489,8 @@
                                 </div>
                                 <div class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex">
                                     <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
-                                        <h1 class="margin-bottom-half wp-block-heading"  style ="color: #7D47C1;">Consultorio de Medicina Alternativa y Spa Integral</h1>
-                                        <p class="margin-top-half" style= "color: #7D47C1;">Av. Estado de México 433, Santiaguito, 52140 Metepec, Méx.</p>
+                                        <h1 class="margin-bottom-half wp-block-heading"  style ="color: #784F96;">Consultorio de Medicina Alternativa y Spa Integral</h1>
+                                        <p class="margin-top-half" style= "color:  #784F96;">Av. Estado de México 433, Santiaguito, 52140 Metepec, Méx.</p>
                                     </div>
                                     <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
                                         <p class="has-text-align-right has-huge-font-size">
@@ -1501,7 +1503,7 @@
                                         <div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
                                         <div class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-4 wp-block-columns-is-layout-flex">
                                             <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
-                                                <h2 class="wp-block-heading">¡Bienvenidos a Merrash!</h2>
+                                                <h2 class="margin-bottom-half wp-block-heading"  style ="color: #784F96;">¡Bienvenidos a Merrash!</h2>
                                             </div>
                                             <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
                                                 <p>Nuestros expertos en medicina alternativa comprenden las necesidades únicas de cada individuo, 
@@ -1519,7 +1521,7 @@
                                 <div class="wp-block-cover alignfull has-background-dim-50 has-primary-background-color has-background-dim" style="background-image:url('img/brand/10.jpg');background-position:50% 50%;background-size: cover;background-color:rgba(133, 204, 54, 0.7);">
                                     <div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
                                         <div style="height:64px" aria-hidden="true" class="wp-block-spacer"></div>
-                                        <h2 class="has-text-align-center wp-block-heading">En Merrash contamos con las mejores instalaciones para ti.</h2>
+                                        <h2 class="margin-bottom-half wp-block-heading"  style ="color: #784F96;">En Merrash contamos con las mejores instalaciones para ti.</h2>
                                         <div style="height:64px" aria-hidden="true" class="wp-block-spacer"></div>
                                     </div>
                                 </div>                                    
