@@ -1350,9 +1350,25 @@
                                             <div class="tiled-gallery__gallery">
                                                 <div class="tiled-gallery__row columns-3">
                                                     <div class="tiled-gallery__col">
-                                                        <figure class="tiled-gallery__item">
-                                                            <img srcset="https://rivingtondemo.files.wordpress.com/2019/08/jason-briscoe-uv81e0oxxwq-unsplash-5.jpg?resize=600,600&#038;strip=info 600w,https://rivingtondemo.files.wordpress.com/2019/08/jason-briscoe-uv81e0oxxwq-unsplash-5.jpg?resize=900,900&#038;strip=info 900w,https://rivingtondemo.files.wordpress.com/2019/08/jason-briscoe-uv81e0oxxwq-unsplash-5.jpg?resize=1200,1200&#038;strip=info 1200w,https://rivingtondemo.files.wordpress.com/2019/08/jason-briscoe-uv81e0oxxwq-unsplash-5.jpg?resize=1500,1500&#038;strip=info 1500w,https://rivingtondemo.files.wordpress.com/2019/08/jason-briscoe-uv81e0oxxwq-unsplash-5.jpg?resize=1800,1800&#038;strip=info 1800w,https://rivingtondemo.files.wordpress.com/2019/08/jason-briscoe-uv81e0oxxwq-unsplash-5.jpg?resize=2000,2000&#038;strip=info 2000w" alt="" data-height="5472" data-id="61" data-link="https://rivingtondemo.wordpress.com/jason-briscoe-uv81e0oxxwq-unsplash/" data-url="https://rivingtondemo.files.wordpress.com/2019/08/jason-briscoe-uv81e0oxxwq-unsplash-5.jpg" data-width="3648" src="https://rivingtondemo.files.wordpress.com/2019/08/jason-briscoe-uv81e0oxxwq-unsplash-5.jpg?resize=2000%2C2000"/>
-                                                        </figure>
+                                                        <a href="{{ route('service.detail', ['id' => 1]) }}">
+                                                            <figure class="tiled-gallery__item">
+                                                                <img src="https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg"
+                                                                    alt="Acupuntura"
+                                                                    srcset="https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg?resize=600,600 600w,
+                                                                            https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg?resize=900,900 900w,
+                                                                            https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg?resize=1200,1200 1200w,
+                                                                            https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg?resize=1500,1500 1500w,
+                                                                            https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg?resize=1800,1800 1800w,
+                                                                            https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg?resize=2000,2000 2000w"
+                                                                    data-height="2000"
+                                                                    data-id="1"
+                                                                    data-link="{{ route('service.detail', ['id' => 1]) }}"
+                                                                    data-url="https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg"
+                                                                    data-width="3000"
+                                                                    src="https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg?resize=2000,2000" />
+                                                            </figure>
+                                                        </a>
+                                                        
                                                     </div>
                                                     <div class="tiled-gallery__col">
                                                         <figure class="tiled-gallery__item">
