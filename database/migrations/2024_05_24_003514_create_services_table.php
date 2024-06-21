@@ -21,6 +21,12 @@ return new class extends Migration
             $table->string('date_one');
             $table->string('date_two');
             $table->text('reason');
+            $table->text('function');
+            $table->text('complement');
+            $table->text('effects');
+            $table->text('procces');
+            $table->text('goal');
+            $table->string('duration');            
             $table->timestamps();
         });
     }
