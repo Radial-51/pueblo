@@ -1345,7 +1345,14 @@
                                     
 
 
-                                    <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow hide-on-mobile" style="flex-basis:33.33%;"><style>@media only screen and (max-width: 767px) {.hide-on-mobile {display: none;}}</style>
+                                    <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow hide-on-mobile" style="flex-basis:33.33%;">
+                                        <style>
+                                            @media only screen and (max-width: 767px) {
+                                                .hide-on-mobile {
+                                                    display: none;
+                                                }
+                                            }
+                                        </style>
                                         <div data-carousel-extra='{"blog_id":233249796,"permalink":"https://merrash-prubeas-production.up.railway.app/"}' class="wp-block-jetpack-tiled-gallery aligncenter is-style-square">
                                             <div class="tiled-gallery__gallery">
                                                 <div class="tiled-gallery__row columns-3">
