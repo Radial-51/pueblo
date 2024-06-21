@@ -97,8 +97,7 @@
                 </a>
             </p>
         </div>
-        
-
+    
         <div class="hidden-menu flex justify-end px-4 md:hidden">
             <button id="menu-btn" class="text-white focus:outline-none">
                 <i class="fas fa-bars text-2xl"></i>

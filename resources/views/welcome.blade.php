@@ -1632,13 +1632,13 @@
                     </div>
                 </nav>
                 <!-- .social-navigation -->
-                <div class="site-info">
+               <div class="site-info">
                     <a class="site-name" href="{{ route('welcome') }}" rel="home" style="color: #121212;">Copyright ©</a>
                     <span class="comma">,</span>
                     <a href="https://wordpress.com/?ref=footer_website" rel="nofollow" style="color: #121212;">Merrash 2024</a>
                 </div>
                 <!-- .site-info -->
-            </footer>
+            </footer> 
             <!-- #colophon -->
         </div>
         <!-- #page -->

@@ -1093,9 +1093,9 @@
         <meta name="twitter:image" content="https://rivingtondemo.files.wordpress.com/2019/08/dane-deaner-qrfmb-ioqje-unsplash.jpg?w=144"/>
         <meta name="twitter:card" content="summary"/>
         <!-- End Jetpack Open Graph Tags -->
-        <link rel="shortcut icon" type="image/x-icon" href="https://s0.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48"/>
-        <link rel="icon" type="image/x-icon" href="https://s0.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48"/>
-        <link rel="apple-touch-icon" href="https://s0.wp.com/i/webclip.png"/>
+        <link rel="shortcut icon" type="image/x-icon" href="/img/brand/Spa-1.jpg" sizes="16x16 24x24 32x32 48x48"/>
+        <link rel="icon" type="image/x-icon" href="/img/brand/Spa-1.jpg" sizes="16x16 24x24 32x32 48x48"/>
+        <link rel="apple-touch-icon" href="/img/brand/Spa-1.jpg"/>        
         <link rel="search" type="application/opensearchdescription+xml" href="https://merrash-prubeas-production.up.railway.app/" title="Merrash"/>
         <link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com"/>
         <meta name="application-name" content="Mirrash"/>

@@ -226,7 +226,7 @@
                             
                             
                         
-                        <!-- Asegúrate de incluir la biblioteca Font Awesome para el icono de WhatsApp -->
+                       
                         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
                         
                         </body>
