@@ -348,13 +348,13 @@
                 --wp--preset--color--pale-cyan-blue: #8ed1fc;
                 --wp--preset--color--vivid-cyan-blue: #0693e3;
 
-                --wp--preset--color--vivid-purple: #E3DAC9;
+                --wp--preset--color--vivid-purple: #FBFBFB ;
                 --wp--preset--color--primary:  #EFD7FA;                ;
                 --wp--preset--color--secondary: #EE4266;
             
-                --wp--preset--color--background: #00d9ff;
+                --wp--preset--color--background: #FBFBFB;
                 --wp--preset--color--foreground: #f2f2f2;
-                --wp--preset--color--foreground-light: #E7FCC1 ;
+                --wp--preset--color--foreground-light: #F6F8F2  ;
                 --wp--preset--color--foreground-dark: #8F8F8F;
                 --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);
                 --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);
@@ -1240,7 +1240,7 @@
             <header id="masthead" class="site-header responsive-max-width has-title-and-tagline has-menu" role="banner">
                 <div class="site-branding">
                     <p class="site-title">
-                        <a href="{{ route('welcome') }}" rel="home" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 30px; color: #121212;">
+                        <a href="{{ route('welcome') }}" rel="home" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 30px; color: #7D47C1;">
                             <img src="img/brand/FONDO-1.png" alt="Merrash Logo" style="vertical-align: middle; margin-right: 10px; width: 50px;" /> Merrash
                         </a>
                     </p>
@@ -1260,7 +1260,7 @@
                         <li id="menu-item-16" class="mx-6">
                             <a href="{{ route('about') }}"
                                class="font-semibold py-3 px-4 rounded-md text-black transition-colors duration-300"
-                               style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                               style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
                                onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                onmouseout="if (!this.classList.contains('selected')) { this.style.color=getComputedStyle(this).getPropertyValue('--link-color'); }"
                                onclick="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color'); this.classList.add('selected');">
@@ -1272,7 +1272,7 @@
                         <li id="menu-item-17" class="mx-6">
                             <a href="{{ route('services.available') }}"
                                class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                               style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                               style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
                                onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
                                Servicios
@@ -1283,7 +1283,7 @@
                         <li id="menu-item-20" class="mx-6">
                             <a href="{{ route('contacto') }}"
                                class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                               style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                               style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
                                onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
                                Testimonios
@@ -1294,7 +1294,7 @@
                         <li id="menu-item-19" class="mx-6">
                             <a href="{{ route('contacto') }}"
                                class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                 style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
                                onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
                                Contacto
@@ -1304,7 +1304,7 @@
                         <li class="menu-item-20">
                             <a href="{{ route('login.index') }}"
                                class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                               s style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
                                onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
                                Iniciar Sesión
@@ -1323,7 +1323,7 @@
                     <main id="main" class="site-main">
                         <article id="post-23" class="post-23 page type-page status-publish hentry entry">
                             <div style="display: flex; justify-content: center; margin-top: 13px;">
-                                <h5 style="display: flex; align-items: center; align-self: center; font-size: 25px; font-weight: bold; color: #121212;">Nuestros Servicios</h5>
+                                <h5 style="display: flex; align-items: center; align-self: center; font-size: 25px; font-weight: bold; color: #7D47C1;">Nuestros Servicios</h5>
                             </div>                            
                             <header class="entry-header responsive-max-width">
                                 <h1 class="entry-title">Home</h1>
@@ -1487,8 +1487,8 @@
                                 </div>
                                 <div class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex">
                                     <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
-                                        <h1 class="margin-bottom-half wp-block-heading"  style ="color: #121212;">Consultorio de Medicina Alternativa y Spa Integral</h1>
-                                        <p class="margin-top-half" style= "color: #121212;">Av. Estado de México 433, Santiaguito, 52140 Metepec, Méx.</p>
+                                        <h1 class="margin-bottom-half wp-block-heading"  style ="color: #7D47C1;">Consultorio de Medicina Alternativa y Spa Integral</h1>
+                                        <p class="margin-top-half" style= "color: #7D47C1;">Av. Estado de México 433, Santiaguito, 52140 Metepec, Méx.</p>
                                     </div>
                                     <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
                                         <p class="has-text-align-right has-huge-font-size">
