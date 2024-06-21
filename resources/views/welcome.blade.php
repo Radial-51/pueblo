@@ -10,6 +10,7 @@
         <link rel='dns-prefetch' href='//wordpress.com'/>
         <link rel="alternate" type="application/rss+xml" title="Merrash &raquo; Feed" href="https://merrash-prubeas-production.up.railway.app/"/>
         <link rel="alternate" type="application/rss+xml" title="Merrash &raquo; Comments Feed" href="https://merrash-prubeas-production.up.railway.app/"/>
+        
         <script type="text/javascript">
             /* <![CDATA[ */
             function addLoadEvent(func) {
@@ -166,6 +167,67 @@
                 padding: 0 !important;
             }
         </style>
+                <style>
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        border: 0;
+                        box-sizing: border-box; /* Añadido para evitar problemas de dimensiones */
+                    }
+                
+                    .btn-wsp {
+                        position: fixed;
+                        width: 55px;
+                        height: 55px;
+                        line-height: 55px;
+                        bottom: 30px;
+                        right: 30px; /* Ajustado para que esté en la esquina derecha */
+                        background: #25d366;
+                        color: #FFF;
+                        border-radius: 50px;
+                        text-align: center;
+                        font-size: 35px;
+                        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+                        z-index: 100;
+                        transition: all 300ms ease;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-decoration: none; /* Añadido para evitar subrayado en el enlace */
+                    }
+                
+                    .btn-wsp i {
+                        margin-left: 5px; /* Espacio entre el icono y el borde del botón */
+                    }
+                
+                    .btn-wsp:hover {
+                        background: #20ba5a;
+                    }
+                
+                    @media only screen and (min-width: 320px) and (max-width: 768px) {
+                        .btn-wsp {
+                            width: 63px;
+                            height: 63px;
+                            line-height: 66px; /* Ajustado para centrar verticalmente el icono */
+                            right: 20px; /* Ajustado para dispositivos más pequeños */
+                        }
+                    }
+                </style>
+                </head>
+                <body>
+                
+                    <a href="https://wa.me/7224958550?text=Hola%20quisiera%20más%20información" class="btn-wsp" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/128/15707/15707820.png" alt="WhatsApp icon">
+                    </a>
+                    
+                    
+                    
+                    
+                
+                <!-- Asegúrate de incluir la biblioteca Font Awesome para el icono de WhatsApp -->
+                <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+                
+                </body>
         <link crossorigin='anonymous' rel='stylesheet' id='all-css-4-1' href='https://s0.wp.com/_static/??-eJylzEEOQDAQQNEL0VGNYCHOojWpMko6LXF7jStY/vzkwX2W5vARfYSTknWewaacGoPNJyBcshNKVKCToxk0HWYryekwhQc4PoTCMBfwD4oL7h807oNsZaO6uq/69QUlZjhb&cssminify=yes' type='text/css' media='all'/>
         <style id='wp-block-library-inline-css'>
             .has-text-align-justify {
@@ -1261,6 +1323,7 @@
                 <!-- #site-navigation -->
             </header>
             <!-- #masthead -->
+            
             <div id="content" class="site-content">
                 <section id="primary" class="content-area">
                     <main id="main" class="site-main">
@@ -1756,6 +1819,7 @@
                 </div>
             </div>
         </div>
+
         <style id='jetpack-block-slideshow-inline-css'>
             .wp-block-jetpack-slideshow {
                 margin-bottom: 1.5em;
@@ -2029,6 +2093,7 @@
                 position: relative
             }
         </style>
+        
         <link crossorigin='anonymous' rel='stylesheet' id='all-css-2-2' href='https://s0.wp.com/_static/??-eJylzN0KwjAMhuEbssb5tyPxUqRLw+iWpqVpLN69CO5c8PB7+XigF4dZGkmDZK6wzVEUFmrF4/rdoCbwiIIwccZVoUWm4GbPTPUFz0h9j6o7+BlLORiTAvqaTYlBeyxU3WQSmP7Fts8WPt493YZxuBzH6+F0Xt6hm1y4&cssminify=yes' type='text/css' media='all'/>
         <style id='core-block-supports-inline-css'>
             .wp-container-core-columns-is-layout-1 {
@@ -2240,5 +2305,5 @@
 
             }
         </script>
-    </body>
+    </body>        
 </html>
