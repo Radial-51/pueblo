@@ -10,6 +10,8 @@
         <link rel='dns-prefetch' href='//wordpress.com'/>
         <link rel="alternate" type="application/rss+xml" title="Site Title &raquo; Feed" href="{{ route('welcome') }}"/>
         <link rel="alternate" type="application/rss+xml" title="Site Title &raquo; Comments Feed" href="{{ route('welcome') }}"/>
+        <link rel="stylesheet" href="public/css/styles.css">
+        
         <script type="text/javascript">
             /* <![CDATA[ */
             function addLoadEvent(func) {
@@ -980,6 +982,11 @@
                 --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
                 --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
             }
+            body {
+                background: linear-gradient(to right, rgb(133, 204, 54), rgb(130, 99, 140)); 
+               color: rgb(0, 0, 0); 
+          }
+
         </style>
         <link crossorigin='anonymous' rel='stylesheet' id='all-css-16-1' href='https://s0.wp.com/wp-content/themes/h4/global.css?m=1420737423i&cssminify=yes' type='text/css' media='all'/>
         <script type="text/javascript" id="notes-common-lite-js-extra">
@@ -1173,14 +1180,17 @@
             }
             )();
         </script>
-        <div id="page" class="site">
-            <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-            <header id="masthead" class="site-header responsive-max-width has-title-and-tagline has-menu" role="banner">
-                <div class="site-branding">
-                    <p class="site-title">
-                        <a href="{{ route('welcome') }}" rel="home">Merrash</a>
-                    </p>
-                </div>
+
+<div id="page" class="site">
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+    <header id="masthead" class="site-header responsive-max-width has-title-and-tagline has-menu" role="banner">
+        <div class="site-branding">
+            <p class="site-title">
+                <a href="{{ route('welcome') }}" rel="home" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 30px; color: #121212;">
+                    <img src="img/brand/FONDO-1.png" alt="Merrash Logo" style="vertical-align: middle; margin-right: 10px; width: 50px;" /> Merrash
+                </a>
+            </p>
+        </div>   
                 <!-- .site-branding -->
                 <nav id="site-navigation" class="main-navigation" aria-label="Main Navigation">
                     <input type="checkbox" role="button" aria-haspopup="true" id="toggle" class="hide-visually">
@@ -1272,38 +1282,58 @@
                                     que ofrecemos como: medicina alternativa, spa integral de belleza y nutrición
                                 </p>
                                 <hr class="wp-block-separator is-style-wide"/>
-                                <h1>Visión</h1>
-                                <p style="text-align:left">Consolidarnos como el mejor servicio que se puede ofrecer a aquellas personas que buscan su bienestar, 
+                                <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="width: 50pxpx; height: 50px; margin-right: 10px;">
+                                      <path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"/>
+                                    </svg>
+                                    <h1 style="margin-bottom: 0;">Visión</h1>
+                                  </div>
+                                  <p style="text-align:left">Consolidarnos como el mejor servicio que se puede ofrecer a aquellas personas que buscan su bienestar, 
                                     aspiramos a formar parte del cambio personal de manera integral con dedicación y constancia para lograr una armonización de la mente,
-                                     el cuerpo y el espirítu.
-                                </p>
+                                    el cuerpo y el espíritu.
+                                  </p>        
                                 <div style="height:32px" aria-hidden="true" class="wp-block-spacer desktop-only"></div>
                                 <hr class="wp-block-separator is-style-wide"/>
-                                <h3 class="has-text-align-center wp-block-heading">Valores</h3>
-                                <div class="wp-block-columns alignwide has-3-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex">
-                                    <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-                                        <blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
-                                           <center> <h1>Honestidad</h1> </center>
-                                            <p>Como valor más importante en la empresa ya que establece las bases para crear una cultura de trabajo
-                                                 idónea que genere comportamiento de confianza en los pacientes.
-                                            </p>
-                                            <cite></cite>
-                                        </blockquote>
-                                    </div>
-                                    <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-                                        <blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
-                                             <center> <h1>Transparencia</h1> </center>
-                                            <p>Implica compartir información relacionada con productos y servicios asi como procesos internos, precios y verdad absoluta.</p>
-                                            <cite></cite>
-                                        </blockquote>
-                                    </div>
-                                    <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-                                        <blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
-                                            <center> <h1> Pasión </h1></center>
-                                            <p>Equipo multidisciplinario apasionado por lo que hace y responde a la constancia y excelencia de su preparación.</p>
-                                            <cite></cite>
-                                        </blockquote>
-                                    </div>
+                                <center>
+                                    <h3 class="has-text-align-center wp-block-heading" style="display: flex; align-items: center; justify-content: center;">
+                                        Valores
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 24px; height: 24px; margin-left: 8px;"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+                                    </h3>
+                                </center>
+                                <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+                                    <blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+                                        <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+                                            <img src="https://cdn-icons-png.flaticon.com/128/5805/5805761.png" alt="Imagen" style="width: 30px; height: 30px; margin-right: 10px;">
+                                            <h1 style="margin: 0;">Honestidad</h1>
+                                        </div>
+                                        <p>
+                                            Como valor más importante en la empresa ya que establece las bases para crear una cultura de trabajo idónea que genere comportamiento de confianza en los pacientes.
+                                        </p>
+                                    </blockquote>
+                                </div>
+                                
+                                <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="margin-bottom: 40px;">
+                                    <blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow" style="padding: 1px;">
+                                        <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                                            <img src="https://cdn-icons-png.flaticon.com/128/796/796503.png" alt="Imagen" style="width: 30px; height: 30px; margin-right: 10px;">
+                                            <h1 style="margin: 0; line-height: 30px;">Transparencia</h1>
+                                        </div>
+                                        <p>Implica compartir información relacionada con productos y servicios así como procesos internos, precios y verdad absoluta.</p>
+                                        <cite></cite>
+                                    </blockquote>
+                                </div>
+                                
+                                <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="margin-bottom: 40px;">
+                                    <blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow" style="padding: 10px;">
+                                        <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                                            <img src="https://cdn-icons-png.flaticon.com/128/4264/4264425.png" alt="Imagen" style="width: 30px; height: 30px; margin-right: 10px;">
+                                            <h1 style="margin: 0; line-height: 30px;">Pasión</h1>
+                                        </div>
+                                        <p>Equipo multidisciplinario apasionado por lo que hace y responde a la constancia y excelencia de su preparación.</p>
+                                        <cite></cite>
+                                    </blockquote>
+                                </div>
+                                
                                 </div>
             <!-- #content -->
             <footer id="colophon" class="site-footer responsive-max-width">
@@ -1311,7 +1341,10 @@
                     <div class="menu-social-menu-container">
                         <ul id="menu-social-menu" class="social-links-menu">
                             <li id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20">
-                                <a href="https://www.facebook.com/MerrashSpayMedicinaAlternativa">
+                                <a href="https://www.facebook.com/MerrashSpayMedicinaAlternativa" 
+                                style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                onmouseover="this.style.color = this.style.getPropertyValue('--link-hover-color');"
+                                onmouseout="this.style.color = this.style.getPropertyValue('--link-color');">
                                     <span class="screen-reader-text">Facebook</span>
                                     <svg class="svg-icon" width="26" height="26" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <path d="M20.007,3H3.993C3.445,3,3,3.445,3,3.993v16.013C3,20.555,3.445,21,3.993,21h8.621v-6.971h-2.346v-2.717h2.346V9.31 c0-2.325,1.42-3.591,3.494-3.591c0.993,0,1.847,0.074,2.096,0.107v2.43l-1.438,0.001c-1.128,0-1.346,0.536-1.346,1.323v1.734h2.69 l-0.35,2.717h-2.34V21h4.587C20.555,21,21,20.555,21,20.007V3.993C21,3.445,20.555,3,20.007,3z"></path>
@@ -1320,7 +1353,10 @@
                             </li>
 
                             <li id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21">
-                                <a href="https://www.youtube.com">
+                                <a href="https://www.youtube.com"
+                                style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                onmouseover="this.style.color = this.style.getPropertyValue('--link-hover-color');"
+                                onmouseout="this.style.color = this.style.getPropertyValue('--link-color');">
                                     <span class="screen-reader-text">YouTube</span>
                                     <svg class="svg-icon" width="26" height="26" aria-hidden="true" role="img" focusable="false" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/>
@@ -1329,8 +1365,10 @@
                             </li>
                             
                             <li id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21">
-                                <a href="https://www.tiktok.com">
-                                    <span class="screen-reader-text">TikTok</span>
+                                <a href="https://www.tiktok.com"
+                                   style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                   onmouseover="this.style.color = this.style.getPropertyValue('--link-hover-color');"
+                                   onmouseout="this.style.color = this.style.getPropertyValue('--link-color');">
                                     <svg class="svg-icon" width="26" height="26" aria-hidden="true" role="img" focusable="false" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/>
                                     </svg>
@@ -1338,8 +1376,12 @@
                             </li>
                             
                             
+                            
                             <li id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22">
-                                <a href="https://www.instagram.com/merrashyspaintegraldebelleza/">
+                                <a href="https://www.instagram.com/merrashyspaintegraldebelleza/" 
+                                style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                onmouseover="this.style.color = this.style.getPropertyValue('--link-hover-color');"
+                                onmouseout="this.style.color = this.style.getPropertyValue('--link-color');">
                                     <span class="screen-reader-text">Instagram</span>
                                     <svg class="svg-icon" width="26" height="26" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <path d="M12,4.622c2.403,0,2.688,0.009,3.637,0.052c0.877,0.04,1.354,0.187,1.671,0.31c0.42,0.163,0.72,0.358,1.035,0.673 c0.315,0.315,0.51,0.615,0.673,1.035c0.123,0.317,0.27,0.794,0.31,1.671c0.043,0.949,0.052,1.234,0.052,3.637 s-0.009,2.688-0.052,3.637c-0.04,0.877-0.187,1.354-0.31,1.671c-0.163,0.42-0.358,0.72-0.673,1.035 c-0.315,0.315-0.615,0.51-1.035,0.673c-0.317,0.123-0.794,0.27-1.671,0.31c-0.949,0.043-1.233,0.052-3.637,0.052 s-2.688-0.009-3.637-0.052c-0.877-0.04-1.354-0.187-1.671-0.31c-0.42-0.163-0.72-0.358-1.035-0.673 c-0.315-0.315-0.51-0.615-0.673-1.035c-0.123-0.317-0.27-0.794-0.31-1.671C4.631,14.688,4.622,14.403,4.622,12 s0.009-2.688,0.052-3.637c0.04-0.877,0.187-1.354,0.31-1.671c0.163-0.42,0.358-0.72,0.673-1.035 c0.315-0.315,0.615-0.51,1.035-0.673c0.317-0.123,0.794-0.27,1.671-0.31C9.312,4.631,9.597,4.622,12,4.622 M12,3 C9.556,3,9.249,3.01,8.289,3.054C7.331,3.098,6.677,3.25,6.105,3.472C5.513,3.702,5.011,4.01,4.511,4.511 c-0.5,0.5-0.808,1.002-1.038,1.594C3.25,6.677,3.098,7.331,3.054,8.289C3.01,9.249,3,9.556,3,12c0,2.444,0.01,2.751,0.054,3.711 c0.044,0.958,0.196,1.612,0.418,2.185c0.23,0.592,0.538,1.094,1.038,1.594c0.5,0.5,1.002,0.808,1.594,1.038 c0.572,0.222,1.227,0.375,2.185,0.418C9.249,20.99,9.556,21,12,21s2.751-0.01,3.711-0.054c0.958-0.044,1.612-0.196,2.185-0.418 c0.592-0.23,1.094-0.538,1.594-1.038c0.5-0.5,0.808-1.002,1.038-1.594c0.222-0.572,0.375-1.227,0.418-2.185 C20.99,14.751,21,14.444,21,12s-0.01-2.751-0.054-3.711c-0.044-0.958-0.196-1.612-0.418-2.185c-0.23-0.592-0.538-1.094-1.038-1.594 c-0.5-0.5-1.002-0.808-1.594-1.038c-0.572-0.222-1.227-0.375-2.185-0.418C14.751,3.01,14.444,3,12,3L12,3z M12,7.378 c-2.552,0-4.622,2.069-4.622,4.622S9.448,16.622,12,16.622s4.622-2.069,4.622-4.622S14.552,7.378,12,7.378z M12,15 c-1.657,0-3-1.343-3-3s1.343-3,3-3s3,1.343,3,3S13.657,15,12,15z M16.804,6.116c-0.596,0-1.08,0.484-1.08,1.08 s0.484,1.08,1.08,1.08c0.596,0,1.08-0.484,1.08-1.08S17.401,6.116,16.804,6.116z"></path>
@@ -1347,13 +1389,14 @@
                                 </a>
                             </li>
                         </ul>
+
                     </div>
                 </nav>
                 <!-- .social-navigation -->
                 <div class="site-info">
-                    <a class="site-name" href="{{ route('welcome') }}" rel="home">Copyright ©</a>
+                    <a class="site-name" href="{{ route('welcome') }}" rel="home" style="color: #121212;">Copyright ©</a>
                     <span class="comma">,</span>
-                    <a href="{{ route('welcome') }}">Merrash 2024</a>
+                    <a class="site-name" href="{{ route('welcome') }}" rel="nofollow" style="color: #121212;">Merrash 2024</a>
                 </div>
                 <!-- .site-info -->
             </footer>
