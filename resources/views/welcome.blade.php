@@ -1717,7 +1717,7 @@
                                 <div
                                     class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
                                     <div style="height:64px" aria-hidden="true" class="wp-block-spacer"></div>
-                                    <h2 class="margin-bottom-half wp-block-heading" style ="color: #000000;">En
+                                    <h2 class="margin-bottom-half wp-block-heading" style ="color: #784F96;">En
                                         Merrash contamos con las mejores instalaciones para ti.</h2>
                                     <div style="height:64px" aria-hidden="true" class="wp-block-spacer"></div>
                                 </div>
