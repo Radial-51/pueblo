@@ -1192,36 +1192,59 @@
                     </label>
                     <div class="main-menu-container">
                         <ul id="menu-primary-menu" class="main-menu" aria-label="submenu">
-
-                            <li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-15">
-                                <a href="{{ route('welcome') }}">Inicio</a>
-                            </li>
-                            
-                            <li id="menu-item-16"
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16">
-                                <a href="{{ route('about') }}">Acerca De Nosotros</a>
-                            </li>
-
-                            <li id="menu-item-17"
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17">
-                                <a href="{{ route('services.available') }}">Servicios</a>
-                            </li>
-                            
-                            <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19">
-                                <a href="{{ route('contacto') }}">Testimonios</a>
-                            </li>
-                            
-                            <li id="menu-item-18"
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18">
-                                <a href="https://radial51.wordpress.com/blog/">Blog</a>
-                            </li>
-                            <li id="menu-item-19"
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19">
-                                <a href="{{ route('contacto') }}">Contacto</a>
-                            </li>
+                        
                             <li class="mx-6">
+                                <a class="site-name"
+                                   href="{{ route('welcome') }}"
+                                   class="font-semibold py-3 px-4 rounded-md text-black transition-colors duration-300"
+                                   style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
+                                   onmouseout="if (!this.classList.contains('selected')) { this.style.color=getComputedStyle(this).getPropertyValue('--link-color'); }"
+                                   onclick="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color'); this.classList.add('selected');">
+                                   Inicio
+                                </a>
+                            </li>
+                            
+                            <li id="menu-item-17" class="mx-6">
+                                <a href="{{ route('services.available') }}"
+                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
+                                   style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
+                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
+                                   Servicios
+                                </a>
+                            </li>
+                            
+                            
+                            <li id="menu-item-20" class="mx-6">
+                                <a href="{{ route('contacto') }}"
+                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
+                                   style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
+                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
+                                   Testimonios
+                                </a>
+                            </li>
+                            
+                        
+                            <li id="menu-item-19" class="mx-6">
+                                <a href="{{ route('contacto') }}"
+                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
+                                    style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
+                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
+                                   Contacto
+                                </a>
+                            </li>
+                            
+                            <li class="menu-item-20">
                                 <a href="{{ route('login.index') }}"
-                                    class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md">Iniciar Sesión</a>
+                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
+                                   s style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
+                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
+                                   Iniciar Sesión
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -1237,10 +1260,16 @@
                                 <h1 class="entry-title"></h1>
                             </header>
                             <div class="entry-content">
-                                <h1>Mision</h1>
+                                <div style="display: flex; align-items: center;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 50px; height: 50px; margin-right: 10px;">
+                                        <!-- El contenido del SVG aquí -->
+                                        <path d="M448 256A192 192 0 1 0 64 256a192 192 0 1 0 384 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 80a80 80 0 1 0 0-160 80 80 0 1 0 0 160zm0-224a144 144 0 1 1 0 288 144 144 0 1 1 0-288zM224 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/>
+                                    </svg>
+                                    <h1 style="margin-bottom: 0;">Mision</h1>
+                                </div>
                                 <p style="text-align:left">Nuestra empresa tiene el compromiso de ayudar a la autosanación a través del conocimiento y la autoconciencia;
-                                     brindando salud, bienestar y satisfacción personal a nuestros pacientes mediante los servicios 
-                                     que ofrecemos como: medicina alternativa, spa integral de belleza y nutrición
+                                    brindando salud, bienestar y satisfacción personal a nuestros pacientes mediante los servicios 
+                                    que ofrecemos como: medicina alternativa, spa integral de belleza y nutrición
                                 </p>
                                 <hr class="wp-block-separator is-style-wide"/>
                                 <h1>Visión</h1>

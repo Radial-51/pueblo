@@ -1153,23 +1153,62 @@
                     </label>
                     <div class="main-menu-container">
                         <ul id="menu-primary-menu" class="main-menu" aria-label="submenu">
+                        
                             <li class="mx-6">
-                                <a class="site-name" href="{{ route('welcome') }}" rel="home">Inicio</a>
-                            </li>  
-
-                            <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16">
-                                <a href="http://127.0.0.1:8000/Acerca">Acerca De Nosotros</a>
+                                <a class="site-name"
+                                   href="{{ route('welcome') }}"
+                                   class="font-semibold py-3 px-4 rounded-md text-black transition-colors duration-300"
+                                   style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
+                                   onmouseout="if (!this.classList.contains('selected')) { this.style.color=getComputedStyle(this).getPropertyValue('--link-color'); }"
+                                   onclick="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color'); this.classList.add('selected');">
+                                   Inicio
+                                </a>
                             </li>
-                            <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17">
-                                <a href="http://127.0.0.1:8000/Disponibles">Servicios</a>
+                            
+                            <li id="menu-item-16" class="mx-6">
+                                <a href="{{ route('about') }}"
+                                   class="font-semibold py-3 px-4 rounded-md text-black transition-colors duration-300"
+                                   style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
+                                   onmouseout="if (!this.classList.contains('selected')) { this.style.color=getComputedStyle(this).getPropertyValue('--link-color'); }"
+                                   onclick="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color'); this.classList.add('selected');">
+                                   Acerca De Nosotros
+                                </a>
                             </li>
-                            <li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18">
-                                <a href="https://radial51.wordpress.com/blog/">Blog</a>
+                            
+    
+                            <li id="menu-item-17" class="mx-6">
+                                <a href="{{ route('services.available') }}"
+                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
+                                   style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
+                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
+                                   Servicios
+                                </a>
                             </li>
-                            <li class="mx-6">
+                            
+                            
+                            <li id="menu-item-20" class="mx-6">
+                                <a href="{{ route('contacto') }}"
+                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
+                                   style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
+                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
+                                   Testimonios
+                                </a>
+                            </li>
+ 
+                            <li class="menu-item-20">
                                 <a href="{{ route('login.index') }}"
-                                class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md">Iniciar Sesión</a>
-                            </li>  
+                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
+                                   s style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
+                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
+                                   Iniciar Sesión
+                                </a>
+                            </li>
+    
                         </ul>
                     </div>
                 </nav>
