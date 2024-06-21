@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<link rel="stylesheet" href="{{ asset('css/styles-crud.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('css/styles-crud.css') }}">
     <div class="back">
         <a href="{{ route('home') }}" id="r">Regresar</a>
     </div>
