@@ -1247,79 +1247,50 @@
                             <div class="entry-content">
                                 <div class="wp-block-columns alignfull is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex">
                                     
-                                    <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
+                                    <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%; height: auto; padding-top: 5px;">
                                         <div class="wp-block-jetpack-slideshow aligncenter" data-effect="slide">
                                             <style>
                                                 .swiper-container { width: 100%; height: 100%; }
-                                                .swiper-slide { text-align: center; display: flex; justify-content: center; align-items: center; }
+                                                .swiper-slide { text-align: center; display: flex; justify-content: center; align-items: center; margin: 10px; }
                                                 .swiper-pagination { position: absolute; text-align: center; transition: 300ms opacity; transform: translate3d(0, 0, 0); z-index: 10; width: 100%; bottom: 10px; }
                                                 .swiper-pagination-bullet { width: 8px; height: 8px; display: inline-block; border-radius: 100%; background: #000; opacity: 0.2; cursor: pointer; margin: 0 4px; }
                                                 .swiper-pagination-bullet-active { opacity: 1; background: #007aff; }
                                                 .swiper-button-next, .swiper-button-prev { position: absolute; top: 50%; width: 27px; height: 44px; margin-top: -22px; z-index: 10; cursor: pointer; display: block; background-size: 27px 44px; background-position: center; background-repeat: no-repeat; }
                                                 .swiper-button-prev, .swiper-container-rtl .swiper-button-next { left: 10px; right: auto; background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMCAyMCI+PHBhdGggZD0iTTYuMTcuNzNMNS4zIDBsLTIuOCwyLjhsMS4yLDEuMkg5LjVsMi44LTIuOEw5LjYtMS4ybC0zLDNMMi44LDE2TDEuNywxMy43TDYuMTcuNzNMMi44LDExTDQuNSwxMkw2LjUsOUw0LjUsNkwyLjgsNkwzLjYsNC41TDYuMTcuNzNMMjguMywxMy4zbDMuMi0zLDFsLTIuOCwwWiIgZmlsbD0iI0U5RjFGMSIvPjwvc3ZnPg==); }
-                                                .swiper-button-next, .swiper-container-rtl .swiper-button-prev { right: 10px; left: auto; background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMCAyMCI+PHBhdGggZD0iTTQuODMuNzNsLS44LS44TDMuNywwTDAsMy43TDEuMiw1bDEuMjQ5LDEuMjQ5TDAuMiwxMC41bC0uNi43aC0uMkw1LDIwdjAsMEw4LjQsMTNINlYxNmgtLjdMMi43LDguNEgxMi43TDEuMSwyLjRoLS4xTDAsMCwzLjcsMy43TDAuNiwxLjI0TDAsMy41bC4xLC41bC45LDhMNi40LDlsLS41LDRMMTYuNCwxLjBMMi40LDE1LjJsMi4yLDEuMi4xLDBMMi44LDEwLDUuOCw5LjFMMy41LDdMMi42LDZMNC42LDJMNiwxLjcuMzcsMC4lNDUuOTYsMi4zLDcsMFoiIGZpbGw9IiNFOUZGRiIvPjwvc3ZnPg==); }
+                                                .swiper-button-next, .swiper-container-rtl .swiper-button-prev { right: 10px; left: auto; background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMCAyMCI+PHBhdGggZD0iTTQuODMuNzNsLS44LS44TDMuNywwTDAsMy43TDEuMiw1bDEuMjQ5LDEuMjQ5TDAuMiwxMC41bC0uNi43aC0uMkw1LDIwdjAsMEw4LjQsMTNINlYxNmgtLjdMMi43LDguNEgxMi43TDEuMSwyLjRoLS4xTDAsMCwzLjcsMy43TDAuNiwxLjI0TDAsMy41bC4xLC41bC45LDhMNi40LDlsLS41LDRMMTYuNCwxLjBMMi4yLDE1LjJsMi4yLDEuMi4xLDBMMi44LDEwLDUuOCw5LjFMMy41LDdMMi42LDZMNC42LDJMNiwxLjcuMzcsMC4lNDUuOTYsMi4zLDcsMFoiIGZpbGw9IiNFOUZGRiIvPjwvc3ZnPg==); }
                                             </style>
                                             <div class="wp-block-jetpack-slideshow_container swiper-container">
                                                 <ul class="wp-block-jetpack-slideshow_swiper-wrapper swiper-wrapper">
+                                                    @foreach ($services as $service)
                                                     <li class="wp-block-jetpack-slideshow_slide swiper-slide">
-                                                        <figure>
-                                                            <img alt="" class="wp-block-jetpack-slideshow_image wp-image-57" data-id="57" src="https://rivingtondemo.files.wordpress.com/2019/08/alberto-castillo-q-mx4mskk9zeo-unsplash-5.jpg"/>
-                                                        </figure>
+                                                        <a href="{{ route('service.detail', ['id' => $service->id]) }}">
+                                                            <img alt="{{ $service->name }}" class="wp-block-jetpack-slideshow_image" src="{{ $service->photo }}"/>
+                                                        </a>
+                                                    </li>
+                                                    @endforeach
+                                                    <li class="wp-block-jetpack-slideshow_slide swiper-slide">
+                                                        <a href="{{ route('community.available') }}">
+                                                            <img alt="Community Service" src="https://merrash-prubeas-production.up.railway.app/images/9.jpg">
+                                                        </a>
                                                     </li>
                                                     <li class="wp-block-jetpack-slideshow_slide swiper-slide">
-                                                        <figure>
-                                                            <img alt="" class="wp-block-jetpack-slideshow_image wp-image-59" data-id="59" src="https://rivingtondemo.files.wordpress.com/2019/08/ialicante-mediterranean-homes-2d4laqalbda-unsplash-5.jpg"/>
-                                                        </figure>
-                                                    </li>
-                                                    <li class="wp-block-jetpack-slideshow_slide swiper-slide">
-                                                        <figure>
-                                                            <img alt="" class="wp-block-jetpack-slideshow_image wp-image-64" data-id="64" src="https://rivingtondemo.files.wordpress.com/2019/08/sidekix-media-f1rd2hsoknk-unsplash-5.jpg"/>
-                                                        </figure>
-                                                    </li>
-                                                    <li class="wp-block-jetpack-slideshow_slide swiper-slide">
-                                                        <figure>
-                                                            <img alt="" class="wp-block-jetpack-slideshow_image wp-image-63" data-id="63" src="https://rivingtondemo.files.wordpress.com/2019/08/nastuh-abootalebi-rspmla5rita-unsplash-5.jpg"/>
-                                                        </figure>
-                                                    </li>
-                                                    <li class="wp-block-jetpack-slideshow_slide swiper-slide">
-                                                        <figure>
-                                                            <img alt="" class="wp-block-jetpack-slideshow_image wp-image-62" data-id="62" src="https://rivingtondemo.files.wordpress.com/2019/08/naomi-hebert-mp0bgas_d1c-unsplash-5.jpg"/>
-                                                        </figure>
-                                                    </li>
-                                                    <li class="wp-block-jetpack-slideshow_slide swiper-slide">
-                                                        <figure>
-                                                            <img alt="" class="wp-block-jetpack-slideshow_image wp-image-61" data-id="61" src="https://rivingtondemo.files.wordpress.com/2019/08/jason-briscoe-uv81e0oxxwq-unsplash-5.jpg"/>
-                                                        </figure>
-                                                    </li>
-                                                    <li class="wp-block-jetpack-slideshow_slide swiper-slide">
-                                                        <figure>
-                                                            <img alt="" class="wp-block-jetpack-slideshow_image wp-image-60" data-id="60" src="https://rivingtondemo.files.wordpress.com/2019/08/ialicante-mediterranean-homes-fqqiavjejto-unsplash-5.jpg"/>
-                                                        </figure>
-                                                    </li>
-                                                    <li class="wp-block-jetpack-slideshow_slide swiper-slide">
-                                                        <figure>
-                                                            <img alt="" class="wp-block-jetpack-slideshow_image wp-image-58" data-id="58" src="https://rivingtondemo.files.wordpress.com/2019/08/deborah-floden-hcvvx5xz0he-unsplash-5.jpg"/>
-                                                        </figure>
-                                                    </li>
-                                                    <li class="wp-block-jetpack-slideshow_slide swiper-slide">
-                                                        <figure>
-                                                            <img alt="" class="wp-block-jetpack-slideshow_image wp-image-65" data-id="65" src="https://rivingtondemo.files.wordpress.com/2019/08/steven-ungermann-d-zkucfjbww-unsplash-5.jpg"/>
-                                                        </figure>
+                                                        <a href="{{ route('offer') }}">
+                                                            <img alt="Special Offer" src="https://merrash-prubeas-production.up.railway.app/images/10.jpg">
+                                                        </a>
                                                     </li>
                                                 </ul>
-                                                <div>
-
+                                                <div style="display: flex; justify-content: center; color:rgba(76, 107, 192, 0.7);">
+                                                    <a class="wp-block-jetpack-slideshow_button-prev swiper-button-prev swiper-button-white" role="button"></a>
+                                                    <a class="wp-block-jetpack-slideshow_button-next swiper-button-next swiper-button-white" role="button"></a>
+                                                    <a aria-label="Pause Slideshow" class="wp-block-jetpack-slideshow_button-pause" role="button"></a>
+                                                    <div class="wp-block-jetpack-slideshow_pagination swiper-pagination swiper-pagination-white" style="margin: 10px auto; min-width: auto; max-width: 200px; display: flex; align-items: center;"></div>
                                                 </div>
-                                                <a class="wp-block-jetpack-slideshow_button-prev swiper-button-prev swiper-button-white" role="button"></a>
-                                                <a class="wp-block-jetpack-slideshow_button-next swiper-button-next swiper-button-white" role="button"></a>
-                                                <a aria-label="Pause Slideshow" class="wp-block-jetpack-slideshow_button-pause" role="button"></a>
-                                                <div class="wp-block-jetpack-slideshow_pagination swiper-pagination swiper-pagination-white"></div>
                                             </div>
                                         </div>
                                         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
                                         <script>
                                             document.addEventListener('DOMContentLoaded', function() {
-                                                new Swiper('.swiper-container', {
+                                                var swiper = new Swiper('.swiper-container', {
                                                     loop: true,
                                                     autoplay: {
                                                         delay: 3000,
@@ -1328,6 +1299,12 @@
                                                     pagination: {
                                                         el: '.swiper-pagination',
                                                         clickable: true,
+                                                        renderBullet: function (index, className) {
+                                                            if (index < {{ count($services) + 2 }}) { // Añadir 2 por las imágenes fijas
+                                                                return '<span class="' + className + '"></span>';
+                                                            }
+                                                            return ''; // Oculta los bullets extras
+                                                        },
                                                     },
                                                     navigation: {
                                                         nextEl: '.swiper-button-next',
