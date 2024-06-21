@@ -348,13 +348,13 @@
                 --wp--preset--color--pale-cyan-blue: #8ed1fc;
                 --wp--preset--color--vivid-cyan-blue: #0693e3;
 
-                --wp--preset--color--vivid-purple: #9b51e0;
-                --wp--preset--color--primary:  #85CC36;                ;
+                --wp--preset--color--vivid-purple: #E3DAC9;
+                --wp--preset--color--primary:  #EFD7FA;                ;
                 --wp--preset--color--secondary: #EE4266;
             
                 --wp--preset--color--background: #00d9ff;
                 --wp--preset--color--foreground: #f2f2f2;
-                --wp--preset--color--foreground-light: #82638c;
+                --wp--preset--color--foreground-light: #E7FCC1 ;
                 --wp--preset--color--foreground-dark: #8F8F8F;
                 --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);
                 --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);
