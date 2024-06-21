@@ -6,7 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>@yield('title') - Laravel App</title>
+    <title>Iniciar Sesión</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/img/brand/Spa-1.jpg" sizes="16x16 24x24 32x32 48x48"/>
+    <link rel="icon" type="image/x-icon" href="/img/brand/Spa-1.jpg" sizes="16x16 24x24 32x32 48x48"/>
+    <link rel="apple-touch-icon" href="/img/brand/Spa-1.jpg"/>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.5.1/tailwind.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -62,12 +66,7 @@
         <a href="https://wa.me/7224958550?text=Hola%20quisiera%20más%20información" class="btn-wsp" target="_blank">
             <img src="https://cdn-icons-png.flaticon.com/128/15707/15707820.png" alt="WhatsApp icon">
         </a>
-        
-        
-        
-        
-    
-    
+
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     
     </body>
@@ -90,9 +89,15 @@
 
 <body style="background-color: #F5CBA7; background-image: url('https://img.freepik.com/fotos-premium/textura-fondo-carton-reciclado-color-beige-fotograma-completo_136875-2707.jpg');" class="text-gray-800">
     <nav class="flex py-5 bg-indigo-500 text-white items-center">
-        <div class="w-1/2 px-12 mr-auto">
-            <p class="text-2xl font-bold">Merrash</p>
+        <div class="site-branding flex items-center">
+            <img src="img/brand/FONDO-1.png" alt="Merrash Logo" style="width: 50px; margin-right: 10px;">
+            <p class="site-title" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 30px; color: #121212;">
+                <a href="{{ route('welcome') }}" rel="home">
+                    Merrash
+                </a>
+            </p>
         </div>
+        
 
         <div class="hidden-menu flex justify-end px-4 md:hidden">
             <button id="menu-btn" class="text-white focus:outline-none">
