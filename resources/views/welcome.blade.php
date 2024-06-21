@@ -1353,21 +1353,23 @@
                                                         <a href="{{ route('service.detail', ['id' => 1]) }}">
                                                             <figure class="tiled-gallery__item">
                                                                 <img src="https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg"
-                                                                    alt="Acupuntura"
-                                                                    srcset="https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg?resize=600,600 600w,
-                                                                            https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg?resize=900,900 900w,
-                                                                            https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg?resize=1200,1200 1200w,
-                                                                            https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg?resize=1500,1500 1500w,
-                                                                            https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg?resize=1800,1800 1800w,
-                                                                            https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg?resize=2000,2000 2000w"
-                                                                    data-height="2000"
-                                                                    data-id="1"
-                                                                    data-link="{{ route('service.detail', ['id' => 1]) }}"
-                                                                    data-url="https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg"
-                                                                    data-width="3000"
-                                                                    src="https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg?resize=2000,2000" />
+                                                                     alt="Acupuntura"
+                                                                     srcset="https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg?resize=600,600 600w,
+                                                                             https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg?resize=900,900 900w,
+                                                                             https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg?resize=1200,1200 1200w,
+                                                                             https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg?resize=1500,1500 1500w,
+                                                                             https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg?resize=1800,1800 1800w,
+                                                                             https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg?resize=2000,2000 2000w"
+                                                                     data-height="2000"
+                                                                     data-id="1"
+                                                                     data-link="{{ route('service.detail', ['id' => 1]) }}"
+                                                                     data-url="https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg"
+                                                                     data-width="3000"
+                                                                     src="https://merrash-proyecto-production.up.railway.app/images/Acupuntura.jpg?resize=2000,2000"
+                                                                     style="pointer-events: none;" />
                                                             </figure>
                                                         </a>
+                                                        
                                                         
                                                     </div>
                                                     <div class="tiled-gallery__col">
