@@ -1201,33 +1201,60 @@
                 <div class="main-menu-container">
                     <ul id="menu-primary-menu" class="main-menu" aria-label="submenu">
                         
-                        <li id="menu-item-16"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16">
-                            <a href="{{ route('about') }}">Acerca De Nosotros</a>
-                        </li>
-
-                        <li id="menu-item-17"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17">
-                            <a href="{{ route('services.available') }}">Servicios</a>
-                        </li>
-                        
-                        <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19">
-                            <a href="{{ route('contacto') }}">Testimonios</a>
+                        <li id="menu-item-16" class="mx-6">
+                            <a href="{{ route('about') }}"
+                               class="font-semibold py-3 px-4 rounded-md text-black transition-colors duration-300"
+                               style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                               onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
+                               onmouseout="if (!this.classList.contains('selected')) { this.style.color=getComputedStyle(this).getPropertyValue('--link-color'); }"
+                               onclick="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color'); this.classList.add('selected');">
+                               Acerca De Nosotros
+                            </a>
                         </li>
                         
 
-                        <li id="menu-item-18"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18">
-                            <a href="https://radial51.wordpress.com/blog/">Blog</a>
+                        <li id="menu-item-17" class="mx-6">
+                            <a href="{{ route('services.available') }}"
+                               class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
+                               style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                               onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
+                               onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
+                               Servicios
+                            </a>
                         </li>
-                        <li id="menu-item-19"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19">
-                            <a href="{{ route('contacto') }}">Contacto</a>
+                        
+                        
+                        <li id="menu-item-20" class="mx-6">
+                            <a href="{{ route('contacto') }}"
+                               class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
+                               style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                               onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
+                               onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
+                               Testimonios
+                            </a>
                         </li>
-                        <li class="mx-6">
+                        
+                    
+                        <li id="menu-item-19" class="mx-6">
+                            <a href="{{ route('contacto') }}"
+                               class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
+                                style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                               onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
+                               onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
+                               Contacto
+                            </a>
+                        </li>
+                        
+                        <li class="menu-item-20">
                             <a href="{{ route('login.index') }}"
-                                class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md">Iniciar Sesión</a>
+                               class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
+                               s style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                               onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
+                               onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
+                               Iniciar Sesión
+                            </a>
                         </li>
+
                     </ul>
                 </div>
             </nav>
@@ -1406,7 +1433,7 @@
                                     </div>
                                     <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
                                         <p class="has-text-align-right has-huge-font-size">
-                                            <strong>$700,000</strong>
+                                           
                                         </p>
                                     </div>
                                 </div>
@@ -1790,7 +1817,7 @@
             }
 
             .wp-block-jetpack-slideshow .amp-carousel-button,.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_button-next,.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_button-pause,.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_button-play,.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_button-prev {
-                background-color: #fff;
+                background-color: #ffffff;
                 background-position: 50%;
                 background-repeat: no-repeat;
                 background-size: contain;

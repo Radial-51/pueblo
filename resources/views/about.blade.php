@@ -4,7 +4,7 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="profile" href="https://gmpg.org/xfn/11"/>
-        <title>About &#8211;Site Title</title>
+        <title>Acerca De &#8211;Nosotros</title>
         <meta name='robots' content='noindex, nofollow'/>
         <link rel='dns-prefetch' href='//s0.wp.com'/>
         <link rel='dns-prefetch' href='//wordpress.com'/>
