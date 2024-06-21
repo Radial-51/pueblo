@@ -1250,7 +1250,7 @@
                 <!-- .site-branding -->
             <nav id="site-navigation" class="main-navigation" aria-label="Main Navigation">
                 <input type="checkbox" role="button" aria-haspopup="true" id="toggle" class="hide-visually">
-                <label for="toggle" id="toggle-menu" class="button">
+                <label for="toggle" id="toggle-menu" class="button" style="background-color: beige ">
                     Menu <span class="dropdown-icon open"></span>
                     <span class="dropdown-icon close">&times;</span>
                     <span class="hide-visually expanded-text">expanded</span>
@@ -1258,7 +1258,6 @@
                 </label>
                 <div class="main-menu-container">
                     <ul id="menu-primary-menu" class="main-menu" aria-label="submenu">
-                        
                         <li id="menu-item-16" class="mx-6">
                             <a href="{{ route('about') }}"
                                class="font-semibold py-3 px-4 rounded-md text-black transition-colors duration-300"
@@ -1521,7 +1520,7 @@
                                 <div class="wp-block-cover alignfull has-background-dim-50 has-primary-background-color has-background-dim" style="background-image:url('img/brand/10.jpg');background-position:50% 50%;background-size: cover;background-color:rgba(133, 204, 54, 0.7);">
                                     <div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
                                         <div style="height:64px" aria-hidden="true" class="wp-block-spacer"></div>
-                                        <h2 class="margin-bottom-half wp-block-heading"  style ="color: #784F96;">En Merrash contamos con las mejores instalaciones para ti.</h2>
+                                        <h2 class="margin-bottom-half wp-block-heading"  style ="color: #000000;">En Merrash contamos con las mejores instalaciones para ti.</h2>
                                         <div style="height:64px" aria-hidden="true" class="wp-block-spacer"></div>
                                     </div>
                                 </div>                                    
@@ -1535,11 +1534,12 @@
                                                 </figure>
                                             </div>
                                             <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-                                                <h3 class="wp-block-heading">About Agent.</h3>
+                                                <h3 class="margin-bottom-half wp-block-heading"  style ="color: #784F96;">María de Lourdes Molina Olivares
+                                                </h3>
                                                 <p>Juan Pérez is a Certified Residential Specialist with over 12 years of experience of helping local clients sell homes. He achieved success due to his commitment to providing beautiful homes in Sussex. </p>
                                             </div>
                                             <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-                                                <h3 class="has-text-align-left wp-block-heading">Schedule a Private Showing.</h3>
+                                                <h3 class="margin-bottom-half wp-block-heading"  style ="color: #784F96;">Schedule a Private Showing.</h3>
                                                 <p class="margin-bottom-none">
                                                     <strong>Rivington Real Estate Team</strong>
                                                     :
