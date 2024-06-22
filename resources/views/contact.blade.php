@@ -1219,7 +1219,7 @@
                                 <a class="site-name"
                                    href="{{ route('welcome') }}"
                                    class="font-semibold py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                   style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
                                    onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                    onmouseout="if (!this.classList.contains('selected')) { this.style.color=getComputedStyle(this).getPropertyValue('--link-color'); }"
                                    onclick="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color'); this.classList.add('selected');">
@@ -1230,7 +1230,7 @@
                             <li id="menu-item-16" class="mx-6">
                                 <a href="{{ route('about') }}"
                                    class="font-semibold py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                   style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
                                    onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                    onmouseout="if (!this.classList.contains('selected')) { this.style.color=getComputedStyle(this).getPropertyValue('--link-color'); }"
                                    onclick="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color'); this.classList.add('selected');">
@@ -1242,7 +1242,7 @@
                             <li id="menu-item-17" class="mx-6">
                                 <a href="{{ route('services.available') }}"
                                    class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                   style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
                                    onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                    onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
                                    Servicios
@@ -1253,7 +1253,7 @@
                             <li id="menu-item-20" class="mx-6">
                                 <a href="{{ route('contacto') }}"
                                    class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                   style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
                                    onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                    onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
                                    Testimonios
@@ -1263,7 +1263,7 @@
                             <li class="menu-item-20">
                                 <a href="{{ route('login.index') }}"
                                    class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   s style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                   style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
                                    onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                    onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
                                    Iniciar Sesión

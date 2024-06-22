@@ -365,7 +365,7 @@
     }
 </style>
 <style id='global-styles-inline-css'>
-    :root {
+:root {
         --wp--preset--color--black: #000000;
         --wp--preset--color--cyan-bluish-gray: #abb8c3;
         --wp--preset--color--white: #ffffff;
@@ -385,7 +385,7 @@
 
         --wp--preset--color--background: #FBFBFB;
         --wp--preset--color--foreground: #f2f2f2;
-        --wp--preset--color--foreground-light: #F6F8F2;
+        --wp--preset--color--foreground-light: #ffffff;
         --wp--preset--color--foreground-dark: #8F8F8F;
         --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
         --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);

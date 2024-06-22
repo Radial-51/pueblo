@@ -1045,7 +1045,7 @@
                 --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
             }
             body {
-                background: linear-gradient(to right, rgb(133, 204, 54), rgb(130, 99, 140)); 
+                background: linear-gradient(to right, rgb(255, 255, 255), rgb(130, 99, 140)); 
                color: rgb(0, 0, 0); 
           }
 
@@ -1248,7 +1248,7 @@
     <header id="masthead" class="site-header responsive-max-width has-title-and-tagline has-menu" role="banner">
         <div class="site-branding">
             <p class="site-title">
-                <a href="{{ route('welcome') }}" rel="home" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 30px; color: #121212;">
+                <a href="{{ route('welcome') }}" rel="home" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 30px; color: #7D47C1;">
                     <img src="img/brand/FONDO-1.png" alt="Merrash Logo" style="vertical-align: middle; margin-right: 10px; width: 50px;" /> Merrash
                 </a>
             </p>
@@ -1257,7 +1257,7 @@
                 <nav id="site-navigation" class="main-navigation" aria-label="Main Navigation">
                     <input type="checkbox" role="button" aria-haspopup="true" id="toggle" class="hide-visually">
                     <label for="toggle" id="toggle-menu" class="button">
-                        Menu			<span class="dropdown-icon open">+</span>
+                        Menu<span class="dropdown-icon open">+</span>
                         <span class="dropdown-icon close">&times;</span>
                         <span class="hide-visually expanded-text">expanded</span>
                         <span class="hide-visually collapsed-text">collapsed</span>
@@ -1269,7 +1269,7 @@
                                 <a class="site-name"
                                    href="{{ route('welcome') }}"
                                    class="font-semibold py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                   style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
                                    onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                    onmouseout="if (!this.classList.contains('selected')) { this.style.color=getComputedStyle(this).getPropertyValue('--link-color'); }"
                                    onclick="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color'); this.classList.add('selected');">
@@ -1280,7 +1280,7 @@
                             <li id="menu-item-17" class="mx-6">
                                 <a href="{{ route('services.available') }}"
                                    class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                   style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
                                    onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                    onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
                                    Servicios
@@ -1291,7 +1291,7 @@
                             <li id="menu-item-20" class="mx-6">
                                 <a href="{{ route('contacto') }}"
                                    class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                   style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
                                    onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                    onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
                                    Testimonios
@@ -1302,7 +1302,7 @@
                             <li id="menu-item-19" class="mx-6">
                                 <a href="{{ route('contacto') }}"
                                    class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                    style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                    style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
                                    onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                    onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
                                    Contacto
@@ -1312,7 +1312,7 @@
                             <li class="menu-item-20">
                                 <a href="{{ route('login.index') }}"
                                    class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   s style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
+                                   style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
                                    onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                    onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
                                    Iniciar Sesión
