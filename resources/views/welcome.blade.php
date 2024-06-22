@@ -1735,17 +1735,20 @@
                                             </figure>
                                         </div>
                                         <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-                                            <h3 class="margin-bottom-half wp-block-heading" style ="color: #784F96;">
+                                            <h3 class="margin-bottom-half wp-block-heading" style ="color: #000000;">
                                                 María de Lourdes Molina Olivares
                                             </h3>
-                                            <p>Juan Pérez is a Certified Residential Specialist with over 12 years of
-                                                experience of helping local clients sell homes. He achieved success due
-                                                to his commitment to providing beautiful homes in Sussex. </p>
+                                            <p class="margin-bottom-half wp-block-heading" style ="color: #000000;">Mexicana, Casada, 39 años 
+                                                Certificación de Acupunturista Internacional, World Federation of Chines Medicine Societies
+                                                Diplomado en Acupuntura a Nivel Superior de Especialidades
+                                                Diplomado Básico de Acupuntura y Moxibustión
+                                                Especialidad en Homeopatía
+                                                Médico Cirujano y Partero </p>
                                         </div>
                                         <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-                                            <h3 class="margin-bottom-half wp-block-heading" style ="color: #784F96;">
+                                            <h3 class="margin-bottom-half wp-block-heading" style ="color: #000000;">
                                                 Schedule a Private Showing.</h3>
-                                            <p class="margin-bottom-none">
+                                            <p class="margin-bottom-half wp-block-heading" style ="color: #000000;">
                                                 <strong>Rivington Real Estate Team</strong>
                                                 :
                                             </p>
@@ -1754,26 +1757,26 @@
                                                 class="wp-block-jetpack-contact-info margin-top-none">
                                                 <div class="wp-block-jetpack-email">
                                                     <a itemprop="email"
-                                                        href="mailto:myemail@example.com">myemail@example.com</a>
+                                                        href="mailto:myemail@example.com" style ="color: #000000;">Correo electrónico: dramalumolina@gmail.com</a>
                                                 </div>
                                                 <div class="wp-block-jetpack-phone">
                                                     <span itemprop="telephone">
-                                                        <a href="tel:123456789">(123)-456-789</a>
+                                                        <a href="tel:123456789" style ="color: #000000;">Teléfono(s): (45)2222386181, (722)1963462</a>
                                                     </span>
                                                 </div>
                                                 <div itemprop="address" itemscope
                                                     itemtype="http://schema.org/PostalAddress"
                                                     class="wp-block-jetpack-address">
                                                     <div itemprop="streetAddress"
-                                                        class="jetpack-address__address jetpack-address__address1">1
+                                                        class="jetpack-address__address jetpack-address__address1" style ="color: #000000;">1
                                                         Example Street, </div>
                                                     <div>
                                                         <span itemprop="addressRegion"
-                                                            class="jetpack-address__region">Anytown,</span>
+                                                            class="jetpack-address__region" style ="color: #000000;">Anytown,</span>
                                                         <span itemprop="postalCode"
-                                                            class="jetpack-address__postal">10100</span>
+                                                            class="jetpack-address__postal" style ="color: #000000;">10100</span>
                                                     </div>
-                                                    <div itemprop="addressCountry" class="jetpack-address__country">
+                                                    <div itemprop="addressCountry" class="jetpack-address__country" style ="color: #000000;">
                                                         USA</div>
                                                 </div>
                                             </div>
