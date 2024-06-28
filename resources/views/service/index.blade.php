@@ -35,8 +35,8 @@
                             <thead class="thead">
                                 <tr>
                                     <th></th>
-                                    <th>No</th>
                                     <th>Nombre</th>
+                                    <th>No</th>
                                     <th>Descripción</th>
                                     <th>Estado</th>
                                     <th>Foto</th>
@@ -71,8 +71,8 @@
                                                 </button>
                                             </form>
                                         </td>
-                                        <td>{{ ++$i }}</td>
                                         <td>{{ $service->name }}</td>
+                                        <td>{{ ++$i }}</td>
                                         <td>{{ $service->description }}</td>
                                         <td>{{ $service->status }}</td>
                                         <td>{{ $service->photo }}</td>
