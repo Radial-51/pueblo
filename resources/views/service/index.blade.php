@@ -34,42 +34,28 @@
                         <table class="table table-striped table-hover" id="datatable">
                             <thead class="thead">
                                 <tr>
+                                    <th>Acciones</th>
                                     <th>No</th>
-                                    <th>Name</th>
-                                    <th>Description</th>
-                                    <th>Status</th>
-                                    <th>Photo</th>
-                                    <th>Discount Percentage</th>
-                                    <th>Date One</th>
-                                    <th>Date Two</th>
-                                    <th>Reason</th>
-                                    <th>Function</th>
-                                    <th>Complement</th>
-                                    <th>Effects</th>
-                                    <th>Process</th>
-                                    <th>Goal</th>
-                                    <th>Duration</th>
-                                    <th></th>
+                                    <th>Nombre</th>
+                                    <th>Descripción</th>
+                                    <th>Estado</th>
+                                    <th>Foto</th>
+                                    <th>Porcentaje Descuento</th>
+                                    <th>Inicio Dinámica</th>
+                                    <th>Fin Dinámica</th>
+                                    <th>Razón</th>
+                                    <th>Función</th>
+                                    <th>Complementos</th>
+                                    <th>Posibles efectos</th>
+                                    <th>Proceso</th>
+                                    <th>Objetivo</th>
+                                    <th>Duración</th>
+                                    
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach ($services as $service)
                                     <tr>
-                                        <td>{{ ++$i }}</td>
-                                        <td>{{ $service->name }}</td>
-                                        <td>{{ $service->description }}</td>
-                                        <td>{{ $service->status }}</td>
-                                        <td>{{ $service->photo }}</td>
-                                        <td>{{ $service->discount_percentage }}</td>
-                                        <td>{{ $service->date_one }}</td>
-                                        <td>{{ $service->date_two }}</td>
-                                        <td>{{ $service->reason }}</td>
-                                        <td>{{ $service->function }}</td>
-                                        <td>{{ $service->complement }}</td>
-                                        <td>{{ $service->effects }}</td>
-                                        <td>{{ $service->process }}</td>
-                                        <td>{{ $service->goal }}</td>
-                                        <td>{{ $service->duration }}</td>
                                         <td>
                                             <form action="{{ route('services.destroy', $service->id) }}" method="POST">
                                                 <a class="btn btn-sm btn-primary" href="{{ route('services.show', $service->id) }}">
@@ -85,6 +71,21 @@
                                                 </button>
                                             </form>
                                         </td>
+                                        <td>{{ ++$i }}</td>
+                                        <td>{{ $service->name }}</td>
+                                        <td>{{ $service->description }}</td>
+                                        <td>{{ $service->status }}</td>
+                                        <td>{{ $service->photo }}</td>
+                                        <td>{{ $service->discount_percentage }}</td>
+                                        <td>{{ $service->date_one }}</td>
+                                        <td>{{ $service->date_two }}</td>
+                                        <td>{{ $service->reason }}</td>
+                                        <td>{{ $service->function }}</td>
+                                        <td>{{ $service->complement }}</td>
+                                        <td>{{ $service->effects }}</td>
+                                        <td>{{ $service->process }}</td>
+                                        <td>{{ $service->goal }}</td>
+                                        <td>{{ $service->duration }}</td>
                                     </tr>
                                 @endforeach
                             </tbody>
