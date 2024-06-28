@@ -349,7 +349,7 @@ return [
         ],
         [
             'text' => 'Servicio a la comunidad',
-            'route' => 'community.available',
+            'route' => 'communities.index',
             'icon' => 'fas fa-people-carry',
         ],
         [
