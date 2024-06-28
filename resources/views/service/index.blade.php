@@ -34,7 +34,7 @@
                         <table class="table table-striped table-hover" id="datatable">
                             <thead class="thead">
                                 <tr>
-                                    <th>Acciones</th>
+                                    <th></th>
                                     <th>No</th>
                                     <th>Nombre</th>
                                     <th>Descripción</th>
