@@ -1,12 +1,36 @@
 @extends('adminlte::page')
 
-@section('title', 'Panel de Control')
+@section('title', 'Dashboard')
 
 @section('content_header')
-    <h1>Panel de Control</h1>
+    <h1>Dashboard</h1>
 @stop
 
 @section('content')
+    <p>Welcome to this beautiful admin panel.</p>
+@stop
+
+@section('css')
+    {{-- Add here extra stylesheets --}}
+    {{-- <link rel="stylesheet" href="/css/admin_custom.css"> --}}
+@stop
+
+@section('js')
+    <script> console.log("Hi, I'm using the Laravel-AdminLTE package!"); </script>
+@stop
+
+
+
+
+
+
+
+
+@extends('layouts.app')
+
+@section('content')
+<link rel="stylesheet" href="{{ asset('css/styles-home.css') }}">
+
 <div class="main-content">
     <div class="header">
         <h1>Panel de Control</h1>
@@ -44,15 +68,4 @@
         <p>Los datos de las citas se mostrarán aquí</p>
     </div>
 </div>
-@stop
-
-@section('css')
-    {{-- Add here extra stylesheets --}}
-    {{-- <link rel="stylesheet" href="/css/admin_custom.css"> --}}
-    <link rel="stylesheet" href="{{ asset('css/styles-home.css') }}">
-
-@stop
-
-@section('js')
-    <script> console.log("Hi, I'm using the Laravel-AdminLTE package!"); </script>
-@stop
+@endsection
