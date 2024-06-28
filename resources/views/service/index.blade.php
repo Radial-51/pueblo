@@ -7,27 +7,22 @@
 @stop
 
 @section('content')
-<div class="back">
-    <a href="{{ route('home') }}" id="r">Regresar</a>
-</div>
-<div class="crud-container">
-    <div>
-        <div class="span-title">
-            <span id="card_title">
-                Servicios
-            </span>
-        </div>
-        <div>
-            
-            <div>
-                <div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-header">
                     <div style="display: flex; justify-content: space-between; align-items: center;">
 
-                        <div class="float-right">
-                            <a href="{{ route('services.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left" style="background-color: rgb(33, 226, 33)">
-                            {{ __('Crear Servicio') }}
+                        <span id="card_title">
+                            {{ __('Service') }}
+                        </span>
+
+                         <div class="float-right">
+                            <a href="{{ route('services.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
+                              {{ __('Create New') }}
                             </a>
-                        </div>
+                          </div>
                     </div>
                 </div>
                 @if ($message = Session::get('success'))
@@ -41,21 +36,53 @@
                         <table class="table table-striped table-hover">
                             <thead class="thead">
                                 <tr>
+                                    <th>No</th>
+                                    
                                     <th>Name</th>
-                                    <th>Actions</th>
+                                    <th>Description</th>
+                                    <th>Status</th>
+                                    <th>Photo</th>
+                                    <th>Discount Percentage</th>
+                                    <th>Date One</th>
+                                    <th>Date Two</th>
+                                    <th>Reason</th>
+                                    <th>Function</th>
+                                    <th>Complement</th>
+                                    <th>Effects</th>
+                                    <th>Procces</th>
+                                    <th>Goal</th>
+                                    <th>Duration</th>
+
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach ($services as $service)
                                     <tr>
+                                        <td>{{ ++$i }}</td>
+                                        
                                         <td>{{ $service->name }}</td>
+                                        <td>{{ $service->description }}</td>
+                                        <td>{{ $service->status }}</td>
+                                        <td>{{ $service->photo }}</td>
+                                        <td>{{ $service->discount_percentage }}</td>
+                                        <td>{{ $service->date_one }}</td>
+                                        <td>{{ $service->date_two }}</td>
+                                        <td>{{ $service->reason }}</td>
+                                        <td>{{ $service->function }}</td>
+                                        <td>{{ $service->complement }}</td>
+                                        <td>{{ $service->effects }}</td>
+                                        <td>{{ $service->procces }}</td>
+                                        <td>{{ $service->goal }}</td>
+                                        <td>{{ $service->duration }}</td>
+
                                         <td>
-                                            <form action="{{ route('services.destroy', $service->id) }}" method="POST">
-                                                <a data-color="s" class="btn btn-sm btn-primary" href="{{ route('services.show', $service->id) }}"> <h3 class="texto-botton">Mostrar</h3></a>
-                                                <a data-color="e" class="btn btn-sm btn-success" href="{{ route('services.edit', $service->id) }}"> <h3 class="texto-botton">Editar</h3></a>
+                                            <form action="{{ route('services.destroy',$service->id) }}" method="POST">
+                                                <a class="btn btn-sm btn-primary " href="{{ route('services.show',$service->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Show') }}</a>
+                                                <a class="btn btn-sm btn-success" href="{{ route('services.edit',$service->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Edit') }}</a>
                                                 @csrf
                                                 @method('DELETE')
-                                                <button type="submit" data-color="d" class="btn btn-danger btn-sm"> {{ __('Delete') }}</button>
+                                                <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> {{ __('Delete') }}</button>
                                             </form>
                                         </td>
                                     </tr>
