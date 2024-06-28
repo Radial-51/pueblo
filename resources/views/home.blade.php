@@ -48,15 +48,16 @@
 
 @section('css')
     {{-- Add here extra stylesheets --}}
-    <link rel="stylesheet" href="{{ secure_asset('vendor/adminlte/dist/css/adminlte.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('vendor/fontawesome-free/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('vendor/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('vendor/adminlte/dist/css/adminlte.min.css') }}">
     <link rel="stylesheet" href="{{ secure_asset('css/styles-home.css') }}">
-
 @stop
 
 @section('js')
-    <script src="{{ secure_asset('vendor/jquery/jquery.min.js') }}"></script>
-    <script src="{{ secure_asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ secure_asset('vendor/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
-    <script src="{{ secure_asset('vendor/adminlte/dist/js/adminlte.min.js') }}"></script>
-    <script> console.log("Hi, I'm using the Laravel-AdminLTE package!"); </script>
+<script src="{{ secure_asset('vendor/jquery/jquery.min.js') }}"></script>
+<script src="{{ secure_asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ secure_asset('vendor/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
+<script src="{{ secure_asset('vendor/adminlte/dist/js/adminlte.min.js') }}"></script>
+<link rel="icon" href="{{ secure_asset('favicons/favicon.ico') }}">
 @stop
