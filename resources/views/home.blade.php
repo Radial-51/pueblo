@@ -55,5 +55,5 @@
 
 @section('js')
     <script> console.log("Hi, I'm using the Laravel-AdminLTE package!"); </script>
-    <link rel="stylesheet" href="{{  secure_asset('vendor/adminlte/dist/js/adminlte.js')}}">
+    <script src="{{ secure_asset('vendor/adminlte/dist/js/adminlte.min.js') }}"></script>
 @stop
