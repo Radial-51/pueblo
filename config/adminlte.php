@@ -331,23 +331,26 @@ return [
             'route' => 'home',
             'icon' => 'fas fa-fw fa-home'
         ],
+        /** 
+         * [
+         *   'text' => 'pages',
+         *   'url' => 'admin/pages',
+         *   'icon' => 'far fa-fw fa-file',
+         *   'label' => 4,
+         *   'label_color' => 'success',
+         *  ],
+         * **/
+        
+        ['header' => 'Tablas'],
         [
-            'text' => 'pages',
-            'url' => 'admin/pages',
-            'icon' => 'far fa-fw fa-file',
-            'label' => 4,
-            'label_color' => 'success',
+            'text' => 'Servicios',
+            'route' => 'services',
+            'icon' => 'fas fa-heartbeat',
         ],
-        ['header' => 'account_settings'],
         [
-            'text' => 'profile',
-            'url' => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
-        ],
-        [
-            'text' => 'change_password',
-            'url' => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
+            'text' => 'Servicio a la comunidad',
+            'route' => 'community.available',
+            'icon' => 'fas fa-people-carry',
         ],
         [
             'text' => 'multilevel',
