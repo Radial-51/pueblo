@@ -1,127 +1,60 @@
-@extends('layouts.app')
 
-@section('template_title')
-    {{ __('Create') }} Community
-@endsection
+
+@extends('adminlte::page')
+
+@section('title', 'Dashboard')
+
+@section('content_header')
+    <h1>Crear un registro</h1>
+@stop
 
 @section('content')
-<style>
-    /* General container styling */
-    .content.container-fluid {
-        padding: 20px;
-    }
+<section class="content container-fluid">
+    <div class="row">
+        <div class="col-md-12">
 
-    .row {
-        display: flex;
-        justify-content: center;
-        padding: 0 10px;
-    }
+            <div class="card card-default">
+                <div class="card-header">
+                    <span class="card-title">{{ __('Create') }} Community</span>
+                </div>
+                <div class="card-body bg-white">
+                    <form method="POST" action="{{ route('communities.store') }}"  role="form" enctype="multipart/form-data">
+                        @csrf
 
-    .col-md-12 {
-        max-width: 100%;
-        padding: 0;
-    }
+                        @include('community.form')
 
-    .card {
-        padding: 20px;
-        background-color: #fff;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        overflow: hidden;
-    }
-
-    /* Header styling */
-    .card-header {
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px;
-        border-bottom: 1px solid #ddd;
-    }
-
-    .card-title {
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
-
-    /* Form styling */
-    .form-group {
-        margin-bottom: 20px;
-    }
-
-    .form-group label {
-        display: block;
-        font-weight: bold;
-        margin-bottom: 5px;
-    }
-
-    .form-control {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-
-    .btn-submit {
-        display: block;
-        width: 100%;
-        color: #fff;
-        padding: 10px;
-        background-color: rgb(116, 238, 60);
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 20px;
-    }
-
-    .btn-submit:hover {
-        background-color: rgb(100, 205, 52);
-    }
-
-    #cancelar {
-        background-color: #e64343;
-        display: flex;
-        justify-content: center;
-    }
-
-    /* Mobile specific styling */
-    @media (max-width: 768px) {
-        .form-group {
-            margin-bottom: 15px;
-        }
-
-        .form-group label {
-            font-weight: normal;
-        }
-
-        .card-header {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-    }
-</style>
-    <section class="content container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card card-default">
-                    <div class="card-header">
-                        <span class="card-title">{{ __('Crear') }} Servicio Comunitario</span>
-                    </div>
-                    <div class="card-body bg-white">
-                        <form method="POST" action="{{ route('communities.store') }}" role="form" enctype="multipart/form-data" class="form" style="margin: 0 auto; width: 90%;">
-                            @csrf
-
-                            @include('community.form')
-
-                            <button type="submit" class="btn btn-submit" style="margin-top: 20px;">{{ __('Crear') }}</button>
-                            <a href="{{ route('communities.index') }}" class="btn btn-submit" id="cancelar">{{ __('Cancelar') }}</a>
-                        </form>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </section>
-@endsection
+    </div>
+</section>
+
+
+@stop
+
+@section('css')
+    {{-- Add here extra stylesheets --}}
+    {{-- <link rel="stylesheet" href="/css/admin_custom.css"> --}}
+    {{-- Incluir estilos de DataTables --}}
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+     {{-- Add here extra stylesheets --}}
+     <link rel="stylesheet" href="{{ secure_asset('vendor/fontawesome-free/css/all.min.css') }}">
+     <link rel="stylesheet" href="{{ secure_asset('vendor/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
+     <link rel="stylesheet" href="{{ secure_asset('vendor/adminlte/dist/css/adminlte.min.css') }}">
+     <link rel="stylesheet" href="{{ secure_asset('css/styles-home.css') }}">
+    
+@stop
+
+@section('js')
+    <script> console.log("Hi, I'm using the Laravel-AdminLTE package!"); </script>
+    {{-- Incluir scripts de DataTables y otros --}}
+    <script src="{{ secure_asset('vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ secure_asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ secure_asset('vendor/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
+    <script src="{{ secure_asset('vendor/adminlte/dist/js/adminlte.min.js') }}"></script>
+    
+    {{-- Script de DataTables --}}
+    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+@stop
