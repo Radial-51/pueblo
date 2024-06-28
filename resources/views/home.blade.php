@@ -1,12 +1,13 @@
 @extends('adminlte::page')
 
-@section('title', 'Panel de Control')
+@section('title', 'Dashboard')
 
 @section('content_header')
-    <h1>Panel de Control</h1>
+    <h1>Dashboard</h1>
 @stop
 
 @section('content')
+    
 <div class="main-content">
     <div class="header">
         <h1>Panel de Control</h1>
@@ -47,13 +48,14 @@
 @stop
 
 @section('css')
-    {{-- Add here extra stylesheets --}}
-    <link rel="stylesheet" href="{{ secure_asset('vendor/adminlte/dist/css/adminlte.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('vendor/adminlte/dist/css/adminlte.min.css') }}">
     <link rel="stylesheet" href="{{ secure_asset('css/styles-home.css') }}">
-
 @stop
 
 @section('js')
-    <script> console.log("Hi, I'm using the Laravel-AdminLTE package!"); </script>
-    <script src="{{ asset('vendor/adminlte/dist/js/adminlte.js') }}"></script>
+    <script src="{{ secure_asset('vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ secure_asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ secure_asset('vendor/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
+    <script src="{{ secure_asset('vendor/adminlte/dist/js/adminlte.min.js') }}"></script>
+    <script> console.log('Hi, I\'m using the Laravel-AdminLTE package!'); </script>
 @stop
