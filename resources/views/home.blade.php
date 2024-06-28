@@ -43,21 +43,57 @@
         <h2>Citas</h2>
         <p>Los datos de las citas se mostrarán aquí</p>
     </div>
+
+    <div class="datatable-container">
+        <table id="example" class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <!-- Añade las columnas necesarias -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Añade filas según tu modelo de datos -->
+                <tr>
+                    <td>John Doe</td>
+                    <td>john.doe@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>jane.smith@example.com</td>
+                </tr>
+                <!-- Ejemplo de datos, ajusta según tu aplicación -->
+            </tbody>
+        </table>
+    </div>
 </div>
 @stop
 
 @section('css')
-    {{-- Add here extra stylesheets --}}
-    <link rel="stylesheet" href="{{ secure_asset('vendor/fontawesome-free/css/all.min.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('vendor/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('vendor/adminlte/dist/css/adminlte.min.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('css/styles-home.css') }}">
+    {{-- Incluir estilos de DataTables --}}
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+     {{-- Add here extra stylesheets --}}
+     <link rel="stylesheet" href="{{ secure_asset('vendor/fontawesome-free/css/all.min.css') }}">
+     <link rel="stylesheet" href="{{ secure_asset('vendor/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
+     <link rel="stylesheet" href="{{ secure_asset('vendor/adminlte/dist/css/adminlte.min.css') }}">
+     <link rel="stylesheet" href="{{ secure_asset('css/styles-home.css') }}">
 @stop
 
 @section('js')
-<script src="{{ secure_asset('vendor/jquery/jquery.min.js') }}"></script>
-<script src="{{ secure_asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-<script src="{{ secure_asset('vendor/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
-<script src="{{ secure_asset('vendor/adminlte/dist/js/adminlte.min.js') }}"></script>
-<link rel="icon" href="{{ secure_asset('favicons/favicon.ico') }}">
+    {{-- Incluir scripts de DataTables y otros --}}
+    <script src="{{ secure_asset('vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ secure_asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ secure_asset('vendor/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
+    <script src="{{ secure_asset('vendor/adminlte/dist/js/adminlte.min.js') }}"></script>
+    
+    {{-- Script de DataTables --}}
+    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable();
+        });
+    </script>
 @stop
