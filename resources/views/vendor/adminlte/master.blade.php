@@ -18,11 +18,11 @@
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
         <!-- Navbar -->
-        @include('vendor.adminlte.partials.navbar.navbar')
+        @include('vendor.adminlte.master')
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
-        @include('vendor.adminlte.partials.sidebar.sidebar')
+        @include('vendor.adminlte.master')
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
