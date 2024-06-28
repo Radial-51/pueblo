@@ -110,7 +110,7 @@ return [
     */
 
     'preloader' => [
-        'enabled' => false,
+        'enabled' => true,
         'mode' => 'fullscreen',
         'img' => [
             'path' => 'favicons/favicon.ico',
