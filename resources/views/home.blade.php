@@ -50,10 +50,10 @@
     {{-- Add here extra stylesheets --}}
     <link rel="stylesheet" href="{{ secure_asset('vendor/adminlte/dist/css/adminlte.css') }}">
     <link rel="stylesheet" href="{{ secure_asset('css/styles-home.css') }}">
-    <link rel="stylesheet" href="{{  secure_asset('vendor/adminlte/dist/js/adminlte.js')}}">
 
 @stop
 
 @section('js')
     <script> console.log("Hi, I'm using the Laravel-AdminLTE package!"); </script>
+    <link rel="stylesheet" href="{{  secure_asset('vendor/adminlte/dist/js/adminlte.js')}}">
 @stop
