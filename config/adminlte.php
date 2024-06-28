@@ -263,6 +263,9 @@ return [
     'register_url' => 'register',
     'password_reset_url' => 'password/reset',
     'password_email_url' => 'password/email',
+    'assets' => [
+        'use_secure' => true, // Asegúrate de que esto esté configurado
+    ],
     'profile_url' => false,
 
     /*
