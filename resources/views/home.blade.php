@@ -48,7 +48,7 @@
 
 @section('css')
     {{-- Add here extra stylesheets --}}
-    {{-- <link rel="stylesheet" href="/css/admin_custom.css"> --}}
+    <link rel="stylesheet" href="{{ secure_asset('vendor/adminlte/dist/css/adminlte.css') }}">
     <link rel="stylesheet" href="{{ secure_asset('css/styles-home.css') }}">
 
 @stop
