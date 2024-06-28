@@ -344,7 +344,7 @@ return [
         ['header' => 'Tablas'],
         [
             'text' => 'Servicios',
-            'route' => 'services',
+            'route' => 'services.index',
             'icon' => 'fas fa-heartbeat',
         ],
         [
