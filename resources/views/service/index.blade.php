@@ -59,15 +59,15 @@
                                         <td>
                                             <form action="{{ route('services.destroy', $service->id) }}" method="POST">
                                                 <a class="btn btn-sm btn-primary" href="{{ route('services.show', $service->id) }}">
-                                                    <i class="fa fa-fw fa-eye"></i> {{ __('Show') }}
+                                                    <i class="fa fa-fw fa-eye"></i> {{ __('Mostrar') }}
                                                 </a>
                                                 <a class="btn btn-sm btn-success" href="{{ route('services.edit', $service->id) }}">
-                                                    <i class="fa fa-fw fa-edit"></i> {{ __('Edit') }}
+                                                    <i class="fa fa-fw fa-edit"></i> {{ __('Editar') }}
                                                 </a>
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit" class="btn btn-danger btn-sm">
-                                                    <i class="fa fa-fw fa-trash"></i> {{ __('Delete') }}
+                                                    <i class="fa fa-fw fa-trash"></i> {{ __('Eliminar') }}
                                                 </button>
                                             </form>
                                         </td>
