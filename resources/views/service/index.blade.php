@@ -120,7 +120,7 @@
             $('#services-table').DataTable({
                 "language": {
                     "url": "//cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json",
-                    "info": "_START_ / _END_ de un total de _TOTAL_ registros",
+                    "info": "_START_ / _END_ de un total de _TOTAL_",
                     "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
                     "infoFiltered": "(filtrado de un total de _MAX_ registros)",
                     "infoPostFix": "",
