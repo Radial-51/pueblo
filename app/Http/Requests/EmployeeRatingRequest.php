@@ -22,9 +22,9 @@ class EmployeeRatingRequest extends FormRequest
     public function rules(): array
     {
         return [
-			'service_employee_id' => 'required',
-			'counter_employee_id' => 'required',
-			'customer_id' => 'required',
+			'service_employee' => 'required|string',
+			'counter_employee' => 'required|string',
+			'customer' => 'required|string',
 			'service_rating' => 'required',
 			'counter_rating' => 'required',
 			'service_feedback' => 'string',

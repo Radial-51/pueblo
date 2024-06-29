@@ -23,16 +23,16 @@
                 <div class="card-body bg-white">
                     
                     <div class="form-group mb-2 mb20">
-                        <strong>Service Employee Id:</strong>
-                        {{ $employeeRating->service_employee_id }}
+                        <strong>Service Employee:</strong>
+                        {{ $employeeRating->service_employee }}
                     </div>
                     <div class="form-group mb-2 mb20">
-                        <strong>Counter Employee Id:</strong>
-                        {{ $employeeRating->counter_employee_id }}
+                        <strong>Counter Employee:</strong>
+                        {{ $employeeRating->counter_employee }}
                     </div>
                     <div class="form-group mb-2 mb20">
-                        <strong>Customer Id:</strong>
-                        {{ $employeeRating->customer_id }}
+                        <strong>Customer:</strong>
+                        {{ $employeeRating->customer }}
                     </div>
                     <div class="form-group mb-2 mb20">
                         <strong>Service Rating:</strong>

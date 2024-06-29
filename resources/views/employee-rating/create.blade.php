@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Crear registro')
+@section('title', 'Encuesta')
 
 @section('content_header')
-    <h1>Crear registro</h1>
+    <h1>Encuesta de satiscación</h1>
 @stop
 
 @section('content')

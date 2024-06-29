@@ -8,9 +8,9 @@ use Illuminate\Database\Eloquent\Model;
  * Class EmployeeRating
  *
  * @property $id
- * @property $service_employee_id
- * @property $counter_employee_id
- * @property $customer_id
+ * @property $service_employee
+ * @property $counter_employee
+ * @property $customer
  * @property $service_rating
  * @property $counter_rating
  * @property $service_feedback
@@ -32,7 +32,7 @@ class EmployeeRating extends Model
      *
      * @var array
      */
-    protected $fillable = ['service_employee_id', 'counter_employee_id', 'customer_id', 'service_rating', 'counter_rating', 'service_feedback', 'counter_feedback'];
+    protected $fillable = ['service_employee', 'counter_employee', 'customer', 'service_rating', 'counter_rating', 'service_feedback', 'counter_feedback'];
 
 
 

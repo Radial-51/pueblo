@@ -2,19 +2,19 @@
     <div class="col-md-12">
         
         <div class="form-group mb-2 mb20">
-            <label for="service_employee_id" class="form-label">{{ __('Service Employee Id') }}</label>
-            <input type="text" name="service_employee_id" class="form-control @error('service_employee_id') is-invalid @enderror" value="{{ old('service_employee_id', $employeeRating?->service_employee_id) }}" id="service_employee_id" placeholder="Service Employee Id">
-            {!! $errors->first('service_employee_id', '<div class="invalid-feedback" role="alert"><strong>:message</strong></div>') !!}
+            <label for="service_employee" class="form-label">{{ __('Service Employee') }}</label>
+            <input type="text" name="service_employee" class="form-control @error('service_employee') is-invalid @enderror" value="{{ old('service_employee', $employeeRating?->service_employee) }}" id="service_employee" placeholder="Service Employee">
+            {!! $errors->first('service_employee', '<div class="invalid-feedback" role="alert"><strong>:message</strong></div>') !!}
         </div>
         <div class="form-group mb-2 mb20">
-            <label for="counter_employee_id" class="form-label">{{ __('Counter Employee Id') }}</label>
-            <input type="text" name="counter_employee_id" class="form-control @error('counter_employee_id') is-invalid @enderror" value="{{ old('counter_employee_id', $employeeRating?->counter_employee_id) }}" id="counter_employee_id" placeholder="Counter Employee Id">
-            {!! $errors->first('counter_employee_id', '<div class="invalid-feedback" role="alert"><strong>:message</strong></div>') !!}
+            <label for="counter_employee" class="form-label">{{ __('Counter Employee') }}</label>
+            <input type="text" name="counter_employee" class="form-control @error('counter_employee') is-invalid @enderror" value="{{ old('counter_employee', $employeeRating?->counter_employee) }}" id="counter_employee" placeholder="Counter Employee">
+            {!! $errors->first('counter_employee', '<div class="invalid-feedback" role="alert"><strong>:message</strong></div>') !!}
         </div>
         <div class="form-group mb-2 mb20">
-            <label for="customer_id" class="form-label">{{ __('Customer Id') }}</label>
-            <input type="text" name="customer_id" class="form-control @error('customer_id') is-invalid @enderror" value="{{ old('customer_id', $employeeRating?->customer_id) }}" id="customer_id" placeholder="Customer Id">
-            {!! $errors->first('customer_id', '<div class="invalid-feedback" role="alert"><strong>:message</strong></div>') !!}
+            <label for="customer" class="form-label">{{ __('Customer') }}</label>
+            <input type="text" name="customer" class="form-control @error('customer') is-invalid @enderror" value="{{ old('customer', $employeeRating?->customer) }}" id="customer" placeholder="Customer">
+            {!! $errors->first('customer', '<div class="invalid-feedback" role="alert"><strong>:message</strong></div>') !!}
         </div>
         <div class="form-group mb-2 mb20">
             <label for="service_rating" class="form-label">{{ __('Service Rating') }}</label>

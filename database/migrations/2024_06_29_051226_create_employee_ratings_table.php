@@ -15,9 +15,9 @@ class CreateEmployeeRatingsTable extends Migration
     {
         Schema::create('employee_ratings', function (Blueprint $table) {
             $table->id();
-            $table->integer('service_employee_id');
-            $table->integer('counter_employee_id');
-            $table->integer('customer_id');
+            $table->string('service_employee');
+            $table->string('counter_employee');
+            $table->string('customer');
             $table->integer('service_rating');
             $table->integer('counter_rating');
             $table->text('service_feedback')->nullable();

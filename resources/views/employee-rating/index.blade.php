@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Satisfacción')
+@section('title', 'Encuestas')
 
 @section('content_header')
-    <h1>Tabla de Satisfacción</h1>
+    <h1>Encuestas de satisfacción</h1>
 @stop
 
 @section('content')
@@ -36,20 +36,32 @@
                         <table class="table table-striped table-hover">
                             <thead class="thead">
                                 <tr>
-                                    <th></th>
                                     <th>No</th>
-                                    <th>Service Employee Id</th>
-                                    <th>Counter Employee Id</th>
-                                    <th>Customer Id</th>
+                                    
+                                    <th>Service Employee</th>
+                                    <th>Counter Employee</th>
+                                    <th>Customer</th>
                                     <th>Service Rating</th>
                                     <th>Counter Rating</th>
                                     <th>Service Feedback</th>
                                     <th>Counter Feedback</th>
+
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach ($employeeRatings as $employeeRating)
                                     <tr>
+                                        <td>{{ ++$i }}</td>
+                                        
+                                        <td>{{ $employeeRating->service_employee }}</td>
+                                        <td>{{ $employeeRating->counter_employee }}</td>
+                                        <td>{{ $employeeRating->customer }}</td>
+                                        <td>{{ $employeeRating->service_rating }}</td>
+                                        <td>{{ $employeeRating->counter_rating }}</td>
+                                        <td>{{ $employeeRating->service_feedback }}</td>
+                                        <td>{{ $employeeRating->counter_feedback }}</td>
+
                                         <td>
                                             <form action="{{ route('employee-ratings.destroy',$employeeRating->id) }}" method="POST">
                                                 <a class="btn btn-sm btn-primary " href="{{ route('employee-ratings.show',$employeeRating->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Show') }}</a>
@@ -59,17 +71,6 @@
                                                 <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> {{ __('Delete') }}</button>
                                             </form>
                                         </td>
-                                        <td>{{ ++$i }}</td>
-                                        
-                                        <td>{{ $employeeRating->service_employee_id }}</td>
-                                        <td>{{ $employeeRating->counter_employee_id }}</td>
-                                        <td>{{ $employeeRating->customer_id }}</td>
-                                        <td>{{ $employeeRating->service_rating }}</td>
-                                        <td>{{ $employeeRating->counter_rating }}</td>
-                                        <td>{{ $employeeRating->service_feedback }}</td>
-                                        <td>{{ $employeeRating->counter_feedback }}</td>
-
-                                        
                                     </tr>
                                 @endforeach
                             </tbody>
