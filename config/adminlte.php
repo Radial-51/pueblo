@@ -343,6 +343,11 @@ return [
         
         ['header' => 'Tablas'],
         [
+            'text' => 'Usuarios',
+            'route' => 'users.index',
+            'icon' => 'fas fa-users',
+        ],
+        [
             'text' => 'Servicios',
             'route' => 'services.index',
             'icon' => 'fas fa-heartbeat',
