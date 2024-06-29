@@ -362,6 +362,11 @@ return [
             'route' => 'employee-ratings.index',
             'icon' => 'fas fa-vote-yea',
         ],
+        [
+            'text' => 'Citas',
+            'route' => 'appointments.index',
+            'icon' => 'fas fa-calendar-check',
+        ],
         
         [
             'text' => 'multilevel',
