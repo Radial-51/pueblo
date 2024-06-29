@@ -408,6 +408,11 @@ return [
         ],
         ['header' => 'labels'],
         [
+            'text' => 'Encuesta',
+            'icon_color' => 'cyan',
+            'route' => 'employee-rating.create',
+        ],
+        [
             'text' => 'important',
             'icon_color' => 'red',
             'url' => '#',
@@ -417,11 +422,7 @@ return [
             'icon_color' => 'yellow',
             'url' => '#',
         ],
-        [
-            'text' => 'Encuesta',
-            'icon_color' => 'cyan',
-            'route' => 'encuesta',
-        ],
+        
     ],
 
     /*
