@@ -146,7 +146,7 @@
             @if ($message = Session::get('success'))
                 Swal.fire({
                     title: '¡Éxito!',
-                    text: 'Servicio Creado Correctamente',
+                    text: '{{ $message }}',
                     icon: 'success',
                     confirmButtonText: 'OK'
                 });

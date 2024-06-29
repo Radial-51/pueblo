@@ -44,7 +44,7 @@ class ServiceController extends Controller
     public function store(ServiceRequest $request)
     {
         Service::create($request->validated());
-        return redirect()->route('services.index')->with('success', 'Service created successfully.');
+        return redirect()->route('services.index')->with('success', 'Servicio Creado Correctamente');
     }
 
     public function show($id)
@@ -63,13 +63,13 @@ class ServiceController extends Controller
     {
         $service = Service::findOrFail($id);
         $service->update($request->validated());
-        return redirect()->route('services.index')->with('success', 'Service updated successfully');
+        return redirect()->route('services.index')->with('success', 'Servicio Editado Correctamente');
     }
 
     public function destroy($id)
     {
         $service = Service::findOrFail($id);
         $service->delete();
-        return redirect()->route('services.index')->with('success', 'Service deleted successfully');
+        return redirect()->route('services.index')->with('success', 'Servicio Eliminado Correctamente');
     }
 }
