@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Encuestas de Empleados')
+@section('title', 'Satisfacción')
 
 @section('content_header')
-    <h1>Encuestas de Empleados</h1>
+    <h1>Tabla de Satisfacción</h1>
 @stop
 
 @section('content')
@@ -13,12 +13,14 @@
             <div class="card">
                 <div class="card-header">
                     <div style="display: flex; justify-content: space-between; align-items: center;">
+
                         <span id="card_title">
-                            {{ __('Encuestas de Empleados') }}
+                            {{ __('Employee Rating') }}
                         </span>
-                        <div class="float-right">
+
+                         <div class="float-right">
                             <a href="{{ route('employee-ratings.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                              {{ __('Crear Nueva') }}
+                              {{ __('Create New') }}
                             </a>
                           </div>
                     </div>
@@ -31,24 +33,34 @@
 
                 <div class="card-body bg-white">
                     <div class="table-responsive">
-                        <table id="employeeRatingsTable" class="table table-striped table-hover">
+                        <table class="table table-striped table-hover">
                             <thead class="thead">
                                 <tr>
+                                    <th></th>
                                     <th>No</th>
-                                    <th>Empleado de Servicio</th>
-                                    <th>Empleado de Mostrador</th>
-                                    <th>Cliente</th>
-                                    <th>Calificación de Servicio</th>
-                                    <th>Calificación de Mostrador</th>
-                                    <th>Feedback de Servicio</th>
-                                    <th>Feedback de Mostrador</th>
-                                    <th>Acciones</th>
+                                    <th>Service Employee Id</th>
+                                    <th>Counter Employee Id</th>
+                                    <th>Customer Id</th>
+                                    <th>Service Rating</th>
+                                    <th>Counter Rating</th>
+                                    <th>Service Feedback</th>
+                                    <th>Counter Feedback</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach ($employeeRatings as $employeeRating)
                                     <tr>
+                                        <td>
+                                            <form action="{{ route('employee-ratings.destroy',$employeeRating->id) }}" method="POST">
+                                                <a class="btn btn-sm btn-primary " href="{{ route('employee-ratings.show',$employeeRating->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Show') }}</a>
+                                                <a class="btn btn-sm btn-success" href="{{ route('employee-ratings.edit',$employeeRating->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Edit') }}</a>
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> {{ __('Delete') }}</button>
+                                            </form>
+                                        </td>
                                         <td>{{ ++$i }}</td>
+                                        
                                         <td>{{ $employeeRating->service_employee_id }}</td>
                                         <td>{{ $employeeRating->counter_employee_id }}</td>
                                         <td>{{ $employeeRating->customer_id }}</td>
@@ -56,15 +68,8 @@
                                         <td>{{ $employeeRating->counter_rating }}</td>
                                         <td>{{ $employeeRating->service_feedback }}</td>
                                         <td>{{ $employeeRating->counter_feedback }}</td>
-                                        <td>
-                                            <form action="{{ route('employee-ratings.destroy',$employeeRating->id) }}" method="POST">
-                                                <a class="btn btn-sm btn-primary" href="{{ route('employee-ratings.show',$employeeRating->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Ver') }}</a>
-                                                <a class="btn btn-sm btn-success" href="{{ route('employee-ratings.edit',$employeeRating->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Editar') }}</a>
-                                                @csrf
-                                                @method('DELETE')
-                                                <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> {{ __('Eliminar') }}</button>
-                                            </form>
-                                        </td>
+
+                                        
                                     </tr>
                                 @endforeach
                             </tbody>
@@ -80,10 +85,15 @@
 
 @section('css')
     {{-- Add here extra stylesheets --}}
-    <link rel="stylesheet" href="{{ secure_asset('vendor/fontawesome-free/css/all.min.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('vendor/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('vendor/adminlte/dist/css/adminlte.min.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('css/styles-home.css') }}">
+    {{-- <link rel="stylesheet" href="/css/admin_custom.css"> --}}
+    {{-- Incluir estilos de DataTables --}}
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+     {{-- Add here extra stylesheets --}}
+     <link rel="stylesheet" href="{{ secure_asset('vendor/fontawesome-free/css/all.min.css') }}">
+     <link rel="stylesheet" href="{{ secure_asset('vendor/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
+     <link rel="stylesheet" href="{{ secure_asset('vendor/adminlte/dist/css/adminlte.min.css') }}">
+     <link rel="stylesheet" href="{{ secure_asset('css/styles-home.css') }}">
+    
 @stop
 
 @section('js')
@@ -97,15 +107,4 @@
     {{-- Script de DataTables --}}
     <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script src="//cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
-
-    {{-- Inicializar DataTable --}}
-    <script>
-        $(document).ready(function() {
-            $('#employeeRatingsTable').DataTable({
-                "language": {
-                    "url": "//cdn.datatables.net/plug-ins/1.10.24/i18n/Spanish.json"
-                }
-            });
-        });
-    </script>
 @stop

@@ -32,4 +32,16 @@ class HomeController extends Controller
     
         return view('home', compact('serviceCount', 'communityServiceCount', 'offerServiceCount'));
     }
+
+
+    /**
+     * Show the survey form.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function showSurvey()
+    {
+        return view('encuesta');
+    }
+    
 }
