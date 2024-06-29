@@ -3,37 +3,36 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+use App\Models\User;
 
 class SessionsController extends Controller
 {
-    public function create()
-    {
-        return view('auth.login'); // Mostrar el formulario de inicio de sesión
+    public function create() {
+        return view('auth.login'); // Asumo que esto es para mostrar el formulario de inicio de sesión
     }
 
-    public function store(Request $request)
-    {
-        $credentials = $request->only('email', 'password');
-
-        if (Auth::attempt($credentials)) {
-            // Autenticación exitosa
-            if (auth()->user()->role == 'admin') {
-                return redirect()->route('home'); // Redirigir al dashboard de admin
-            } else {
-                return redirect()->route('usuarios'); // Redirigir al dashboard de usuario normal
-            }
-        } else {
-            // Autenticación fallida
+    public function store() {
+        if (auth()->attempt(request(['email', 'password'])) == false) {
             return back()->withErrors([
-                'message' => 'El correo electrónico o la contraseña son incorrectos. Por favor, inténtelo de nuevo.',
+                'message' => 'El correo electrónico o contraseña es incorrecto, por favor intente nuevamente',
             ]);
+        } else {
+
+            if(auth()->user()->role == 'admin') {
+                 // Redirigir a la vista de contacto
+                return redirect()->route('home');
+            } else {
+                // Redirigir a la vista de contacto
+                return redirect()->route('usuarios');
+            }
+
         }
     }
 
-    public function destroy()
-    {
-        Auth::logout(); // Cerrar sesión del usuario
-        return redirect()->route('login'); // Redirigir al formulario de inicio de sesión
+    public function destroy() {
+        auth()->logout();
+        return redirect()->to('/login');
     }
 }
+
+
