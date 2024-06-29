@@ -24,6 +24,28 @@
                         </div>
                     @endif
 
+                    <div class="form-group">
+                        <label for="service_employee_id">Servicio id:</label>
+                        <select class="form-control" id="service_employee_id" name="service_employee_id">
+                            <option value="1">1 - Pedro</option>
+                            <option value="2">2 - Maria</option>
+                            <option value="3">3 - Alberto</option>
+                            <option value="4">4 - Juan</option>
+                            <option value="5">5 - Ana</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="counter_employee_id">Servicio id:</label>
+                        <select class="form-control" id="counter_employee_id" name="counter_employee_id">
+                            <option value="1">1 - Pedro</option>
+                            <option value="2">2 - Maria</option>
+                            <option value="3">3 - Alberto</option>
+                            <option value="4">4 - Juan</option>
+                            <option value="5">5 - Ana</option>
+                        </select>
+                    </div>
+
                     <form action="{{ route('employee-ratings.store') }}" method="POST">
                         @csrf
                         <div class="form-group">
@@ -68,6 +90,7 @@
                                 <option value="5">5 - Ana</option>
                             </select>
                         </div>
+                        Service Employee Id
 
                         <button type="submit" class="btn btn-primary">Enviar Encuesta</button>
                     </form>
