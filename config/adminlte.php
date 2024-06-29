@@ -410,7 +410,7 @@ return [
         [
             'text' => 'Encuesta',
             'icon_color' => 'cyan',
-            'route' => 'employee-rating.create',
+            'route' => 'employee-ratings.create',
         ],
         [
             'text' => 'important',
