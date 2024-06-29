@@ -24,8 +24,8 @@ class CreateAppointmentsTable extends Migration
             $table->text('consultation_reason');
             $table->integer('age');
             $table->integer('consulting_room_id');
-            $table->integer('service_id');
-            $table->integer('doctor_id');
+            $table->string('service');
+            $table->string('doctor');
             $table->date('appointment_date');
             $table->time('appointment_time');
             $table->enum('sex', ['Masculino', 'Femenino']);
