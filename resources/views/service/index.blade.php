@@ -17,62 +17,41 @@
                             {{ __('Service') }}
                         </span>
                         <div class="float-right">
-                            <a href="{{ route('services.create') }}" class="btn btn-primary btn-sm float-right" data-placement="left">
-                                {{ __('Create New') }}
+                            <a href="{{ route('services.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
+                              {{ __('Create New') }}
                             </a>
-                        </div>
+                          </div>
                     </div>
                 </div>
-                @if ($message = Session::get('success'))
-                    <div class="alert alert-success m-4">
-                        <p>{{ $message }}</p>
-                    </div>
-                @endif
 
                 <div class="card-body bg-white">
                     <div class="table-responsive">
-                        <table class="table table-striped table-hover" id="datatable">
+                        <table class="table table-striped table-hover" id="services-table">
                             <thead class="thead">
                                 <tr>
-                                    <th>Acciones</th>
-                                    <th>Nombre</th>
                                     <th>No</th>
-                                    <th>Descripción</th>
-                                    <th>Estado</th>
-                                    <th>Foto</th>
-                                    <th>Porcentaje Descuento</th>
-                                    <th>Inicio Dinámica</th>
-                                    <th>Fin Dinámica</th>
-                                    <th>Razón</th>
-                                    <th>Función</th>
-                                    <th>Complementos</th>
-                                    <th>Posibles efectos</th>
-                                    <th>Proceso</th>
-                                    <th>Objetivo</th>
-                                    <th>Duración</th>
-                                    
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>Status</th>
+                                    <th>Photo</th>
+                                    <th>Discount Percentage</th>
+                                    <th>Date One</th>
+                                    <th>Date Two</th>
+                                    <th>Reason</th>
+                                    <th>Function</th>
+                                    <th>Complement</th>
+                                    <th>Effects</th>
+                                    <th>Procces</th>
+                                    <th>Goal</th>
+                                    <th>Duration</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach ($services as $service)
                                     <tr>
-                                        <td>
-                                            <form action="{{ route('services.destroy', $service->id) }}" method="POST">
-                                                <a class="btn btn-sm btn-primary" href="{{ route('services.show', $service->id) }}">
-                                                    <i class="fa fa-fw fa-eye"></i> {{ __('Mostrar') }}
-                                                </a>
-                                                <a class="btn btn-sm btn-success" href="{{ route('services.edit', $service->id) }}">
-                                                    <i class="fa fa-fw fa-edit"></i> {{ __('Editar') }}
-                                                </a>
-                                                @csrf
-                                                @method('DELETE')
-                                                <button type="submit" class="btn btn-danger btn-sm">
-                                                    <i class="fa fa-fw fa-trash"></i> {{ __('Eliminar') }}
-                                                </button>
-                                            </form>
-                                        </td>
-                                        <td>{{ $service->name }}</td>
                                         <td>{{ ++$i }}</td>
+                                        <td>{{ $service->name }}</td>
                                         <td>{{ $service->description }}</td>
                                         <td>{{ $service->status }}</td>
                                         <td>{{ $service->photo }}</td>
@@ -83,9 +62,18 @@
                                         <td>{{ $service->function }}</td>
                                         <td>{{ $service->complement }}</td>
                                         <td>{{ $service->effects }}</td>
-                                        <td>{{ $service->process }}</td>
+                                        <td>{{ $service->procces }}</td>
                                         <td>{{ $service->goal }}</td>
                                         <td>{{ $service->duration }}</td>
+                                        <td>
+                                            <form action="{{ route('services.destroy',$service->id) }}" method="POST">
+                                                <a class="btn btn-sm btn-primary " href="{{ route('services.show',$service->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Show') }}</a>
+                                                <a class="btn btn-sm btn-success" href="{{ route('services.edit',$service->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Edit') }}</a>
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> {{ __('Delete') }}</button>
+                                            </form>
+                                        </td>
                                     </tr>
                                 @endforeach
                             </tbody>
@@ -93,37 +81,55 @@
                     </div>
                 </div>
             </div>
+            {!! $services->links() !!}
         </div>
     </div>
 </div>
 @stop
 
 @section('css')
-    {{-- Estilos adicionales --}}
-    <link rel="stylesheet" href="{{ secure_asset('css/styles-crud.css') }}">
-    {{-- Estilos de DataTables --}}
+    {{-- Add here extra stylesheets --}}
+    {{-- <link rel="stylesheet" href="/css/admin_custom.css"> --}}
+    {{-- Incluir estilos de DataTables --}}
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
-    {{-- Estilos de AdminLTE --}}
-    <link rel="stylesheet" href="{{ secure_asset('vendor/fontawesome-free/css/all.min.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('vendor/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('vendor/adminlte/dist/css/adminlte.min.css') }}">
-    {{-- Otros estilos personalizados --}}
-    <link rel="stylesheet" href="{{ secure_asset('css/styles-home.css') }}">
+     {{-- Add here extra stylesheets --}}
+     <link rel="stylesheet" href="{{ secure_asset('vendor/fontawesome-free/css/all.min.css') }}">
+     <link rel="stylesheet" href="{{ secure_asset('vendor/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
+     <link rel="stylesheet" href="{{ secure_asset('vendor/adminlte/dist/css/adminlte.min.css') }}">
+     <link rel="stylesheet" href="{{ secure_asset('css/styles-home.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/styles-crud.css') }}">
 @stop
 
 @section('js')
     <script> console.log("Hi, I'm using the Laravel-AdminLTE package!"); </script>
-    {{-- Scripts de DataTables y otros --}}
+    {{-- Incluir scripts de DataTables y otros --}}
     <script src="{{ secure_asset('vendor/jquery/jquery.min.js') }}"></script>
     <script src="{{ secure_asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ secure_asset('vendor/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
     <script src="{{ secure_asset('vendor/adminlte/dist/js/adminlte.min.js') }}"></script>
-    {{-- Scripts de DataTables --}}
+    
+    {{-- Script de DataTables --}}
     <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script src="//cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    
+    {{-- Script para inicializar DataTables y SweetAlert2 --}}
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script>
         $(document).ready(function() {
-            $('#datatable').DataTable();
+            $('#services-table').DataTable({
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json"
+                }
+            });
+            
+            @if ($message = Session::get('success'))
+                Swal.fire({
+                    title: '¡Servicio Creado!',
+                    text: '{{ $message }}',
+                    icon: 'success',
+                    confirmButtonText: 'OK'
+                });
+            @endif
         });
     </script>
 @stop
