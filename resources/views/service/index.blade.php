@@ -29,29 +29,38 @@
                         <table class="table table-striped table-hover" id="services-table">
                             <thead class="thead">
                                 <tr>
+                                    <th>Acciones</th>
                                     <th>No</th>
-                                    <th>Name</th>
-                                    <th>Description</th>
-                                    <th>Status</th>
-                                    <th>Photo</th>
-                                    <th>Discount Percentage</th>
-                                    <th>Date One</th>
-                                    <th>Date Two</th>
-                                    <th>Reason</th>
-                                    <th>Function</th>
-                                    <th>Complement</th>
-                                    <th>Effects</th>
-                                    <th>Procces</th>
-                                    <th>Goal</th>
-                                    <th>Duration</th>
-                                    <th></th>
+                                    <th>Nombre</th>
+                                    <th>Descripción</th>
+                                    <th>Estado</th>
+                                    <th>Foto</th>
+                                    <th>Porcentaje Descuento</th>
+                                    <th>Inicio Dinámica</th>
+                                    <th>FIn Dinámica</th>
+                                    <th>Razón</th>
+                                    <th>Función</th>
+                                    <th>Complementos</th>
+                                    <th>Efectos</th>
+                                    <th>Proceso</th>
+                                    <th>Objetivo</th>
+                                    <th>Duración</th>
+                                    
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach ($services as $service)
-                                    <tr>
-                                        <td>{{ ++$i }}</td>
+                                    <tr><td>
+                                        <form action="{{ route('services.destroy',$service->id) }}" method="POST">
+                                            <a class="btn btn-sm btn-primary " href="{{ route('services.show',$service->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Show') }}</a>
+                                            <a class="btn btn-sm btn-success" href="{{ route('services.edit',$service->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Edit') }}</a>
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> {{ __('Delete') }}</button>
+                                        </form>
+                                    </td>
                                         <td>{{ $service->name }}</td>
+                                        <td>{{ ++$i }}</td>
                                         <td>{{ $service->description }}</td>
                                         <td>{{ $service->status }}</td>
                                         <td>{{ $service->photo }}</td>
@@ -65,15 +74,7 @@
                                         <td>{{ $service->procces }}</td>
                                         <td>{{ $service->goal }}</td>
                                         <td>{{ $service->duration }}</td>
-                                        <td>
-                                            <form action="{{ route('services.destroy',$service->id) }}" method="POST">
-                                                <a class="btn btn-sm btn-primary " href="{{ route('services.show',$service->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Show') }}</a>
-                                                <a class="btn btn-sm btn-success" href="{{ route('services.edit',$service->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Edit') }}</a>
-                                                @csrf
-                                                @method('DELETE')
-                                                <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> {{ __('Delete') }}</button>
-                                            </form>
-                                        </td>
+                                        
                                     </tr>
                                 @endforeach
                             </tbody>
