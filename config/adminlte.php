@@ -324,7 +324,7 @@ return [
         [
             'text' => 'blog',
             'url' => 'admin/blog',
-            'can' => 'manage-blog',
+            'can' => 'admin',
         ],
         [
             'text' => 'Panel de Control',
@@ -413,9 +413,9 @@ return [
             'route' => 'employee-ratings.create',
         ],
         [
-            'text' => 'important',
-            'icon_color' => 'red',
-            'url' => '#',
+            'text' => 'Agendar cita',
+            'icon_color' => 'green',
+            'route' => 'appointments.create',
         ],
         [
             'text' => 'warning',
