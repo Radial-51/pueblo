@@ -24,7 +24,7 @@
                         </div>
                     @endif
 
-                    <form action="{{ route('encuesta.store') }}" method="POST">
+                    <form action="{{ route('employee-ratings.store') }}" method="POST">
                         @csrf
                         <div class="form-group">
                             <label for="service_rating">Calificación del servicio:</label>
