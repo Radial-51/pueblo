@@ -119,13 +119,33 @@
         $(document).ready(function() {
             $('#services-table').DataTable({
                 "language": {
-                    "url": "//cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json"
+                    "url": "//cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json",
+                    "info": "_START_ / _END_ de un total de _TOTAL_ registros",
+                    "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                    "infoFiltered": "(filtrado de un total de _MAX_ registros)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "Mostrar _MENU_ registros",
+                    "loadingRecords": "Cargando...",
+                    "processing": "Procesando...",
+                    "search": "Buscar:",
+                    "zeroRecords": "No se encontraron resultados",
+                    "paginate": {
+                        "first": "Primero",
+                        "last": "Último",
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    },
+                    "aria": {
+                        "sortAscending": ": activar para ordenar la columna de manera ascendente",
+                        "sortDescending": ": activar para ordenar la columna de manera descendente"
+                    }
                 }
             });
             
             @if ($message = Session::get('success'))
                 Swal.fire({
-                    title: '¡Servicio Creado!',
+                    title: '¡Éxito!',
                     text: '{{ $message }}',
                     icon: 'success',
                     confirmButtonText: 'OK'
