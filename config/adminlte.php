@@ -357,6 +357,11 @@ return [
             'route' => 'testimonios.index',
             'icon' => 'fas fa-person-booth',
         ],
+        [
+            'text' => 'Encuestas',
+            'route' => 'employee_rating.index',
+            'icon' => 'fas fa-vote-yea',
+        ],
         
         [
             'text' => 'multilevel',
