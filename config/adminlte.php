@@ -413,9 +413,9 @@ return [
             'url' => '#',
         ],
         [
-            'text' => 'information',
+            'text' => 'Encuesta',
             'icon_color' => 'cyan',
-            'url' => '#',
+            'route' => 'encuesta',
         ],
     ],
 
