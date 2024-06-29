@@ -9,6 +9,7 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SessionsController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\EmployeeRatingController;
+use App\Http\Controllers\SurveyController;
 
 /*
 |--------------------------------------------------------------------------
@@ -83,3 +84,5 @@ Route::post('/login', [SessionsController::class, 'store'])->name('login.index')
 Route::get('/logout', [SessionsController::class, 'destroy'])->name('login.destroy');
 
 Route::get('/admin', [AdminController::class, 'index'])->middleware('auth.admin')->name('admin.index');
+
+Route::resource('surveys', SurveyController::class);
