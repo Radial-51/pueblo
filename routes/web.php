@@ -11,7 +11,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\EmployeeRatingController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\SurveyController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -57,6 +57,9 @@ Route::get('/admin', function () {
 
 // Rutas para las ofertas
 Route::get('/Ofertas', [ServiceController::class, 'Offer'])->name('offer');
+
+// Rutas CRUD generadas por ibex/crud-generator
+Route::resource('users', UserController::class);
 
 // Rutas CRUD generadas por ibex/crud-generator
 Route::resource('employee-ratings', EmployeeRatingController::class);
