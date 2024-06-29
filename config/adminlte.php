@@ -353,6 +353,12 @@ return [
             'icon' => 'fas fa-people-carry',
         ],
         [
+            'text' => 'Testimonios',
+            'route' => 'testimonios.index',
+            'icon' => 'fas fa-person-booth',
+        ],
+        
+        [
             'text' => 'multilevel',
             'icon' => 'fas fa-fw fa-share',
             'submenu' => [

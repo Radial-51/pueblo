@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CommunityController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\TestimonioController;
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
@@ -52,6 +53,9 @@ Route::get('/admin', function () {
 
 // Rutas para las ofertas
 Route::get('/Ofertas', [ServiceController::class, 'Offer'])->name('offer');
+
+// Rutas CRUD generadas por ibex/crud-generator
+Route::resource('testimonios', TestimonioController::class);
 
 // Rutas CRUD generadas por ibex/crud-generator
 Route::resource('services', ServiceController::class);
