@@ -4,11 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use App\Http\Requests\UserRequest;
+use Illuminate\Http\Request;
 
-/**
- * Class UserController
- * @package App\Http\Controllers
- */
 class UserController extends Controller
 {
     /**
@@ -18,8 +15,7 @@ class UserController extends Controller
     {
         $users = User::paginate();
 
-        return view('user.index', compact('users'))
-            ->with('i', (request()->input('page', 1) - 1) * $users->perPage());
+        return view('adminlte.user.index', compact('users'));
     }
 
     /**
@@ -28,7 +24,7 @@ class UserController extends Controller
     public function create()
     {
         $user = new User();
-        return view('user.create', compact('user'));
+        return view('adminlte.user.create', compact('user'));
     }
 
     /**
@@ -49,7 +45,7 @@ class UserController extends Controller
     {
         $user = User::find($id);
 
-        return view('user.show', compact('user'));
+        return view('adminlte.user.show', compact('user'));
     }
 
     /**
@@ -59,7 +55,7 @@ class UserController extends Controller
     {
         $user = User::find($id);
 
-        return view('user.edit', compact('user'));
+        return view('adminlte.user.edit', compact('user'));
     }
 
     /**
@@ -73,6 +69,9 @@ class UserController extends Controller
             ->with('success', 'User updated successfully');
     }
 
+    /**
+     * Remove the specified resource from storage.
+     */
     public function destroy($id)
     {
         User::find($id)->delete();
