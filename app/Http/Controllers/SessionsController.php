@@ -12,20 +12,18 @@ class SessionsController extends Controller
     }
 
     public function store() {
-        if (auth()->attempt(request(['email', 'password'])) == false) {
+        $credentials = request()->only('email', 'password');
+
+        if (!auth()->attempt($credentials)) {
             return back()->withErrors([
                 'message' => 'El correo electrónico o contraseña es incorrecto, por favor intente nuevamente',
             ]);
+        }
+
+        if (auth()->user()->role == 'admin') {
+            return redirect()->route('home');
         } else {
-
-            if(auth()->user()->role == 'admin') {
-                 // Redirigir a la vista de contacto
-                return redirect()->route('home');
-            } else {
-                // Redirigir a la vista de contacto
-                return redirect()->route('usuarios');
-            }
-
+            return redirect()->route('usuarios');
         }
     }
 
@@ -34,5 +32,3 @@ class SessionsController extends Controller
         return redirect()->to('/login');
     }
 }
-
-

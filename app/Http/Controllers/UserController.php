@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use App\Http\Requests\UserRequest;
+use Illuminate\Support\Facades\Hash;
 
 /**
  * Class UserController
@@ -36,7 +37,10 @@ class UserController extends Controller
      */
     public function store(UserRequest $request)
     {
-        User::create($request->validated());
+        $data = $request->validated();
+        $data['password'] = Hash::make($data['password']); // Encriptar la contraseña
+
+        User::create($data);
 
         return redirect()->route('users.index')
             ->with('success', 'User created successfully.');
@@ -67,7 +71,15 @@ class UserController extends Controller
      */
     public function update(UserRequest $request, User $user)
     {
-        $user->update($request->validated());
+        $data = $request->validated();
+
+        if (!empty($data['password'])) {
+            $data['password'] = Hash::make($data['password']); // Encriptar la contraseña si es provista
+        } else {
+            unset($data['password']); // No actualizar la contraseña si no es provista
+        }
+
+        $user->update($data);
 
         return redirect()->route('users.index')
             ->with('success', 'User updated successfully');
