@@ -14,159 +14,6 @@
     <link rel="alternate" type="application/rss+xml" title="Merrash &raquo; Comments Feed"
         href="https://merrash-prubeas-production.up.railway.app/" />
 
-    <script type="text/javascript">
-        /* <![CDATA[ */
-        function addLoadEvent(func) {
-            var oldonload = window.onload;
-            if (typeof window.onload != 'function') {
-                window.onload = func;
-            } else {
-                window.onload = function() {
-                    oldonload();
-                    func();
-                }
-            }
-        }
-        /* ]]> */
-    </script>
-    <script type="text/javascript">
-        /* <![CDATA[ */
-        window._wpemojiSettings = {
-            "baseUrl": "https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/",
-            "ext": ".png",
-            "svgUrl": "https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/",
-            "svgExt": ".svg",
-            "source": {
-                "concatemoji": "https:\/\/s0.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1710334132i&ver=6.6-alpha-58146"
-            }
-        };
-        /*! This file is auto-generated */
-        ! function(i, n) {
-            var o, s, e;
-
-            function c(e) {
-                try {
-                    var t = {
-                        supportTests: e,
-                        timestamp: (new Date).valueOf()
-                    };
-                    sessionStorage.setItem(o, JSON.stringify(t))
-                } catch (e) {}
-            }
-
-            function p(e, t, n) {
-                e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-                    e.fillText(t, 0, 0);
-                var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
-                    r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-                        e.fillText(n, 0, 0),
-                        new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
-                return t.every(function(e, t) {
-                    return e === r[t]
-                })
-            }
-
-            function u(e, t, n) {
-                switch (t) {
-                    case "flag":
-                        return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !
-                            n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e,
-                                "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
-                                "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
-                            );
-                    case "emoji":
-                        return !n(e, "\ud83d\udc26\u200d\u2b1b", "\ud83d\udc26\u200b\u2b1b")
-                }
-                return !1
-            }
-
-            function f(e, t, n) {
-                var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(
-                        300, 150) : i.createElement("canvas"),
-                    a = r.getContext("2d", {
-                        willReadFrequently: !0
-                    }),
-                    o = (a.textBaseline = "top",
-                        a.font = "600 32px Arial", {});
-                return e.forEach(function(e) {
-                        o[e] = t(a, e, n)
-                    }),
-                    o
-            }
-
-            function t(e) {
-                var t = i.createElement("script");
-                t.src = e,
-                    t.defer = !0,
-                    i.head.appendChild(t)
-            }
-            "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports",
-                s = ["flag", "emoji"],
-                n.supports = {
-                    everything: !0,
-                    everythingExceptFlag: !0
-                },
-                e = new Promise(function(e) {
-                    i.addEventListener("DOMContentLoaded", e, {
-                        once: !0
-                    })
-                }),
-                new Promise(function(t) {
-                    var n = function() {
-                        try {
-                            var e = JSON.parse(sessionStorage.getItem(o));
-                            if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() <
-                                e.timestamp + 604800 && "object" == typeof e.supportTests)
-                                return e.supportTests
-                        } catch (e) {}
-                        return null
-                    }();
-                    if (!n) {
-                        if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" !=
-                            typeof URL && URL.createObjectURL && "undefined" != typeof Blob)
-                            try {
-                                var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p
-                                        .toString()
-                                    ].join(",") + "));",
-                                    r = new Blob([e], {
-                                        type: "text/javascript"
-                                    }),
-                                    a = new Worker(URL.createObjectURL(r), {
-                                        name: "wpTestEmojiSupports"
-                                    });
-                                return void(a.onmessage = function(e) {
-                                    c(n = e.data),
-                                        a.terminate(),
-                                        t(n)
-                                })
-                            } catch (e) {}
-                        c(n = f(s, u, p))
-                    }
-                    t(n)
-                }).then(function(e) {
-                    for (var t in e)
-                        n.supports[t] = e[t],
-                        n.supports.everything = n.supports.everything && n.supports[t],
-                        "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n
-                            .supports[t]);
-                    n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag,
-                        n.DOMReady = !1,
-                        n.readyCallback = function() {
-                            n.DOMReady = !0
-                        }
-                }).then(function() {
-                    return e
-                }).then(function() {
-                    var e;
-                    n.supports.everything || (n.readyCallback(),
-                        (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e
-                                .twemoji),
-                            t(e.wpemoji)))
-                }))
-        }((window,
-            document), window._wpemojiSettings);
-        /* ]]> */
-    </script>
     <link crossorigin='anonymous' rel='stylesheet' id='all-css-0-1'
         href='https://s0.wp.com/wp-includes/css/dashicons.min.css?m=1617198107i&cssminify=yes' type='text/css'
         media='all' />
@@ -1979,111 +1826,76 @@
                 </svg>
             </div>
             <!-- Image info, comments and meta -->
-            <div class="jp-carousel-info">
-                <div class="jp-carousel-info-footer">
-                    <div class="jp-carousel-pagination-container">
-                        <div class="jp-swiper-pagination swiper-pagination"></div>
-                        <div class="jp-carousel-pagination"></div>
-                    </div>
-                    <div class="jp-carousel-photo-title-container">
-                        <h2 class="jp-carousel-photo-caption"></h2>
-                    </div>
-                    <div class="jp-carousel-photo-icons-container">
-                        <a href="#" class="jp-carousel-icon-btn jp-carousel-icon-info"
-                            aria-label="Toggle photo metadata visibility">
-                            <span class="jp-carousel-icon">
-                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <mask id="maskInfo" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2"
-                                        width="21" height="20">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12.7537 2C7.26076 2 2.80273 6.48 2.80273 12C2.80273 17.52 7.26076 22 12.7537 22C18.2466 22 22.7046 17.52 22.7046 12C22.7046 6.48 18.2466 2 12.7537 2ZM11.7586 7V9H13.7488V7H11.7586ZM11.7586 11V17H13.7488V11H11.7586ZM4.79292 12C4.79292 16.41 8.36531 20 12.7537 20C17.142 20 20.7144 16.41 20.7144 12C20.7144 7.59 17.142 4 12.7537 4C8.36531 4 4.79292 7.59 4.79292 12Z"
-                                            fill="white" />
-                                    </mask>
-                                    <g mask="url(#maskInfo)">
-                                        <rect x="0.8125" width="23.8823" height="24" fill="#FFFFFF" />
-                                    </g>
-                                </svg>
-                            </span>
-                        </a>
-                        <a href="#" class="jp-carousel-icon-btn jp-carousel-icon-comments"
-                            aria-label="Toggle photo comments visibility">
-                            <span class="jp-carousel-icon">
-                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <mask id="maskComments" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2"
-                                        width="21" height="20">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M4.3271 2H20.2486C21.3432 2 22.2388 2.9 22.2388 4V16C22.2388 17.1 21.3432 18 20.2486 18H6.31729L2.33691 22V4C2.33691 2.9 3.2325 2 4.3271 2ZM6.31729 16H20.2486V4H4.3271V18L6.31729 16Z"
-                                            fill="white" />
-                                    </mask>
-                                    <g mask="url(#maskComments)">
-                                        <rect x="0.34668" width="23.8823" height="24" fill="#FFFFFF" />
-                                    </g>
-                                </svg>
-                                <span class="jp-carousel-has-comments-indicator"
-                                    aria-label="This image has comments."></span>
-                            </span>
-                        </a>
-                    </div>
+            <div class="jp-carousel-info-footer">
+                <div class="jp-carousel-pagination-container">
+                    <div class="jp-swiper-pagination swiper-pagination"></div>
+                    <div class="jp-carousel-pagination"></div>
                 </div>
-                <div class="jp-carousel-info-extra">
-                    <div class="jp-carousel-info-content-wrapper">
-                        <div class="jp-carousel-photo-title-container">
-                            <h2 class="jp-carousel-photo-title"></h2>
-                        </div>
-                        <div class="jp-carousel-comments-wrapper">
-                            <div id="jp-carousel-comments-loading">
-                                <span>Loading Comments...</span>
-                            </div>
-                            <div class="jp-carousel-comments"></div>
-                            <div id="jp-carousel-comment-form-container">
-                                <span id="jp-carousel-comment-form-spinner">&nbsp;</span>
-                                <div id="jp-carousel-comment-post-results"></div>
-                                <form id="jp-carousel-comment-form">
-                                    <label for="jp-carousel-comment-form-comment-field"
-                                        class="screen-reader-text">Write a Comment...</label>
-                                    <textarea name="comment" class="jp-carousel-comment-form-field jp-carousel-comment-form-textarea"
-                                        id="jp-carousel-comment-form-comment-field" placeholder="Write a Comment..."></textarea>
-                                    <div id="jp-carousel-comment-form-submit-and-info-wrapper">
-                                        <div id="jp-carousel-comment-form-commenting-as">
-                                            <p id="jp-carousel-commenting-as">Commenting as Aldair Morales</p>
-                                        </div>
-                                        <input type="submit" name="submit" class="jp-carousel-comment-form-button"
-                                            id="jp-carousel-comment-form-button-submit" value="Post Comment" />
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="jp-carousel-image-meta">
-                            <div class="jp-carousel-title-and-caption">
-                                <div class="jp-carousel-photo-info">
-                                    <h3 class="jp-carousel-caption" itemprop="caption description"></h3>
-                                </div>
-                                <div class="jp-carousel-photo-description"></div>
-                            </div>
-                            <ul class="jp-carousel-image-exif" style="display: none;"></ul>
-                            <a class="jp-carousel-image-download" href="#" target="_blank"
-                                style="display: none;">
-                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="3"
-                                        width="19" height="18">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M5.84615 5V19H19.7775V12H21.7677V19C21.7677 20.1 20.8721 21 19.7775 21H5.84615C4.74159 21 3.85596 20.1 3.85596 19V5C3.85596 3.9 4.74159 3 5.84615 3H12.8118V5H5.84615ZM14.802 5V3H21.7677V10H19.7775V6.41L9.99569 16.24L8.59261 14.83L18.3744 5H14.802Z"
-                                            fill="white" />
-                                    </mask>
-                                    <g mask="url(#mask0)">
-                                        <rect x="0.870605" width="23.8823" height="24" fill="#FFFFFF" />
-                                    </g>
-                                </svg>
-                                <span class="jp-carousel-download-text"></span>
-                            </a>
-                            <div class="jp-carousel-image-map" style="display: none;"></div>
-                        </div>
-                    </div>
+                <div class="jp-carousel-photo-title-container">
+                    <h2 class="jp-carousel-photo-caption"></h2>
+                </div>
+                <div class="jp-carousel-photo-icons-container">
+                    <!-- Botón para mostrar/ocultar metadatos -->
+                    <a href="#" class="jp-carousel-icon-btn jp-carousel-icon-info"
+                        aria-label="Toggle photo metadata visibility">
+                        <span class="jp-carousel-icon">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <mask id="maskInfo" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2"
+                                    width="21" height="20">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.7537 2C7.26076 2 2.80273 6.48 2.80273 12C2.80273 17.52 7.26076 22 12.7537 22C18.2466 22 22.7046 17.52 22.7046 12C22.7046 6.48 18.2466 2 12.7537 2ZM11.7586 7V9H13.7488V7H11.7586ZM11.7586 11V17H13.7488V11H11.7586ZM4.79292 12C4.79292 16.41 8.36531 20 12.7537 20C17.142 20 20.7144 16.41 20.7144 12C20.7144 7.59 17.142 4 12.7537 4C8.36531 4 4.79292 7.59 4.79292 12Z"
+                                        fill="white" />
+                                </mask>
+                                <g mask="url(#maskInfo)">
+                                    <rect x="0.8125" width="23.8823" height="24" fill="#FFFFFF" />
+                                </g>
+                            </svg>
+                        </span>
+                    </a>
+            
+                    <!-- Botón para mostrar/ocultar comentarios -->
+                    <a href="#" class="jp-carousel-icon-btn jp-carousel-icon-comments"
+                        aria-label="Toggle photo comments visibility">
+                        <span class="jp-carousel-icon">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <mask id="maskComments" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2"
+                                    width="21" height="20">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4.3271 2H20.2486C21.3432 2 22.2388 2.9 22.2388 4V16C22.2388 17.1 21.3432 18 20.2486 18H6.31729L2.33691 22V4C2.33691 2.9 3.2325 2 4.3271 2ZM6.31729 16H20.2486V4H4.3271V18L6.31729 16Z"
+                                        fill="white" />
+                                </mask>
+                                <g mask="url(#maskComments)">
+                                    <rect x="0.34668" width="23.8823" height="24" fill="#FFFFFF" />
+                                </g>
+                            </svg>
+                            <span class="jp-carousel-has-comments-indicator"
+                                aria-label="This image has comments."></span>
+                        </span>
+                    </a>
+            
+                    <!-- Botón para editar -->
+                    <a href="{{ route('service.detail/1' }}" class="jp-carousel-icon-btn jp-carousel-icon-edit"
+                        aria-label="Edit photo">
+                        <span class="jp-carousel-icon">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <mask id="maskEdit" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2"
+                                    width="21" height="20">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.5562 5.83234L18.6656 10.9418L7.94448 21.6629L4.2959 22.6301L5.26309 19.0108L16.0017 8.27224L21.1111 3.16278L22.8518 4.90353C23.0513 5.10303 23.0513 5.41987 22.8518 5.61937L19.4426 9.02852C19.4426 9.02852 19.1264 9.34474 18.9269 9.34474L17.0038 10.6667C16.8033 10.8662 16.4871 10.8662 16.2876 10.6667L5.54905 19.4053L4.63085 20.3235L5.54899 19.4053L6.46719 18.4881L15.2097 9.74554C15.4092 9.54604 15.7254 9.54604 15.9249 9.74554L17.848 8.42361C18.0475 8.2241 18.3637 8.2241 18.5632 8.42361L20.4863 7.10168C20.6858 7.30118 20.6858 7.61802 20.4863 7.81753L15.3769 12.9269C15.1764 13.1274 14.8602 13.1274 14.6607 12.9269L13.5562 11.8224L13.5562 5.83234ZM3.44251 21.0903L2.06406 21.9366L2.91039 20.5582L15.9267 7.54188L17.3051 8.92033L4.28874 21.9366L3.44251 21.0903Z"
+                                        fill="white" />
+                                </mask>
+                                <g mask="url(#maskEdit)">
+                                    <rect x="0.870605" width="23.8823" height="24" fill="#FFFFFF" />
+                                </g>
+                            </svg>
+                        </span>
+                    </a>
                 </div>
             </div>
+            
         </div>
     </div>
 
