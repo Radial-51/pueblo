@@ -359,7 +359,7 @@ return [
         ],
         [
             'text' => 'Encuestas',
-            'route' => 'employee_rating.index',
+            'route' => 'employee-ratings.index',
             'icon' => 'fas fa-vote-yea',
         ],
         
