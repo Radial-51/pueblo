@@ -30,8 +30,8 @@
                             <thead class="thead">
                                 <tr>
                                     <th>Acciones</th>
-                                    <th>No</th>
                                     <th>Nombre</th>
+                                    <th>No</th>
                                     <th>Descripción</th>
                                     <th>Estado</th>
                                     <th>Foto</th>
