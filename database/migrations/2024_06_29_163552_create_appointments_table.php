@@ -28,8 +28,8 @@ class CreateAppointmentsTable extends Migration
             $table->string('doctor');
             $table->date('appointment_date');
             $table->time('appointment_time');
-            $table->enum('sex', ['Masculino', 'Femenino']);
-            $table->enum('pathology', ['Obesidad', 'Enfermedades de Transmisión', 'Desnutrición', 'Enfermedades Crónicas Degenerativas', 'Diabetes Mellitus', 'Hipertensión', 'Covid', 'Otros']);
+            $table->string('sex');
+            $table->string('pathology');
             $table->boolean('invoice');
             $table->timestamps();
         });

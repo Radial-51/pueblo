@@ -47,14 +47,14 @@
             {!! $errors->first('consulting_room_id', '<div class="invalid-feedback" role="alert"><strong>:message</strong></div>') !!}
         </div>
         <div class="form-group mb-2 mb20">
-            <label for="service_id" class="form-label">{{ __('Service Id') }}</label>
-            <input type="text" name="service_id" class="form-control @error('service_id') is-invalid @enderror" value="{{ old('service_id', $appointment?->service_id) }}" id="service_id" placeholder="Service Id">
-            {!! $errors->first('service_id', '<div class="invalid-feedback" role="alert"><strong>:message</strong></div>') !!}
+            <label for="service" class="form-label">{{ __('Service') }}</label>
+            <input type="text" name="service" class="form-control @error('service') is-invalid @enderror" value="{{ old('service', $appointment?->service) }}" id="service" placeholder="Service">
+            {!! $errors->first('service', '<div class="invalid-feedback" role="alert"><strong>:message</strong></div>') !!}
         </div>
         <div class="form-group mb-2 mb20">
-            <label for="doctor_id" class="form-label">{{ __('Doctor Id') }}</label>
-            <input type="text" name="doctor_id" class="form-control @error('doctor_id') is-invalid @enderror" value="{{ old('doctor_id', $appointment?->doctor_id) }}" id="doctor_id" placeholder="Doctor Id">
-            {!! $errors->first('doctor_id', '<div class="invalid-feedback" role="alert"><strong>:message</strong></div>') !!}
+            <label for="doctor" class="form-label">{{ __('Doctor') }}</label>
+            <input type="text" name="doctor" class="form-control @error('doctor') is-invalid @enderror" value="{{ old('doctor', $appointment?->doctor) }}" id="doctor" placeholder="Doctor">
+            {!! $errors->first('doctor', '<div class="invalid-feedback" role="alert"><strong>:message</strong></div>') !!}
         </div>
         <div class="form-group mb-2 mb20">
             <label for="appointment_date" class="form-label">{{ __('Appointment Date') }}</label>

@@ -31,12 +31,12 @@ class AppointmentRequest extends FormRequest
 			'consultation_reason' => 'required|string',
 			'age' => 'required',
 			'consulting_room_id' => 'required',
-			'service_id' => 'required',
-			'doctor_id' => 'required',
+			'service' => 'required|string',
+			'doctor' => 'required|string',
 			'appointment_date' => 'required',
 			'appointment_time' => 'required',
-			'sex' => 'required',
-			'pathology' => 'required',
+			'sex' => 'required|string',
+			'pathology' => 'required|string',
 			'invoice' => 'required',
         ];
     }

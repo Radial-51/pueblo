@@ -17,8 +17,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property $consultation_reason
  * @property $age
  * @property $consulting_room_id
- * @property $service_id
- * @property $doctor_id
+ * @property $service
+ * @property $doctor
  * @property $appointment_date
  * @property $appointment_time
  * @property $sex
@@ -41,7 +41,7 @@ class Appointment extends Model
      *
      * @var array
      */
-    protected $fillable = ['first_name', 'last_name_father', 'last_name_mother', 'address', 'phone', 'family_phone', 'consultation_reason', 'age', 'consulting_room_id', 'service_id', 'doctor_id', 'appointment_date', 'appointment_time', 'sex', 'pathology', 'invoice'];
+    protected $fillable = ['first_name', 'last_name_father', 'last_name_mother', 'address', 'phone', 'family_phone', 'consultation_reason', 'age', 'consulting_room_id', 'service', 'doctor', 'appointment_date', 'appointment_time', 'sex', 'pathology', 'invoice'];
 
 
 
