@@ -58,6 +58,17 @@
                             <textarea class="form-control" id="counter_feedback" name="counter_feedback" rows="3"></textarea>
                         </div>
 
+                        <div class="form-group">
+                            <label for="customer_id">CUrtomer id:</label>
+                            <select class="form-control" id="customer_id" name="customer_id">
+                                <option value="1">1 - Pedro</option>
+                                <option value="2">2 - Maria</option>
+                                <option value="3">3 - Alberto</option>
+                                <option value="4">4 - Juan</option>
+                                <option value="5">5 - Ana</option>
+                            </select>
+                        </div>
+
                         <button type="submit" class="btn btn-primary">Enviar Encuesta</button>
                     </form>
                 </div>
