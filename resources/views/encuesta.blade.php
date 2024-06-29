@@ -70,11 +70,27 @@
 @section('css')
     {{-- Incluir estilos de SweetAlert2 --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@8">
+
+    {{-- Estilos adicionales de AdminLTE y otros --}}
+    <link rel="stylesheet" href="{{ secure_asset('vendor/fontawesome-free/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('vendor/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('vendor/adminlte/dist/css/adminlte.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/styles-home.css') }}">
 @stop
 
 @section('js')
     {{-- Incluir script de SweetAlert2 --}}
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+    {{-- Scripts adicionales de jQuery, Bootstrap, OverlayScrollbars y AdminLTE --}}
+    <script src="{{ secure_asset('vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ secure_asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ secure_asset('vendor/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
+    <script src="{{ secure_asset('vendor/adminlte/dist/js/adminlte.min.js') }}"></script>
+
+    {{-- Script de DataTables (si es necesario) --}}
+    {{-- <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script> --}}
+    {{-- <script src="//cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script> --}}
 
     {{-- Script para mostrar alerta después de enviar la encuesta --}}
     @if(session('success'))
