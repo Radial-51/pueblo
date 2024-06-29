@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SessionsController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\EmployeeRatingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,6 +54,9 @@ Route::get('/admin', function () {
 
 // Rutas para las ofertas
 Route::get('/Ofertas', [ServiceController::class, 'Offer'])->name('offer');
+
+// Rutas CRUD generadas por ibex/crud-generator
+Route::resource('employee-ratings', EmployeeRatingController::class);
 
 // Rutas CRUD generadas por ibex/crud-generator
 Route::resource('testimonios', TestimonioController::class);

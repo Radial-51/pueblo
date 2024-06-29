@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Testimonios')
+@section('title', 'Satisfacción')
 
 @section('content_header')
-    <h1>Tabla de Testimonios</h1>
+    <h1>Tabla de Satisfacción</h1>
 @stop
 
 @section('content')
@@ -15,11 +15,11 @@
                     <div style="display: flex; justify-content: space-between; align-items: center;">
 
                         <span id="card_title">
-                            {{ __('Testimonio') }}
+                            {{ __('Employee Rating') }}
                         </span>
 
                          <div class="float-right">
-                            <a href="{{ route('testimonios.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
+                            <a href="{{ route('employee-ratings.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
                               {{ __('Create New') }}
                             </a>
                           </div>
@@ -36,42 +36,38 @@
                         <table class="table table-striped table-hover">
                             <thead class="thead">
                                 <tr>
-                                    <th>Acciones</th>
-                                    <th>Nombre</th>
+                                    <th></th>
                                     <th>No</th>
-                                    <th>Titulo</th>
-                                    <th>Contenido</th>
-                                    <th>Calificacion</th>
-                                    <th>Fecha</th>
-                                    <th>Estado</th>
-                                    <th>Imagen</th>
-                                    <th>Video</th>
-                                    <th>Producto Servicio</th>
-
+                                    <th>Service Employee Id</th>
+                                    <th>Counter Employee Id</th>
+                                    <th>Customer Id</th>
+                                    <th>Service Rating</th>
+                                    <th>Counter Rating</th>
+                                    <th>Service Feedback</th>
+                                    <th>Counter Feedback</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($testimonios as $testimonio)
+                                @foreach ($employeeRatings as $employeeRating)
                                     <tr>
                                         <td>
-                                            <form action="{{ route('testimonios.destroy',$testimonio->id) }}" method="POST">
-                                                <a class="btn btn-sm btn-primary " href="{{ route('testimonios.show',$testimonio->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Show') }}</a>
-                                                <a class="btn btn-sm btn-success" href="{{ route('testimonios.edit',$testimonio->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Edit') }}</a>
+                                            <form action="{{ route('employee-ratings.destroy',$employeeRating->id) }}" method="POST">
+                                                <a class="btn btn-sm btn-primary " href="{{ route('employee-ratings.show',$employeeRating->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Show') }}</a>
+                                                <a class="btn btn-sm btn-success" href="{{ route('employee-ratings.edit',$employeeRating->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Edit') }}</a>
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> {{ __('Delete') }}</button>
                                             </form>
                                         </td>
-                                        <td>{{ $testimonio->nombre }}</td>
                                         <td>{{ ++$i }}</td>
-                                        <td>{{ $testimonio->titulo }}</td>
-                                        <td>{{ $testimonio->contenido }}</td>
-                                        <td>{{ $testimonio->calificacion }}</td>
-                                        <td>{{ $testimonio->fecha }}</td>
-                                        <td>{{ $testimonio->estado }}</td>
-                                        <td>{{ $testimonio->imagen }}</td>
-                                        <td>{{ $testimonio->video }}</td>
-                                        <td>{{ $testimonio->producto_servicio }}</td>
+                                        
+                                        <td>{{ $employeeRating->service_employee_id }}</td>
+                                        <td>{{ $employeeRating->counter_employee_id }}</td>
+                                        <td>{{ $employeeRating->customer_id }}</td>
+                                        <td>{{ $employeeRating->service_rating }}</td>
+                                        <td>{{ $employeeRating->counter_rating }}</td>
+                                        <td>{{ $employeeRating->service_feedback }}</td>
+                                        <td>{{ $employeeRating->counter_feedback }}</td>
 
                                         
                                     </tr>
@@ -81,7 +77,7 @@
                     </div>
                 </div>
             </div>
-            {!! $testimonios->links() !!}
+            {!! $employeeRatings->links() !!}
         </div>
     </div>
 </div>
