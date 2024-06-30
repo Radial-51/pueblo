@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="profile" href="https://gmpg.org/xfn/11" />
     <title>Merrash</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/brand/Spa-1.jpg" sizes="16x16 24x24 32x32 48x48"/>
+    <link rel="icon" type="image/x-icon" href="/img/brand/Spa-1.jpg" sizes="16x16 24x24 32x32 48x48"/>
+    <link rel="apple-touch-icon" href="/img/brand/Spa-1.jpg"/>
     <meta name='robots' content='noindex, nofollow' />
     <link rel='dns-prefetch' href='//s0.wp.com' />
     <link rel='dns-prefetch' href='//wordpress.com' />
