@@ -4,7 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Symfony\Component\HttpFoundation\Response;
+use Illuminate\Http\Response;
 
 class AdminAuth
 {
@@ -13,7 +13,7 @@ class AdminAuth
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Closure  $next
-     * @return \Symfony\Component\HttpFoundation\Response
+     * @return \Illuminate\Http\Response
      */
     public function handle(Request $request, Closure $next): Response
     {
@@ -25,9 +25,7 @@ class AdminAuth
             }
         }
         
-        // Si el usuario no está autenticado o no es administrador, redirige a la página de inicio de sesión
-        return redirect()->route('usuarios'); // Cambia 'usuarios' por la ruta que necesitas
+        // Si el usuario no está autenticado o no es administrador, redirige a la página de usuarios
+        return redirect()->route('usuarios'); // Redirige a la ruta usuarios
     }
 }
-
-

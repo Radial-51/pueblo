@@ -16,11 +16,14 @@
                         <span id="card_title">
                             {{ __('Service') }}
                         </span>
-                        <div class="float-right">
-                            <a href="{{ route('services.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                              {{ __('Create New') }}
-                            </a>
-                          </div>
+                        @can('services.create')
+                            <div class="float-right">
+                                <a href="{{ route('services.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
+                                {{ __('Create New') }}
+                                </a>
+                            </div>
+                        @endcan
+                        
                     </div>
                 </div>
 
@@ -51,13 +54,19 @@
                             <tbody>
                                 @foreach ($services as $service)
                                     <tr><td>
+                                        @can('services.create')
+
                                         <form action="{{ route('services.destroy',$service->id) }}" method="POST">
-                                            <a class="btn btn-sm btn-primary " href="{{ route('services.show',$service->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Show') }}</a>
                                             <a class="btn btn-sm btn-success" href="{{ route('services.edit',$service->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Edit') }}</a>
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> {{ __('Delete') }}</button>
                                         </form>
+                                        @endcan
+                                        @can('services.index')
+                                            <a class="btn btn-sm btn-primary " href="{{ route('services.show',$service->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Show') }}</a>
+                                            @endcan
+                                        
                                     </td>
                                         <td>{{ $service->name }}</td>
                                         <td>{{ ++$i }}</td>

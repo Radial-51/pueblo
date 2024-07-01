@@ -14,6 +14,14 @@ class EmployeeRatingController extends Controller
     /**
      * Display a listing of the resource.
      */
+
+
+    public function __construct()
+    {
+        $this->middleware('can:employee-ratings.index')->only('edit', 'update', 'destroy', 'show', 'index');
+        $this->middleware('can:employee-ratings.create')->only('create');
+    }
+
     public function index()
     {
         $employeeRatings = EmployeeRating::paginate();
@@ -38,7 +46,7 @@ class EmployeeRatingController extends Controller
     {
         EmployeeRating::create($request->validated());
 
-        return redirect()->route('employee-ratings.index')
+        return redirect()->route('employee-ratings.create')
             ->with('success', 'EmployeeRating created successfully.');
     }
 

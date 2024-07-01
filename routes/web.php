@@ -26,9 +26,6 @@ use App\Http\Controllers\UserController;
 
 Route::get('/', [WelcomeController::class, 'index'])->name('welcome');
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 // Rutas para los servicios
 Route::get('/Disponibles', [ServiceController::class, 'availableServices'])->name('services.available');
@@ -50,44 +47,48 @@ Route::get('/usuarios', function () {
     return view('usuarios');
 })->name('usuarios')->middleware('auth');
 
-// Ruta para la vista de admin
-Route::get('/admin', function () {
-    return view('home');
-})->name('admin')->middleware('auth.admin');
+// // Ruta para la vista de admin
+// Route::get('/admin', function () {
+//     return view('home');
+// })->name('admin')->middleware('auth.admin');
 
 // Rutas para las ofertas
 Route::get('/Ofertas', [ServiceController::class, 'Offer'])->name('offer');
 
 // Rutas CRUD generadas por ibex/crud-generator
-Route::resource('users', UserController::class);
+Route::resource('users', UserController::class)->middleware('can:users.index');
 
 // Rutas CRUD generadas por ibex/crud-generator
 Route::resource('employee-ratings', EmployeeRatingController::class);
 
 // Rutas CRUD generadas por ibex/crud-generator
-Route::resource('testimonios', TestimonioController::class);
+Route::resource('testimonios', TestimonioController::class)->middleware('can:testimonios.index');
 
 // Rutas CRUD generadas por ibex/crud-generator
 Route::resource('services', ServiceController::class);
 
 // Rutas CRUD generadas por ibex/crud-generator
-Route::resource('communities', CommunityController::class);
+Route::resource('communities', CommunityController::class)->middleware('can:communities.index');
 
 // routes/web.php
 Route::get('/service/{id}', [ServiceController::class, 'showdetail'])->name('service.detail');
 
 // Rutas Login
 
-Route::get('/register', [RegisterController::class, 'create'])->name('register.index'); 
 
-Route::post('/register', [RegisterController::class, 'store'])->name('register.store'); 
+Route::post('/register', [RegisterController::class, 'store'])->middleware('can:register.index')->name('register.index'); 
 
-Route::get('/login', [SessionsController::class, 'create'])->name('login.index');
+Route::get('/login', [WelcomeController::class, 'login'])->name('login');
 
 Route::post('/login', [SessionsController::class, 'store'])->name('login.index');
 
 Route::get('/logout', [SessionsController::class, 'destroy'])->name('login.destroy');
 
-Route::get('/admin', [AdminController::class, 'index'])->middleware('auth.admin')->name('admin.index');
+// Route::get('/admin', [AdminController::class, 'index'])->middleware('auth.admin')->name('admin.index');
 
-Route::resource('appointments', AppointmentController::class);
+Route::resource('appointments', AppointmentController::class)->middleware('can:appointments.index');
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->middleware('can:home')->name('home');

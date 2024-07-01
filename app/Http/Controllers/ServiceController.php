@@ -7,6 +7,12 @@ use App\Http\Requests\ServiceRequest;
 
 class ServiceController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('can:services.create')->only('edit', 'update', 'destroy', 'create');
+        $this->middleware('can:services.index')->only('show', 'index');
+    }
     public function showdetail($id)
 {
     $service = Service::find($id);

@@ -320,16 +320,18 @@ return [
         [
             'type' => 'sidebar-menu-search',
             'text' => 'Buscar',
+            'can' => 'home',
         ],
-        [
-            'text' => 'blog',
-            'url' => 'admin/blog',
-            'can' => 'admin',
-        ],
+        // [
+        //     'text' => 'blog',
+        //     'url' => 'admin/blog',
+        //     'can' => 'services.index',
+        // ],
         [
             'text' => 'Panel de Control',
             'route' => 'home',
-            'icon' => 'fas fa-fw fa-home'
+            'icon' => 'fas fa-fw fa-home',
+            'can' => 'home',
         ],
         /** 
          * [
@@ -341,46 +343,56 @@ return [
          *  ],
          * **/
         
-        ['header' => 'Tablas'],
+        ['header' => 'Tablas',
+         'can' => 'home',
+        ],
         [
             'text' => 'Usuarios',
             'route' => 'users.index',
             'icon' => 'fas fa-users',
+            'can' => 'users.index',
         ],
         [
             'text' => 'Servicios',
             'route' => 'services.index',
             'icon' => 'fas fa-heartbeat',
+            'can' => 'services.index',
         ],
         [
             'text' => 'Servicio a la comunidad',
             'route' => 'communities.index',
             'icon' => 'fas fa-people-carry',
+            'can' => 'communities.index',
         ],
         [
             'text' => 'Testimonios',
             'route' => 'testimonios.index',
             'icon' => 'fas fa-person-booth',
+            'can' => 'testimonios.index',
         ],
         [
             'text' => 'Encuestas',
             'route' => 'employee-ratings.index',
             'icon' => 'fas fa-vote-yea',
+            'can' => 'employee-ratings.index',
         ],
         [
             'text' => 'Citas',
             'route' => 'appointments.index',
             'icon' => 'fas fa-calendar-check',
+            'can' => 'appointments.index',
         ],
         
         [
-            'text' => 'multilevel',
+            'text' => 'Otras Opciones',
             'icon' => 'fas fa-fw fa-share',
+            'can' => 'home',
             'submenu' => [
-                [
-                    'text' => 'level_one',
-                    'url' => '#',
-                ],
+                // [
+                //     'text' => 'Registrar usuarios',
+                //     'route' => 'register',
+                //     'can' => 'register.index',
+                // ],
                 [
                     'text' => 'level_one',
                     'url' => '#',
@@ -411,22 +423,27 @@ return [
                 ],
             ],
         ],
-        ['header' => 'labels'],
+        ['header' => 'labels',
+         'can' => 'home',
+        ],
         [
             'text' => 'Encuesta',
             'icon_color' => 'cyan',
             'route' => 'employee-ratings.create',
+            'can' => 'employee-ratings.create',
         ],
         [
             'text' => 'Agendar cita',
             'icon_color' => 'green',
             'route' => 'appointments.create',
+            'can' => 'appointments.create',
         ],
-        [
-            'text' => 'warning',
-            'icon_color' => 'yellow',
-            'url' => '#',
-        ],
+        // [
+        //     'text' => 'warning',
+        //     'icon_color' => 'yellow',
+        //     'url' => '#',
+        //     'can' => '',
+        // ],
         
     ],
 
