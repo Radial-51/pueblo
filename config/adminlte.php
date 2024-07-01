@@ -64,7 +64,7 @@ return [
     */
 
     'logo' => '<b></b>Merrash',
-    'logo_img' => 'favicons/favicon.ico',
+    'logo_img' => 'img/brand/Spa-1.jpg',
     'logo_img_class' => 'brand-image img-thumbnail elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
