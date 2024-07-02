@@ -51,7 +51,7 @@ body {
   width: 270px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   body {
     margin: 0;
     padding: 0;
