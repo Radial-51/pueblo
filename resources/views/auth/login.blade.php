@@ -8,7 +8,7 @@
     <div id="login">
         <h2></h2>
         <h3 class="text-center text-white pt-5" style="filter: drop-shadow(1px 1px 20px white)">
-            <img id="logo" class="text-center text-white pt-5" style="filter: drop-shadow(1px 1px 17px white); height: 210px; width: 180px;" src="{{ asset('favicons/favicon.ico') }}" alt="">
+            <img id="logo" class="text-center text-white pt-5" src="{{ asset('favicons/favicon.ico') }}" alt="">
         </h3>
         <div class="container">
             <div id="login-row" class="row justify-content-center align-items-center">

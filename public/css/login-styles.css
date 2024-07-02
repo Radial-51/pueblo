@@ -44,8 +44,11 @@ body {
   justify-items: center;
 }
 #logo{
-  margin-top: -130px;
-  margin-bottom: 20px;
+  margin-top: -125px;
+  margin-bottom: 1px;
+  filter: drop-shadow(1px 1px 17px white);
+  height: 300px;
+  width: 270px;
 }
 
 @media (max-width: 768px) {
