@@ -7,20 +7,20 @@
 <body>
     <div id="login">
         <h2></h2>
-        <h3 class="text-center text-white pt-5" style=" filter: drop-shadow(1px 1px 20px white)">
-            <img class="text-center text-white pt-5" style="filter: drop-shadow(1px 1px 17px white); height: 180px; widht: 180px; margin: -60px;"  src="{{ asset('favicons/favicon.ico') }}" alt="">
+        <h3 class="text-center text-white pt-5" style="filter: drop-shadow(1px 1px 20px white)">
+            <img id="logo" class="text-center text-white pt-5" style="filter: drop-shadow(1px 1px 17px white); height: 210px; width: 180px;" src="{{ asset('favicons/favicon.ico') }}" alt="">
         </h3>
         <div class="container">
             <div id="login-row" class="row justify-content-center align-items-center">
-                <div id="login-column" class="col-md-6">
+                <div id="login-column" class="col-md-12">
                     <div id="login-box" class="col-md-12">
                         <form id="login-form" class="form" action="{{ route('login') }}" method="POST">
                             @csrf
                             <div class="centrado">
-                                <h3 class="color-letra">Inicia Sesión</h3>
+                                <h3 class="color-letra" style="font-size: 30px">Inicia Sesión</h3>
                             </div>
                             <div class="form-group">
-                                <label for="email" class="color-letra"class="text-info" >Correo:</label>
+                                <label for="email" class="color-letra text-info">Correo:</label>
                                 <input type="email" name="email" id="email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}" required autocomplete="email" autofocus>
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -29,7 +29,7 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label class="color-letra" for="password" class="text-info">Contraseña:</label>
+                                <label class="color-letra text-info" for="password">Contraseña:</label>
                                 <input type="password" name="password" id="password" class="form-control @error('password') is-invalid @enderror" required autocomplete="current-password">
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
@@ -40,9 +40,6 @@
                             <div class="form-group">
                                 <button id="submit" type="submit" class="btn btn-info btn-md">Inicia Sesión</button>
                             </div>
-                            {{-- <div id="register-link" class="text-right">
-                                <a href="{{ route('register') }}" class="color-letra" class="text-info">Registrate</a>
-                            </div> --}}
                         </form>
                     </div>
                 </div>
