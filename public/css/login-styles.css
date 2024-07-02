@@ -55,36 +55,37 @@ body {
   body {
     margin: 0;
     padding: 0;
-    background-color: var(--color-one);
+    background-color: var(--color-accent);
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: scale(2.2); /* Aplica un zoom al contenido */
   }
   #login .container {
-      margin-top: 60px;
-      width: 100%;
-      padding: 10px;
-      height: 40%;
-      border: none;
-      background-color: #EAEAEA;
+    margin-top: 60px;
+    width: 100%;
+    padding: 10px;
+    height: 40%;
+    border: none;
+    background-color: #EAEAEA;
   }
   .color-letra {
-      font-size: 1.1em;
-      color: var(--color-one);
-      align-self: center;
+    font-size: 1.5em; /* Aumenta el tamaño de la fuente */
+    color: var(--color-one);
+    align-self: center;
   }
   #submit {
     margin-top: 10px;
-      font-size: 1.0em;
-      padding: 10px;
+    font-size: 1.5em; /* Aumenta el tamaño de la fuente */
+    padding: 15px; /* Aumenta el padding para botones más grandes */
   }
-  #logo{
+  #logo {
     margin-top: -90px;
     margin-bottom: -20px;
     filter: drop-shadow(1px 1px 17px white);
-    height: 35%;
-    width: 33%;
+    height: 50%; /* Aumenta el tamaño del logo */
+    width: 50%; /* Aumenta el tamaño del logo */
   }
 }
