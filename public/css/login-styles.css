@@ -52,11 +52,20 @@ body {
 }
 
 @media (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-one);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   #login .container {
       margin-top: 60px;
-      width: 90%;
+      width: 95%;
       padding: 10px;
-      height: 350px;
+      height: 40%;
       border: none;
       background-color: #EAEAEA;
   }
