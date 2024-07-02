@@ -20,7 +20,7 @@
                                 <h3 class="color-letra" style="font-size: 30px">Inicia Sesión</h3>
                             </div>
                             <div class="form-group">
-                                <label for="email" class="color-letra text-info">Correo:</label>
+                                <label for="email" class="color-letra" style="margin-top: 15px;">Correo:</label>
                                 <input type="email" name="email" id="email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}" required autocomplete="email" autofocus>
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -29,7 +29,7 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label class="color-letra text-info" for="password">Contraseña:</label>
+                                <label class="color-letra" for="password">Contraseña:</label>
                                 <input type="password" name="password" id="password" class="form-control @error('password') is-invalid @enderror" required autocomplete="current-password">
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
