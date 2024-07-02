@@ -55,13 +55,13 @@ body {
   body {
     margin: 0;
     padding: 0;
-    background-color: var(--color-accent);
+    background-color: var(--color-one);
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: scale(2.2); /* Aplica un zoom al contenido */
+    transform: scale(1.0); /* Aplica un zoom al contenido */
   }
   #login .container {
     margin-top: 60px;
