@@ -56,7 +56,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--color-one);
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,5 +83,8 @@ body {
   #logo{
     margin-top: -90px;
     margin-bottom: -20px;
+    filter: drop-shadow(1px 1px 17px white);
+    height: 300px;
+    width: 270px;
   }
 }
