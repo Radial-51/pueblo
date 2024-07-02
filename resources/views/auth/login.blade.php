@@ -17,7 +17,7 @@
                         <form id="login-form" class="form" action="{{ route('login') }}" method="POST">
                             @csrf
                             <div class="centrado">
-                                <h3 class="color-letra" style="font-size: 30px">Inicia Sesión</h3>
+                                <h3 id="iniciar">Inicia Sesión</h3>
                             </div>
                             <div class="form-group">
                                 <label for="email" class="color-letra" style="margin-top: 15px;">Correo:</label>

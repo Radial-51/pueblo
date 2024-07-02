@@ -16,9 +16,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 #login {
   width: 100%;
 }
+
 #login .container {
   max-width: 600px;
   background-color: #EAEAEA;
@@ -27,23 +29,27 @@ body {
   padding: 20px;
   border-radius: 10px;
 }
+
 #login-form {
   padding: 20px;
 }
+
 #submit {
   margin: 20px 0px;
   background-color: var(--color-one);
 }
+
 .color-letra {
   color: var(--color-one);
-
 }
-.centrado{
+
+.centrado {
   display: flex;
   width: 90%;
   justify-items: center;
 }
-#logo{
+
+#logo {
   margin-top: -125px;
   margin-bottom: 1px;
   filter: drop-shadow(1px 1px 17px white);
@@ -51,43 +57,135 @@ body {
   width: 270px;
 }
 
-@media (min-width: 768px) {
+/* Estilos para dispositivos pequeños (móviles) */
+@media (max-width: 767px) {
   body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--color-one);
-    height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: scale(1.0); /* Aplica un zoom al contenido */
+    padding: 20px;
+    transform: scale(1.0);
+    padding: 10px;
+    max-height: 100%;
   }
   #login .container {
     max-width: 95%;
-    min-width: 90%;
+    margin-top: 10px;
+    width: 90%;
+    padding: 1px;
+    height: 48%;
+    border: none;
+  }
+  .color-letra {
+    font-size: 1.0em;
+  }
+  #submit {
+    font-size: 1.0em;
+    padding: 9px;
+    margin: 10px 0px 0px;
+  }
+  #logo {
+    margin: -100px 0px 20px 0px;
+    height: 273px;
+    width: 240px;
+    filter: drop-shadow(1px 1px 17px white);
+
+  }
+  #iniciar {
+    font-size: 22px;
+    font-weight: bolder;
+    color: var(--color-one);
+    margin: -8px 0px -2px;  
+    align-self: center;
+  }
+  .centrado{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Estilos para tablets y dispositivos medianos */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    width: 100%;
+    padding: 20px;
+    transform: scale(1.0);
+    padding: 10px;
+    max-height: 100%;
+  }
+  #login .container {
+    max-width: 95%;
+    margin-top: 10px;
+    width: 90%;
+    padding: 1px;
+    height: 48%;
+    border: none;
+  }
+  .color-letra {
+    font-size: 1.0em;
+  }
+  #submit {
+    font-size: 1.0em;
+    padding: 9px;
+    margin: 10px 0px 0px;
+  }
+  #logo {
+    margin: -100px 0px 20px 0px;
+    height: 273px;
+    width: 240px;
+    filter: drop-shadow(1px 1px 17px white);
+
+  }
+  #iniciar {
+    font-size: 22px;
+    font-weight: bolder;
+    color: var(--color-one);
+    margin: -8px 0px -2px;  
+    align-self: center;
+  }
+  .centrado{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Estilos para dispositivos grandes (desktops) */
+@media (min-width: 1025px) {
+  body {
+    transform: scale(1.0);
+  }
+  #login .container {
     margin-top: 60px;
     width: 100%;
     padding: 10px;
-    height: 40%;
-    border: none;
-    background-color: #EAEAEA;
+    height: 330px;
+    border: 1px solid #9C9C9C;
+    margin-bottom: 0;
   }
   .color-letra {
-    font-size: 4.5em; /* Aumenta el tamaño de la fuente */
-    color: var(--color-one);
-    align-self: center;
+    font-size: 1.3em;
   }
   #submit {
-    margin-top: 10px;
-    font-size: 2.5em; /* Aumenta el tamaño de la fuente */
-    padding: 15px; /* Aumenta el padding para botones más grandes */
+    font-size: 1em;
+    padding: 10px;
+    margin: 0;
   }
   #logo {
-    margin-top: -90px;
-    margin-bottom: -20px;
-    filter: drop-shadow(1px 1px 17px white);
-    height: 50%; /* Aumenta el tamaño del logo */
-    width: 50%; /* Aumenta el tamaño del logo */
+    margin-bottom: -60px;
+    height: 330px;
+    width: 300px;
+  }
+  #iniciar {
+    font-size: 32px;
+    font-weight: bolder;
+    color: var(--color-one);
+    margin-top: -18px;
+    margin-bottom: -8px;
+    align-self: center;
+  }
+  .centrado{
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
