@@ -58,62 +58,7 @@ body {
 }
 
 /* Estilos para dispositivos pequeños (móviles) */
-@media (max-width: 767px) {
-  body {
-    width: 100%;
-    padding: 20px;
-    transform: scale(1.0);
-    padding: 10px;
-    max-height: 100%;
-    background-color: var(--color-accent);
-  }
-  #login .container {
-    max-width: 95%;
-    margin-top: 10px;
-    width: 90%;
-    padding: 1px;
-    height: 48%;
-    border: none;
-  }
-  .color-letra {
-    font-size: 2.0em;
-  }
-  #submit {
-    font-size: 1.0em;
-    padding: 9px;
-    margin: 10px 0px 0px;
-  }
-  #logo {
-    margin: -100px 0px 20px 0px;
-    height: 38%;
-    width: 45%;
-    filter: drop-shadow(1px 1px 17px white);
-
-  }
-  #iniciar {
-    font-size: 42px;
-    font-weight: bolder;
-    color: var(--color-one);
-    margin: -8px 0px -2px;  
-    align-self: center;
-  }
-  .centrado {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  #email {
-    width: 100%;
-    height: 10%;
-  }
-  #password {
-    width: 100%;
-    height: 10%;
-  }
-}
-
-/* Estilos para tablets y dispositivos medianos */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 867px) {
   body {
     width: 100%;
     padding: 20px;
@@ -121,6 +66,58 @@ body {
     padding: 10px;
     max-height: 100%;
     background-color: var(--color-one);
+  }
+  #login .container {
+    max-width: 95%;
+    margin-top: 10px;
+    width: 90%;
+    padding: 1px;
+    height: auto;
+    border: none;
+  }
+  .color-letra {
+    font-size: 3.5em;
+  }
+  #submit {
+    font-size: 3.2em;
+    padding: 9px;
+    margin: 20px 0px 10px;
+  }
+  #logo {
+    margin: -190px 0px 20px 0px;
+    height: 600px;
+    width: 560px;
+    filter: drop-shadow(1px 1px 17px white);
+
+  }
+  #iniciar {
+    font-size: 4.0em;
+    font-weight: bolder;
+    color: var(--color-one);
+    margin: 1px 0px -2px;  
+    align-self: center;
+  }
+  .centrado {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  input {
+    height: 80px;
+    color: #2c3e50;
+    font-size: 40px !important;
+  }
+}
+
+/* Estilos para tablets y dispositivos medianos */
+@media (min-width: 868px) and (max-width: 1024px) {
+  body {
+    width: 100%;
+    padding: 20px;
+    transform: scale(1.0);
+    padding: 10px;
+    max-height: 100%;
+    background-color: var(--color-accent);
   }
   #login .container {
     max-width: 95%;
