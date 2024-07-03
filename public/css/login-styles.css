@@ -149,7 +149,7 @@ body {
     font-size: 4.0em;
     font-weight: bolder;
     color: var(--color-one);
-    margin: -8px 0px -2px;  
+    margin: -18px 0px -2px;  
     align-self: center;
   }
   .centrado {
@@ -159,7 +159,8 @@ body {
   }
   input {
     height: 80px;
-    font-size: 3.5em;
+    color: #2c3e50;
+    font-size: 5.5em;
   }
 }
 
