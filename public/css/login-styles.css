@@ -120,7 +120,7 @@ body {
     transform: scale(1.0);
     padding: 10px;
     max-height: 100%;
-    background-color: var(--color-accent);
+    background-color: var(--color-one);
   }
   #login .container {
     max-width: 95%;
@@ -131,16 +131,16 @@ body {
     border: none;
   }
   .color-letra {
-    font-size: 2.0em;
+    font-size: 4.0em;
   }
   #submit {
-    font-size: 1.0em;
+    font-size: 4.0em;
     padding: 9px;
     margin: 10px 0px 0px;
   }
   #logo {
     margin: -100px 0px 20px 0px;
-    height: 38%;
+    height: 35%;
     width: 45%;
     filter: drop-shadow(1px 1px 17px white);
 
