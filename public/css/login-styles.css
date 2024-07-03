@@ -127,7 +127,7 @@ body {
     margin-top: 10px;
     width: 90%;
     padding: 1px;
-    height: 38%;
+    height: auto;
     border: none;
   }
   .color-letra {
@@ -136,7 +136,7 @@ body {
   #submit {
     font-size: 3.2em;
     padding: 9px;
-    margin: 10px 0px 0px;
+    margin: 20px 0px 10px;
   }
   #logo {
     margin: -190px 0px 20px 0px;
