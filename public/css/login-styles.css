@@ -140,8 +140,8 @@ body {
   }
   #logo {
     margin: -190px 0px 20px 0px;
-    height: 35%;
-    width: 45%;
+    height: 400px;
+    width: 360px;
     filter: drop-shadow(1px 1px 17px white);
 
   }
