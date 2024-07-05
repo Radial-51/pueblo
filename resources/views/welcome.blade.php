@@ -16,6 +16,11 @@
         href="https://merrash-prubeas-production.up.railway.app/" />
     <link rel="alternate" type="application/rss+xml" title="Merrash &raquo; Comments Feed"
         href="https://merrash-prubeas-production.up.railway.app/" />
+          <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+
 
     <script type="text/javascript">
         /* <![CDATA[ */
@@ -190,58 +195,17 @@
             padding: 0 !important;
         }
     </style>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            box-sizing: border-box;
-        }
-
-        .btn-wsp {
-            position: fixed;
-            width: 55px;
-            height: 55px;
-            line-height: 55px;
-            bottom: 30px;
-            right: 30px;
-            background: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 35px;
-            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-            z-index: 100;
-            transition: all 300ms ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-        }
-
-        .btn-wsp i {
-            margin-left: 5px;
-        }
-
-        .btn-wsp:hover {
-            background: #20ba5a;
-        }
-
-        @media only screen and (min-width: 320px) and (max-width: 768px) {
-            .btn-wsp {
-                width: 63px;
-                height: 63px;
-                line-height: 66px;
-                right: 20px;
-            }
-        }
-    </style>
 </head>
 
 <body>
+            <a class="btn btn-dark btn-social mx-2" 
+               style="background-color: rgb(red, green, blue); color: black; text-decoration: none; display: flex; flex-direction: column; align-items: center; padding: 1px; border-radius: 70%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);"
+               href="https://api.whatsapp.com/send?phone=7224958550&text=Me%20gustaría%20saber%20más%20sobre%20los%20servicios." aria-label="WhatsApp" target="_blank">
+               <i class="bi bi-whatsapp" style="color:rgb(102, 224, 64); font-size: 24px; margin-bottom: 5px;"></i> 
+            </a>
+            <div style="color: black; margin-top: 5px;">Contactanos</div>
+        </div>
 
-    <a href="https://wa.me/7224958550?text=Hola%20quisiera%20más%20información" class="btn-wsp" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/128/15707/15707820.png" alt="WhatsApp icon">
     </a>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
