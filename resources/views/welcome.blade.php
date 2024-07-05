@@ -21,7 +21,6 @@
     <!-- Bootstrap Icons CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
 
-
     <script type="text/javascript">
         /* <![CDATA[ */
         function addLoadEvent(func) {
@@ -195,18 +194,15 @@
             padding: 0 !important;
         }
     </style>
-</head>
-
-<body>
+        <div style="position: fixed; top: 95%; right: 5%; transform: translateY(-100%); z-index: 1000; text-align: center;">
             <a class="btn btn-dark btn-social mx-2" 
-               style="background-color: rgb(red, green, blue); color: black; text-decoration: none; display: flex; flex-direction: column; align-items: center; padding: 1px; border-radius: 70%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);"
+               style="background-color: rgb(red, green, blue); color: rgb(0, 0, 0); text-decoration: none; display: flex; flex-direction: column; align-items: center; padding: 1px; border-radius: 70%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);"
                href="https://api.whatsapp.com/send?phone=7224958550&text=Me%20gustaría%20saber%20más%20sobre%20los%20servicios." aria-label="WhatsApp" target="_blank">
-               <i class="bi bi-whatsapp" style="color:rgb(102, 224, 64); font-size: 24px; margin-bottom: 5px;"></i> 
+               <i class="bi bi-whatsapp" style="color:rgb(102, 224, 64); font-size: 20px; margin-bottom: 3px;"></i> 
             </a>
             <div style="color: black; margin-top: 5px;">Contactanos</div>
         </div>
 
-    </a>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 </body>
