@@ -194,14 +194,13 @@
             padding: 0 !important;
         }
     </style>
-        <div style="position: fixed; top: 95%; right: 5%; transform: translateY(-100%); z-index: 1000; text-align: center;">
-            <a class="btn btn-dark btn-social mx-2" 
-               style="background-color: rgb(red, green, blue); color: rgb(0, 0, 0); text-decoration: none; display: flex; flex-direction: column; align-items: center; padding: 1px; border-radius: 70%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);"
-               href="https://api.whatsapp.com/send?phone=7224958550&text=Me%20gustaría%20saber%20más%20sobre%20los%20servicios." aria-label="WhatsApp" target="_blank">
-               <i class="bi bi-whatsapp" style="color:rgb(102, 224, 64); font-size: 20px; margin-bottom: 3px;"></i> 
-            </a>
-            <div style="color: black; margin-top: 5px;">Contactanos</div>
-        </div>
+    <div style="position: fixed; top: 95%; right: 5%; transform: translateY(-100%); z-index: 1000; text-align: center; padding: 5px; border-radius: 50%;">
+        <a class="btn btn-dark btn-social mx-2" 
+           style="background-color: rgb(102, 224, 64); color: rgb(78, 253, 9); text-decoration: none; display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; border-radius: 50%; box-shadow: 0px 4px 8px rgb(78, 253, 9); border: 2px solid rgb(102, 224, 64);"
+           href="https://api.whatsapp.com/send?phone=7224958550&text=Me%20gustaría%20saber%20más%20sobre%20los%20servicios." aria-label="WhatsApp" target="_blank">
+           <i class="bi bi-whatsapp" style="color:rgb(255, 255, 255); font-size: 18px;"></i> <!-- Tamaño ajustado -->
+        </a>
+    </div>
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
