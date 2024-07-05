@@ -1625,19 +1625,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div
-                                class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex">
-                                <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"
-                                    style="flex-basis:66.66%">
-                                    <h1 class="margin-bottom-half wp-block-heading" style ="color: #784F96;">
-                                        Consultorio de Medicina Alternativa y Spa Integral</h1>
-                                    <p class="margin-top-half" style= "color:  #784F96;">Av. Estado de México 433,
-                                        Santiaguito, 52140 Metepec, Méx.</p>
-                                </div>
-                                <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"
-                                    style="flex-basis:33.33%">
-                                    <p class="has-text-align-right has-huge-font-size">
-
+                                <div style="display: flex; justify-content: center; width: 100%;">
+                                <div style="text-align: center;">
+                                    <h1 class="margin-bottom-half wp-block-heading" style="color: #784F96;">
+                                        Consultorio de Medicina Alternativa y Spa Integral
+                                    </h1>
+                                    <p class="margin-top-half" style="color: #784F96;">
+                                        Av. Estado de México 433, Santiaguito, 52140 Metepec, Méx.
                                     </p>
                                 </div>
                             </div>
