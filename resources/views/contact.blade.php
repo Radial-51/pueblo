@@ -1326,7 +1326,7 @@
                             </li>
                             
                             <li class="menu-item-20">
-                                <a href="{{ route('login.index') }}"
+                                <a href="{{ route('login') }}"
                                    class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
                                    style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
                                    onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
