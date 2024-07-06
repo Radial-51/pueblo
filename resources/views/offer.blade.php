@@ -468,7 +468,7 @@
         </script>
         <div id="page" class="site">
             <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-            <x-navegacion/>
+            <x-Navegacion/>
             <div id="content" class="site-content">
                 <section id="primary" class="content-area">
                     <main id="main" class="site-main">

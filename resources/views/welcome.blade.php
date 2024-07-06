@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     @include('components.Navegacion')
-    @include('components.carusel')
+    @include('components.Carusel')
     @include('components.Cuadricula')
 <head>
     <meta charset="UTF-8" />
@@ -329,11 +329,11 @@
 
                                 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"
                                     style="flex-basis:66.66%; height: auto; padding-top: 5px;">
-                                    <x-carusel/>
+                                    <x-Carusel/>
                                 </div>
                                 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow hide-on-mobile"
                                     style="flex-basis:33.33%;">
-                                    <x-cuadricula/>
+                                    <x-Cuadricula/>
                                 </div>
                             </div>
                             <div

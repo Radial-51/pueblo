@@ -1,5 +1,7 @@
 <!doctype html>
 <html lang="en">
+    @include('components.Navegacion')
+
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -309,7 +311,7 @@
         </script>
         <div id="page" class="site">
 
-            <x-navegacion/>
+            <x-Navegacion/>
             <!-- #masthead -->
             <div id="content" class="site-content" style="background-color: #fbfbfb;">
                 <section id="primary" class="content-area">
