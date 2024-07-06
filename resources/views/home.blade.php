@@ -21,7 +21,7 @@
                         </div>
                     @endif
                         <div style="height: 100px;">
-                        <x-carusel/>
+                        <x-Carusel/>
 
                         </div>
                 </div>
