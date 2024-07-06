@@ -1039,6 +1039,10 @@
                 --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
                 --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
             }
+            /* Añadir el color de fondo */
+          body {
+           background-color: #fbfbfb;
+       }
         </style>
         <link crossorigin='anonymous' rel='stylesheet' id='all-css-16-1' href='https://s0.wp.com/wp-content/themes/h4/global.css?m=1420737423i&cssminify=yes' type='text/css' media='all'/>
         <script type="text/javascript" id="notes-common-lite-js-extra">
@@ -1235,10 +1239,11 @@
         <div id="page" class="site">
             <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
             <header id="masthead" class="site-header responsive-max-width has-title-and-tagline has-menu" role="banner">
-                <div class="site-branding">
-                    <p class="site-title">
-                        <a href="{{ route('welcome') }}" rel="home">Mirrash</a>
-                    </p>
+                <div style="text-align: center;">
+                    <!-- .cambio de fondo izquierdo merrash-->
+                    <a href="{{ route('welcome') }}" rel="home" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 30px; color: #7D47C1; display: inline-block;">
+                        <img src="img/brand/FONDO-1.png" alt="Merrash Logo" style="vertical-align: middle; width: 90px; transform: translateX(-60px);" />
+                    </a>
                 </div>
                 <!-- .site-branding -->
                 <nav id="site-navigation" class="main-navigation" aria-label="Main Navigation">
@@ -1252,15 +1257,14 @@
                     <div class="main-menu-container">
                         <ul id="menu-primary-menu" class="main-menu" aria-label="submenu">
                         
-                            <li class="mx-6">
-                                <a class="site-name"
-                                   href="{{ route('welcome') }}"
+                            <li id="menu-item-16" class="mx-6">
+                                <a href="{{ route('welcome') }}"
                                    class="font-semibold py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
+                                  style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
                                    onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                    onmouseout="if (!this.classList.contains('selected')) { this.style.color=getComputedStyle(this).getPropertyValue('--link-color'); }"
                                    onclick="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color'); this.classList.add('selected');">
-                                   Inicio
+                                   Inicio 
                                 </a>
                             </li>
                             
@@ -1272,6 +1276,17 @@
                                    onmouseout="if (!this.classList.contains('selected')) { this.style.color=getComputedStyle(this).getPropertyValue('--link-color'); }"
                                    onclick="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color'); this.classList.add('selected');">
                                    Acerca De Nosotros
+                                </a>
+                            </li>
+
+
+                            <li id="menu-item-17" class="mx-6"> 
+                                <a href="{{ route('services.available') }}"
+                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
+                                   style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
+                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
+                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
+                                   Servicios
                                 </a>
                             </li>
 
@@ -1297,7 +1312,7 @@
                             </li>
                             
                             <li class="menu-item-20">
-                                <a href="{{ route('login') }}"
+                                <a href="{{ route('login.index') }}"
                                    class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
                                    style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
                                    onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
@@ -1352,13 +1367,14 @@
                                         @endif
                                     @endforeach
                                 </div>
-                                
-                                <div style="height:32px; display: flex; justify-content: center;" aria-hidden="true" class="wp-block-spacer desktop-only"></div>
+                                 <div style="height:32px; display: flex; justify-content: center;" aria-hidden="true" class="wp-block-spacer desktop-only"></div>
                                 <hr class="wp-block-separator is-style-wide"/>
                                 <div style="height:32px" aria-hidden="true" class="wp-block-spacer desktop-only"></div>
-                                <h2 class="has-text-align-center wp-block-heading">Conoce nuestas ofertas disponibles</h2>
-                                <div class="wp-block-button aligncenter" style="display: flex; justify-content: center;">
-                                    <a style="display: flex; align-items: center; align-self: center;" class="wp-block-button__link" href="{{ route('offer') }}">Ofertas</a>
+                                <h2 class="has-text-align-center wp-block-heading" style="color: #784F96 ">Conoce nuestras ofertas disponibles</h2>
+                                <div style="display: flex; justify-content: center;">
+                                    <div class="wp-block-button">
+                                        <a style="background-color: #784F96; color: white; padding: 10px 20px; text-align: center;" class="wp-block-button__link" href="{{ route('offer') }}">Ofertas</a>
+                                    </div>
                                 </div>
                                 <div style="height:32px" aria-hidden="true" class="wp-block-spacer desktop-only"></div>
                                 <hr class="wp-block-separator is-style-wide"/>
@@ -1429,9 +1445,9 @@
                 </nav>
                 <!-- .social-navigation -->
                 <div class="site-info">
-                    <a class="site-name" href="{{ route('welcome') }}" rel="home" style="color: #ffffff;">Copyright ©</a>
+                    <a class="site-name" href="{{ route('welcome') }}" rel="home" style="color: #000000;">Copyright ©</a>
                     <span class="comma">,</span>
-                    <a class="site-name" href="{{ route('welcome') }}" rel="nofollow" style="color: #ffffff;">Merrash 2024</a>
+                    <a class="site-name" href="{{ route('welcome') }}" rel="nofollow" style="color: #000000;">Merrash 2024</a>
                 </div>
                 <!-- .site-info -->
             </footer>
