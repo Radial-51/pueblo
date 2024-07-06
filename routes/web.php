@@ -91,4 +91,4 @@ Route::resource('appointments', AppointmentController::class)->middleware('can:a
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->middleware('can:home')->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
