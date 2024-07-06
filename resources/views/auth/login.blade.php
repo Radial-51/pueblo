@@ -1,14 +1,14 @@
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link rel="stylesheet" href="{{ asset('css/login-styles.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('css/login-styles.css') }}">
 <!------ Include the above in your HEAD tag ---------->
 
 <body>
     <div id="login">
         <h2></h2>
         <h3 class="text-center text-white pt-5" style="filter: drop-shadow(1px 1px 20px white)">
-            <img id="logo" class="text-center text-white pt-5" src="{{ secure_asset('favicons/favicon.ico') }}" alt="">
+            <img id="logo" class="text-center text-white pt-5" src="{{ asset('favicons/favicon.ico') }}" alt="">
         </h3>
         <div class="container">
             <div id="login-row" class="row justify-content-center align-items-center">
