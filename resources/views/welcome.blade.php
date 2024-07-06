@@ -1,9 +1,8 @@
 <!doctype html>
 <html lang="en">
-    @component('navegacion')
-    @component('cuadricula')
-    @component('carusel')
-
+    @include('components.Navegacion')
+    @include('components.carusel')
+    @include('components.Cuadricula')
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
