@@ -15,60 +15,19 @@
         href="https://merrash-prubeas-production.up.railway.app/" />
     <link rel="alternate" type="application/rss+xml" title="Merrash &raquo; Comments Feed"
         href="https://merrash-prubeas-production.up.railway.app/" />
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            box-sizing: border-box;
-        }
-
-        .btn-wsp {
-            position: fixed;
-            width: 55px;
-            height: 55px;
-            line-height: 55px;
-            bottom: 30px;
-            right: 30px;
-            background: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 35px;
-            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-            z-index: 100;
-            transition: all 300ms ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-        }
-
-        .btn-wsp i {
-            margin-left: 5px;
-        }
-
-        .btn-wsp:hover {
-            background: #20ba5a;
-        }
-
-        @media only screen and (min-width: 320px) and (max-width: 768px) {
-            .btn-wsp {
-                width: 63px;
-                height: 63px;
-                line-height: 66px;
-                right: 20px;
-            }
-        }
-    </style>
+ 
 </head>
 
 
 <body>
-
-    <a href="https://wa.me/7224958550?text=Hola%20quisiera%20más%20información" class="btn-wsp" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/128/15707/15707820.png" alt="WhatsApp icon">
-    </a>
+     <div style="position: fixed; top: 95%; right: 5%; transform: translateY(-100%); z-index: 1000; text-align: center; padding: 5px; border-radius: 50%;">
+        <a class="btn btn-dark btn-social mx-2" 
+           style="background-color: rgb(102, 224, 64); color: rgb(78, 253, 9); text-decoration: none; display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; border-radius: 50%; box-shadow: 0px 4px 8px rgb(78, 253, 9); border: 2px solid rgb(102, 224, 64);"
+           href="https://api.whatsapp.com/send?phone=7224958550&text=Me%20gustaría%20saber%20más%20sobre%20los%20servicios." aria-label="WhatsApp" target="_blank">
+           <i class="bi bi-whatsapp" style="color:rgb(255, 255, 255); font-size: 18px;"></i> <!-- Tamaño ajustado -->
+        </a>
+    </div>
+    
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 </body>
@@ -143,6 +102,24 @@
         }
     }
 </style>
+    <style id='global-styles-inline-css'>
+:root {
+    --wp--preset--color--black: #000000;
+
+    /* Este es el fondo del 3 cuadro */
+    --wp--preset--color--primary: #EFD7FA;
+
+    --wp--preset--color--secondary: #EE4266;
+
+    /* Este es el fondo del 4 cuadro */
+    --wp--preset--color--background: #f3efea;
+    --wp--preset--color--foreground: #f2f2f2;
+
+    /* Este es el fondo del 2 cuadro */
+    --wp--preset--color--foreground-light: #FBFBFB;
+}
+</style>
+
 
 <style id='jetpack-global-styles-frontend-style-inline-css'>
     :root {
@@ -310,7 +287,6 @@
 
         <x-Navegacion/>
 
-
         <div id="content" class="site-content">
             <section id="primary" class="content-area">
                 <main id="main" class="site-main">
@@ -333,14 +309,14 @@
                                     <x-Cuadricula/>
                                 </div>
                             </div>
-                            <div
-                                class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex">
-                                <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"
-                                    style="flex-basis: 100%">
-                                    <h1 class="margin-bottom-half wp-block-heading" style ="color: #784F96;">
-                                        Consultorio de Medicina Alternativa y Spa Integral</h1>
-                                    <p class="margin-top-half" style= "color:  #784F96;">Av. Estado de México 433,
-                                        Santiaguito, 52140 Metepec, Méx.</p>
+                                <div style="display: flex; justify-content: center; width: 100%;">
+                                <div style="text-align: center;">
+                                    <h1 class="margin-bottom-half wp-block-heading" style="color: #784F96;">
+                                        Consultorio de Medicina Alternativa y Spa Integral
+                                    </h1>
+                                    <p class="margin-top-half" style="color: #784F96;">
+                                        Av. Estado de México 433, Santiaguito, 52140 Metepec, Méx.
+                                    </p>
                                 </div>
                             </div>
                             <div class="wp-block-group alignfull has-foreground-light-background-color has-background">
