@@ -106,20 +106,19 @@
 
         @media (max-width: 768px) {
             #toggle-menu {
-                display: inline-block !important; /* Mostrar en dispositivos móviles */
+                display: inline-block !important;
             }
         }
     </style>
 </head>
 <body>
 <header id="masthead" class="site-header responsive-max-width has-title-and-tagline has-menu" role="banner">
-    <div class="site-branding">
-        <p class="site-title">
-            <a href="{{ route('welcome') }}" rel="home">
-                <img src="{{ asset('img/brand/FONDO-1.png') }}" alt="Merrash Logo" /> Merrash
-            </a>
-        </p>
-    </div>
+            <div style="text-align: center;">
+                <!-- .cambio de fondo izquierdo merrash-->
+                <a href="{{ route('welcome') }}" rel="home" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 30px; color: #7D47C1; display: inline-block;">
+                    <img src="img/brand/FONDO-1.png" alt="Merrash Logo" style="vertical-align: middle; width: 90px; transform: translateX(-80px);" />
+                </a>
+            </div>
     <!-- .site-branding -->
     <nav id="site-navigation" class="main-navigation" aria-label="Main Navigation">
         <input type="checkbox" role="button" aria-haspopup="true" id="toggle"  class="hide-visually">
@@ -134,7 +133,7 @@
                 <li class="menu-item">
                     <a href="{{ route('welcome') }}"
                        onmouseover="this.style.color='#85CC36';"
-                       onmouseout="if (!this.classList.contains('selected')) { this.style.color='#7D47C1'; }"
+                       onmouseout="if (!this.classList.contains('selected')) { this.style.color='#784F96'; }"
                        onclick="this.style.color='#85CC36'; this.classList.add('selected');">
                         Inicio
                     </a>
@@ -142,7 +141,7 @@
                 <li class="menu-item">
                     <a href="{{ route('about') }}"
                        onmouseover="this.style.color='#85CC36';"
-                       onmouseout="if (!this.classList.contains('selected')) { this.style.color='#7D47C1'; }"
+                       onmouseout="if (!this.classList.contains('selected')) { this.style.color='#784F96'; }"
                        onclick="this.style.color='#85CC36'; this.classList.add('selected');">
                         Acerca De Nosotros
                     </a>
@@ -150,7 +149,7 @@
                 <li class="menu-item">
                     <a href="{{ route('services.available') }}"
                        onmouseover="this.style.color='#85CC36';"
-                       onmouseout="if (!this.classList.contains('selected')) { this.style.color='#7D47C1'; }"
+                       onmouseout="if (!this.classList.contains('selected')) { this.style.color='#784F96'; }"
                        onclick="this.style.color='#85CC36'; this.classList.add('selected');">
                         Servicios
                     </a>
@@ -158,7 +157,7 @@
                 <li class="menu-item">
                     <a href="{{ route('contacto') }}"
                        onmouseover="this.style.color='#85CC36';"
-                       onmouseout="if (!this.classList.contains('selected')) { this.style.color='#7D47C1'; }"
+                       onmouseout="if (!this.classList.contains('selected')) { this.style.color='#784F96'; }"
                        onclick="this.style.color='#85CC36'; this.classList.add('selected');">
                         Testimonios
                     </a>
@@ -166,7 +165,7 @@
                 <li class="menu-item">
                     <a href="{{ route('contacto') }}"
                        onmouseover="this.style.color='#85CC36';"
-                       onmouseout="if (!this.classList.contains('selected')) { this.style.color='#7D47C1'; }"
+                       onmouseout="if (!this.classList.contains('selected')) { this.style.color='#784F96'; }"
                        onclick="this.style.color='#85CC36'; this.classList.add('selected');">
                         Contacto
                     </a>
@@ -174,7 +173,7 @@
                 <li class="menu-item">
                     <a href="{{ route('login') }}"
                        onmouseover="this.style.color='#85CC36';"
-                       onmouseout="if (!this.classList.contains('selected')) { this.style.color='#7D47C1'; }"
+                       onmouseout="if (!this.classList.contains('selected')) { this.style.color='#784F96'; }"
                        onclick="this.style.color='#85CC36'; this.classList.add('selected');">
                         Iniciar Sesión
                     </a>
