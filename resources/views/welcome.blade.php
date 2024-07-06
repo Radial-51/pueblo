@@ -339,13 +339,17 @@
         --wp--preset--color--vivid-cyan-blue: #0693e3;
 
         --wp--preset--color--vivid-purple: #FBFBFB;
+        
+        /* Este es el fondo del 3 cuadro  */
         --wp--preset--color--primary: #EFD7FA;
-        ;
+        
         --wp--preset--color--secondary: #EE4266;
 
-        --wp--preset--color--background: #FBFBFB;
+        /* Este es el fondo del 4 cuadro  */
+        --wp--preset--color--background: #f3efea;
         --wp--preset--color--foreground: #f2f2f2;
-        --wp--preset--color--foreground-light: #ffffff;
+        /* Este es el fondo del 2 cuadro  */
+        --wp--preset--color--foreground-light: #FBFBFB;
         --wp--preset--color--foreground-dark: #8F8F8F;
         --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
         --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
@@ -1317,7 +1321,7 @@
                         </li>
 
                         <li class="menu-item-20">
-                            <a href="{{ route('login.index') }}"
+                            <a href="{{ route('login') }}"
                                 class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
                                 style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
                                 onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
