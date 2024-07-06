@@ -353,7 +353,7 @@
                                 </div>
                             </div>
                             <div class="wp-block-cover alignfull has-background-dim-50 has-primary-background-color has-background-dim"
-                                style="background-image:url('img/brand/10.jpg');background-position:50% 50%;background-size: cover;background-color:rgba(133, 204, 54, 0.7);">
+                                 style="background-image:url('img/brand/10.jpg');background-position:50% 50%;background-size: cover;background-color: #EFD7FA;">
                                 <div
                                     class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
                                     <div style="height:64px" aria-hidden="true" class="wp-block-spacer"></div>
