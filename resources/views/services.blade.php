@@ -12,6 +12,9 @@
         <link rel='dns-prefetch' href='//wordpress.com'/>
         <link rel="alternate" type="application/rss+xml" title="Mirrash &raquo; Feed" href="https://merrash-prubeas-production.up.railway.app/"/>
         <link rel="alternate" type="application/rss+xml" title="Mirrash &raquo; Comments Feed" href="https://merrash-prubeas-production.up.railway.app/"/>
+        <link rel="shortcut icon" type="image/x-icon" href="/img/brand/Spa-1.jpg" sizes="16x16 24x24 32x32 48x48"/>
+        <link rel="icon" type="image/x-icon" href="/img/brand/Spa-1.jpg" sizes="16x16 24x24 32x32 48x48"/>
+        <link rel="apple-touch-icon" href="/img/brand/Spa-1.jpg"/>
         <script type="text/javascript">
             /* <![CDATA[ */
             function addLoadEvent(func) {
@@ -1331,10 +1334,12 @@
                     <main id="main" class="site-main">
                         <article id="post-6" class="post-6 page type-page status-publish hentry entry">
                             <header class="entry-header responsive-max-width">
-                                <h1 class="entry-title">Servicios</h1>
+                                <h1 class="entry-title" style="color: #784F96 ">Servicios</h1>
                             </header>
                             <div class="entry-content">
-                                <p style="text-align:left">Ofrecemos una variedad de servicios diseñados para ayudarte a alcanzar los resultados que buscas. ¿No estás seguro de lo que necesitas o de cuánto cuesta? Podemos explicarte qué servicios son los más adecuados para ti y darte más información sobre nuestras tarifas. Ponte en contacto con nosotros a continuación.</p>
+                                <p style="text-align:left; color: #000000 ">Ofrecemos una variedad de servicios diseñados para ayudarte a alcanzar los resultados que buscas.
+                                     ¿No estás seguro de lo que necesitas o de cuánto cuesta? Podemos explicarte qué servicios son los más adecuados para ti y darte más información sobre nuestras tarifas. 
+                                     Ponte en contacto con nosotros a continuación.</p>
                                 <div style="height:32px" aria-hidden="true" class="wp-block-spacer desktop-only"></div>
                                 <hr class="wp-block-separator is-style-wide"/>
                                 <div class="wp-block-columns alignwide wp-block-columns-is-layout-flex" style="display: flex; flex-wrap: wrap;">
