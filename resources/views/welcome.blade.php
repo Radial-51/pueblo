@@ -16,8 +16,6 @@
         href="https://merrash-prubeas-production.up.railway.app/" />
     <link rel="alternate" type="application/rss+xml" title="Merrash &raquo; Comments Feed"
         href="https://merrash-prubeas-production.up.railway.app/" />
-          <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
 
