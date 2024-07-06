@@ -1259,16 +1259,9 @@
         <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
         <header id="masthead" class="site-header responsive-max-width has-title-and-tagline has-menu"
             role="banner">
-            <div class="site-branding">
-                <p class="site-title">
-                    <a href="{{ route('welcome') }}" rel="home"
-                        style="font-family: Cambria, Cochin, Georgia,
-                         Times, 'Times New Roman', serif; font-size: 30px; 
-                         color: #784F96;">
-                        <img src="img/brand/FONDO-1.png" alt="Merrash Logo"
-                            style="vertical-align: middle; margin-right: 10px; width: 50px;" /> Merrash
-                    </a>
-                </p>
+            <div style="text-align: center;">
+                <!-- .cambio de fondo izquierdo merrash-->
+                <img src="img/brand/FONDO-1.png" alt="Merrash Logo" style="vertical-align: middle; width: 90px; transform: translateX(-80px);" />
             </div>
             <!-- .site-branding -->
             <nav id="site-navigation" class="main-navigation" aria-label="Main Navigation">
