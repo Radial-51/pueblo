@@ -16,6 +16,8 @@
         href="https://radial51.wordpress.com/feed/" />
     <link rel="alternate" type="application/rss+xml" title="Site Title &raquo; Comments Feed"
         href="https://radial51.wordpress.com/comments/feed/" />
+        <!-- Bootstrap Icons CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
     <script type="text/javascript">
         /* <![CDATA[ */
         function addLoadEvent(func) {
@@ -247,59 +249,17 @@
             padding: 1.25em 2.375em
         }
     </style>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            box-sizing: border-box;
-        }
-
-        .btn-wsp {
-            position: fixed;
-            width: 55px;
-            height: 55px;
-            line-height: 55px;
-            bottom: 30px;
-            right: 30px;
-            background: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 35px;
-            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-            z-index: 100;
-            transition: all 300ms ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-        }
-
-        .btn-wsp i {
-            margin-left: 5px;
-        }
-
-        .btn-wsp:hover {
-            background: #20ba5a;
-        }
-
-        @media only screen and (min-width: 320px) and (max-width: 768px) {
-            .btn-wsp {
-                width: 63px;
-                height: 63px;
-                line-height: 66px;
-                right: 20px;
-            }
-        }
-    </style>
+    
 </head>
 
 <body>
-
-    <a href="https://wa.me/7224958550?text=Hola%20quisiera%20más%20información" class="btn-wsp" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/128/15707/15707820.png" alt="WhatsApp icon">
-    </a>
+    <div style="position: fixed; top: 95%; right: 5%; transform: translateY(-100%); z-index: 1000; text-align: center; padding: 5px; border-radius: 50%;">
+        <a class="btn btn-dark btn-social mx-2" 
+           style="background-color: rgb(102, 224, 64); color: rgb(78, 253, 9); text-decoration: none; display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; border-radius: 50%; box-shadow: 0px 4px 8px rgb(78, 253, 9); border: 2px solid rgb(102, 224, 64);"
+           href="https://api.whatsapp.com/send?phone=7224958550&text=Me%20gustaría%20saber%20más%20sobre%20los%20servicios." aria-label="WhatsApp" target="_blank">
+           <i class="bi bi-whatsapp" style="color:rgb(255, 255, 255); font-size: 18px;"></i> <!-- Tamaño ajustado -->
+        </a>
+    </div>
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
@@ -1357,8 +1317,8 @@
                                     class='wp-block-jetpack-contact-form-container'>
                                     <form id='contact-form' method='post' class='contact-form commentsblock'
                                         aria-label="Contact" novalidate onsubmit="sendToWhatsApp(event)">
-                                        <center>
-                                            <div class='grunion-field-name-wrap grunion-field-wrap'>
+                                        
+                                        <div style="text-align: center;">
                                                 <label for='g7-name' class='grunion-field-label name'>
                                                     Nombre<span class="grunion-label-required"
                                                         aria-hidden="true">(requerido)</span>
@@ -1367,10 +1327,7 @@
                                                     style='width: 300px;' class='name grunion-field' required
                                                     aria-required='true' />
                                             </div>
-                                            <center />
-
-                                            <center>
-                                                <div class='grunion-field-email-wrap grunion-field-wrap'>
+                                            <div style="text-align: center;">
                                                     <label for='g7-email' class='grunion-field-label email'>
                                                         Email<span class="grunion-label-required"
                                                             aria-hidden="true">(requerido)</span>
@@ -1379,10 +1336,7 @@
                                                         value='' style='width: 300px;'
                                                         class='email grunion-field' required aria-required='true' />
                                                 </div>
-                                                <center />
-
-                                                <center>
-                                                    <div class='grunion-field-phone-wrap grunion-field-wrap'>
+                                                <div style="text-align: center;">
                                                         <label for='g7-phone' class='grunion-field-label phone'>
                                                             Teléfono<span class="grunion-label-required"
                                                                 aria-hidden="true">(requerido)</span>
@@ -1392,10 +1346,7 @@
                                                             class='phone grunion-field' required
                                                             aria-required='true' />
                                                     </div>
-                                                    <center />
-
-                                                    <center>
-                                                        <div class='grunion-field-textarea-wrap grunion-field-wrap'>
+                                                    <div style="text-align: center;">
                                                             <label for='contact-form-comment-g7-message'
                                                                 class='grunion-field-label textarea'>
                                                                 Servicio<span class="grunion-label-required"
@@ -1404,8 +1355,6 @@
                                                             <textarea name='g7-message' id='contact-form-comment-g7-message' rows='10' class='textarea grunion-field'
                                                                 required aria-required='true'></textarea>
                                                         </div>
-                                                        <center />
-
                                                         <p class='contact-submit' style="text-align: center;">
                                                             <button type="submit" class="pushbutton-wide">
                                                                 Enviar
