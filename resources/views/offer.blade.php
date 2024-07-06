@@ -10,6 +10,8 @@
         <link rel='dns-prefetch' href='//wordpress.com'/>
         <link rel="alternate" type="application/rss+xml" title="Merrash &raquo; Feed" href="https://merrash-prubeas-production.up.railway.app/"/>
         <link rel="alternate" type="application/rss+xml" title="Merrash &raquo; Comments Feed" href="https://merrash-prubeas-production.up.railway.app/"/>
+         <!-- Bootstrap Icons CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
         <script type="text/javascript">
             /* <![CDATA[ */
             function addLoadEvent(func) {
@@ -980,6 +982,10 @@
                 --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
                 --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
             }
+                body {
+        background-color: #fbfbfb;
+        /* Cambia esto al color que desees */
+    }
         </style>
         <link crossorigin='anonymous' rel='stylesheet' id='all-css-16-1' href='https://s0.wp.com/wp-content/themes/h4/global.css?m=1420737423i&cssminify=yes' type='text/css' media='all'/>
         <script type="text/javascript" id="notes-common-lite-js-extra">
@@ -1189,10 +1195,9 @@
         <div id="page" class="site">
             <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
             <header id="masthead" class="site-header responsive-max-width has-title-and-tagline has-menu" role="banner">
-                <div class="site-branding">
-                    <p class="site-title">
-                        <a href="{{ route('welcome') }}" rel="home">Merrash</a>
-                    </p>
+                <div style="text-align: center;">
+                    <!-- .cambio de fondo izquierdo merrash-->
+                    <img src="img/brand/FONDO-1.png" alt="Merrash Logo" style="vertical-align: middle; width: 90px; transform: translateX(-80px);" />
                 </div>
                 <!-- .site-branding -->
                 <nav id="site-navigation" class="main-navigation" aria-label="Main Navigation">
