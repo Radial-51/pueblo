@@ -1217,12 +1217,12 @@
                         <span class="hide-visually collapsed-text">collapsed</span>
                     </label>
                     <div class="main-menu-container">
-                        <ul id="menu-primary-menu" class="main-menu" aria-label="submenu">
+                                                <ul id="menu-primary-menu" class="main-menu" aria-label="submenu">
                         
                             <li id="menu-item-16" class="mx-6">
                                 <a href="{{ route('welcome') }}"
                                    class="font-semibold py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                  style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
+                                  style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
                                    onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                    onmouseout="if (!this.classList.contains('selected')) { this.style.color=getComputedStyle(this).getPropertyValue('--link-color'); }"
                                    onclick="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color'); this.classList.add('selected');">
@@ -1233,7 +1233,7 @@
                             <li id="menu-item-16" class="mx-6">
                                 <a href="{{ route('about') }}"
                                    class="font-semibold py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                  style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
+                                  style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
                                    onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                    onmouseout="if (!this.classList.contains('selected')) { this.style.color=getComputedStyle(this).getPropertyValue('--link-color'); }"
                                    onclick="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color'); this.classList.add('selected');">
@@ -1255,7 +1255,7 @@
                             <li id="menu-item-20" class="mx-6">
                                 <a href="{{ route('contacto') }}"
                                    class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
+                                   style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
                                    onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                    onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
                                    Testimonios
@@ -1266,7 +1266,7 @@
                             <li id="menu-item-19" class="mx-6">
                                 <a href="{{ route('contacto') }}"
                                    class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                    style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
+                                    style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
                                    onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                    onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
                                    Contacto
@@ -1274,9 +1274,9 @@
                             </li>
                             
                             <li class="menu-item-20">
-                                <a href="{{ route('login') }}"
+                                <a href="{{ route('login.index') }}"
                                    class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
+                                   style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
                                    onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                    onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
                                    Iniciar Sesión
