@@ -5,9 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="profile" href="https://gmpg.org/xfn/11"/>
         <title>Servicio a la comunidad</title>
-        <link rel="shortcut icon" type="image/x-icon" href="/img/brand/Spa-1.jpg" sizes="16x16 24x24 32x32 48x48"/>
-        <link rel="icon" type="image/x-icon" href="/img/brand/Spa-1.jpg" sizes="16x16 24x24 32x32 48x48"/>
-        <link rel="apple-touch-icon" href="/img/brand/Spa-1.jpg"/> 
         <meta name='robots' content='noindex, nofollow'/>
         <link rel='dns-prefetch' href='//s0.wp.com'/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-QwknQOGv/O6v29oygmlvxoOaGpTogOO7M3hpPqLnF5gLtWSr9xR90GXTvBSl59TVfjHxGSdL8nzYdLtReFrfzA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,11 +12,7 @@
         <link rel='dns-prefetch' href='//wordpress.com'/>
         <link rel="alternate" type="application/rss+xml" title="Mirrash &raquo; Feed" href="https://merrash-prubeas-production.up.railway.app/"/>
         <link rel="alternate" type="application/rss+xml" title="Mirrash &raquo; Comments Feed" href="https://merrash-prubeas-production.up.railway.app/"/>
-            <!-- Bootstrap Icons CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
         <script type="text/javascript">
-                <!-- Bootstrap Icons CSS -->
-                <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
             /* <![CDATA[ */
             function addLoadEvent(func) {
                 var oldonload = window.onload;
@@ -176,8 +169,7 @@
                 padding: 0 !important;
             }
         </style>
-        <link crossorigin='anonymous' rel='stylesheet' id='all-css-4-1' 
-        href='https://s0.wp.com/_static/??-eJylzEEOQDAQQNEL0VGNYCHOojWpMko6LXF7jStY/vzkwX2W5vARfYSTknWewaacGoPNJyBcshNKVKCToxk0HWYryekwhQc4PoTCMBfwD4oL7h807oNsZaO6uq/69QUlZjhb&cssminify=yes' type='text/css' media='all'/>
+        <link crossorigin='anonymous' rel='stylesheet' id='all-css-4-1' href='https://s0.wp.com/_static/??-eJylzEEOQDAQQNEL0VGNYCHOojWpMko6LXF7jStY/vzkwX2W5vARfYSTknWewaacGoPNJyBcshNKVKCToxk0HWYryekwhQc4PoTCMBfwD4oL7h807oNsZaO6uq/69QUlZjhb&cssminify=yes' type='text/css' media='all'/>
         <style id='wp-block-library-inline-css'>
             .has-text-align-justify {
                 text-align: justify;
@@ -187,14 +179,6 @@
                 background-size: cover;
             }
         </style>
-
-        <div style="position: fixed; top: 95%; right: 5%; transform: translateY(-100%); z-index: 1000; text-align: center; padding: 5px; border-radius: 50%;">
-        <a class="btn btn-dark btn-social mx-2" 
-           style="background-color: rgb(102, 224, 64); color: rgb(78, 253, 9); text-decoration: none; display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; border-radius: 50%; box-shadow: 0px 4px 8px rgb(78, 253, 9); border: 2px solid rgb(102, 224, 64);"
-           href="https://api.whatsapp.com/send?phone=7224958550&text=Me%20gustaría%20saber%20más%20sobre%20los%20servicios." aria-label="WhatsApp" target="_blank">
-           <i class="bi bi-whatsapp" style="color:rgb(255, 255, 255); font-size: 18px;"></i> <!-- Tamaño ajustado -->
-        </a>
-    </div>
         <link crossorigin='anonymous' rel='stylesheet' id='all-css-6-1' href='https://s0.wp.com/_static/??-eJzTLy/QzcxLzilNSS3WzyrWz01NyUxMzUnNTc0rQeEU5CRWphbp5qSmJyZX6uVm5uklFxfr6OPTDpRD5sM02efaGpoZmFkYGRuZGmQBAHPvL0Y=&cssminify=yes' type='text/css' media='all'/>
         <style id='jetpack-sharing-buttons-style-inline-css'>
             .jetpack-sharing-buttons__services-list {
@@ -999,10 +983,6 @@
                 --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
                 --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
             }
-            body {
-                background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255)); 
-               color: rgb(0, 0, 0); 
-          }
         </style>
         <link crossorigin='anonymous' rel='stylesheet' id='all-css-16-1' href='https://s0.wp.com/wp-content/themes/h4/global.css?m=1420737423i&cssminify=yes' type='text/css' media='all'/>
         <script type="text/javascript" id="notes-common-lite-js-extra">
@@ -1199,12 +1179,11 @@
         <div id="page" class="site">
             <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
             <header id="masthead" class="site-header responsive-max-width has-title-and-tagline has-menu" role="banner">
-                <div style="text-align: center;">
-                <!-- .cambio de fondo izquierdo merrash-->
-                <a href="{{ route('welcome') }}" rel="home" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 30px; color: #7D47C1; display: inline-block;">
-                    <img src="img/brand/FONDO-1.png" alt="Merrash Logo" style="vertical-align: middle; width: 90px; transform: translateX(-80px);" />
-                </a>
-            </div>
+                <div class="site-branding">
+                    <p class="site-title">
+                        <a href="{{ route('welcome') }}" rel="home">Merrash</a>
+                    </p>
+                </div>
                 <!-- .site-branding -->
                 <nav id="site-navigation" class="main-navigation" aria-label="Main Navigation">
                     <input type="checkbox" role="button" aria-haspopup="true" id="toggle" class="hide-visually">
@@ -1217,72 +1196,71 @@
                     <div class="main-menu-container">
                         <ul id="menu-primary-menu" class="main-menu" aria-label="submenu">
                         
-                        <li class="mx-6">
-                            <a class="site-name"
-                               href="{{ route('welcome') }}"
-                               class="font-semibold py-3 px-4 rounded-md text-black transition-colors duration-300"
-                               style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96; display: flex; align-items: center;"
-                               onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
-                               onmouseout="if (!this.classList.contains('selected')) { this.style.color=getComputedStyle(this).getPropertyValue('--link-color'); }"
-                               onclick="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color'); this.classList.add('selected');">
-                               Inicio
-                            </a>
-                        </li>
-                        
+                            <li class="mx-6">
+                                <a class="site-name"
+                                   href="{{ route('welcome') }}"
+                                   class="font-semibold py-3 px-4 rounded-md text-black transition-colors duration-300"
+                                   style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
+                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
+                                   onmouseout="if (!this.classList.contains('selected')) { this.style.color=getComputedStyle(this).getPropertyValue('--link-color'); }"
+                                   onclick="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color'); this.classList.add('selected');">
+                                   Inicio
+                                </a>
+                            </li>
+                            
+                            <li id="menu-item-17" class="mx-6">
+                                <a href="{{ route('services.available') }}"
+                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
+                                   style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
+                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
+                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
+                                   Servicios
+                                </a>
+                            </li>
 
-                        <li id="menu-item-16" class="mx-6">
-                        <a href="{{ route('about') }}"
-                            class="font-semibold py-3 px-4 rounded-md text-black transition-colors duration-300"
-                            style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
-                            onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
-                            onmouseout="if (!this.classList.contains('selected')) { this.style.color=getComputedStyle(this).getPropertyValue('--link-color'); }"
-                            onclick="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color'); this.classList.add('selected');">
-                            Acerca De Nosotros
-                        </a>
-                    </li>
+                            <li id="menu-item-16" class="mx-6">
+                                <a href="{{ route('about') }}"
+                                   class="font-semibold py-3 px-4 rounded-md text-black transition-colors duration-300"
+                                   style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
+                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
+                                   onmouseout="if (!this.classList.contains('selected')) { this.style.color=getComputedStyle(this).getPropertyValue('--link-color'); }"
+                                   onclick="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color'); this.classList.add('selected');">
+                                   Acerca De Nosotros
+                                </a>
+                            </li>
+                            
+                            
+                            <li id="menu-item-20" class="mx-6">
+                                <a href="{{ route('contacto') }}"
+                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
+                                   style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
+                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
+                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
+                                   Testimonios
+                                </a>
+                            </li>
+                            
                         
-                        <li id="menu-item-17" class="mx-6">
-                            <a href="{{ route('services.available') }}"
-                               class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                               style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
-                               onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
-                               onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
-                               Servicios
-                            </a>
-                        </li>
-                        
-                        
-                        <li id="menu-item-20" class="mx-6">
-                            <a href="{{ route('contacto') }}"
-                               class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                               style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
-                               onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
-                               onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
-                               Testimonios
-                            </a>
-                        </li>
-                        
-                    
-                        <li id="menu-item-19" class="mx-6">
-                            <a href="{{ route('contacto') }}"
-                               class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
-                               onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
-                               onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
-                               Contacto
-                            </a>
-                        </li>
-                        
-                        <li class="menu-item-20">
-                            <a href="{{ route('login') }}"
-                               class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                               style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
-                               onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
-                               onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
-                               Iniciar Sesión
-                            </a>
-                        </li>
-                    </ul>
+                            <li id="menu-item-19" class="mx-6">
+                                <a href="{{ route('contacto') }}"
+                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
+                                    style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
+                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
+                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
+                                   Contacto
+                                </a>
+                            </li>
+                            
+                            <li class="menu-item-20">
+                                <a href="{{ route('login') }}"
+                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
+                                   style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
+                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
+                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
+                                   Iniciar Sesión
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
                 <!-- #site-navigation -->
@@ -1293,13 +1271,10 @@
                     <main id="main" class="site-main">
                         <article id="post-6" class="post-6 page type-page status-publish hentry entry">
                             <header class="entry-header responsive-max-width">
-                                <h1 class="entry-title" style="color: #784F96">Servicio a la Comunidad de Merrash</h1>
+                                <h1 class="entry-title">Servicio a la Comunidad de Merrash</h1>
                             </header>
                             <div class="entry-content">
-                                <p style="text-align:left">En Merrash, estamos comprometidos con el bienestar de nuestra comunidad. Ofrecemos sesiones gratuitas para ciertos clientes que padecen diversas condiciones de salud
-                                     Nuestro objetivo es brindarte el apoyo necesario para mejorar tu calidad de vida. 
-                                     ¿No estás seguro de los servicios que necesitas o si calificas para una sesión gratuita? Contáctanos y con gusto te orientaremos sobre los servicios más adecuados 
-                                     para ti y cómo puedes beneficiarte de nuestras iniciativas comunitarias. Ponte en contacto con nosotros a continuación.</p>
+                                <p style="text-align:left">En Merrash, estamos comprometidos con el bienestar de nuestra comunidad. Ofrecemos sesiones gratuitas para ciertos clientes que padecen diversas condiciones de salud. Nuestro objetivo es brindarte el apoyo necesario para mejorar tu calidad de vida. ¿No estás seguro de los servicios que necesitas o si calificas para una sesión gratuita? Contáctanos y con gusto te orientaremos sobre los servicios más adecuados para ti y cómo puedes beneficiarte de nuestras iniciativas comunitarias. Ponte en contacto con nosotros a continuación.</p>
                                 <div style="height:32px" aria-hidden="true" class="wp-block-spacer desktop-only"></div>
                                 <hr class="wp-block-separator is-style-wide"/>
                                 <div class="wp-block-columns alignwide has-3-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex" style="display: flex; flex-wrap: wrap;">
@@ -1324,17 +1299,19 @@
                                         </div>
                                     @endforeach
                                 </div>
-                                <div style="height:32px; display: flex; justify-content: center;" aria-hidden="true" class="wp-block-spacer desktop-only"></div>
+                                
+                                
+                                
+                                <div style="height:32px" aria-hidden="true" class="wp-block-spacer desktop-only"></div>
                                 <hr class="wp-block-separator is-style-wide"/>
                                 <div style="height:32px" aria-hidden="true" class="wp-block-spacer desktop-only"></div>
-                                <h2 class="has-text-align-center wp-block-heading" style="color: #784F96 ">Conoce nuestras ofertas disponibles</h2>
-                                <div style="display: flex; justify-content: center;">
-                                    <div class="wp-block-button">
-                                        <a style="background-color: #784F96; color: white; padding: 10px 20px; text-align: center;" class="wp-block-button__link" href="{{ route('offer') }}">Ofertas</a>
-                                    </div>
+                                <h2 class="has-text-align-center wp-block-heading">Conoce nuestas ofertas disponibles</h2>
+                                <div class="wp-block-button aligncenter">
+                                    <a class="wp-block-button__link" href="{{ route('offer') }}">Ofertas</a>
                                 </div>
                                 <div style="height:32px" aria-hidden="true" class="wp-block-spacer desktop-only"></div>
                                 <hr class="wp-block-separator is-style-wide"/>
+                            </div>
                             <!-- .entry-footer -->
                         </article>
                         <!-- #post-6 -->
@@ -1349,45 +1326,23 @@
                     <div class="menu-social-menu-container">
                         <ul id="menu-social-menu" class="social-links-menu">
                             <li id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20">
-                                <a href="https://www.facebook.com/MerrashSpayMedicinaAlternativa" 
-                                style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
-                                onmouseover="this.style.color = this.style.getPropertyValue('--link-hover-color');"
-                                onmouseout="this.style.color = this.style.getPropertyValue('--link-color');">
+                                <a href="https://www.facebook.com/WordPresscom/">
                                     <span class="screen-reader-text">Facebook</span>
                                     <svg class="svg-icon" width="26" height="26" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <path d="M20.007,3H3.993C3.445,3,3,3.445,3,3.993v16.013C3,20.555,3.445,21,3.993,21h8.621v-6.971h-2.346v-2.717h2.346V9.31 c0-2.325,1.42-3.591,3.494-3.591c0.993,0,1.847,0.074,2.096,0.107v2.43l-1.438,0.001c-1.128,0-1.346,0.536-1.346,1.323v1.734h2.69 l-0.35,2.717h-2.34V21h4.587C20.555,21,21,20.555,21,20.007V3.993C21,3.445,20.555,3,20.007,3z"></path>
                                     </svg>
                                 </a>
                             </li>
-
                             <li id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21">
-                                <a href="https://www.youtube.com"
-                                style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
-                                onmouseover="this.style.color = this.style.getPropertyValue('--link-hover-color');"
-                                onmouseout="this.style.color = this.style.getPropertyValue('--link-color');">
-                                    <span class="screen-reader-text">YouTube</span>
-                                    <svg class="svg-icon" width="26" height="26" aria-hidden="true" role="img" focusable="false" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/>
+                                <a href="https://twitter.com/wordpressdotcom">
+                                    <span class="screen-reader-text">Twitter</span>
+                                    <svg class="svg-icon" width="26" height="26" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path d="M22.23,5.924c-0.736,0.326-1.527,0.547-2.357,0.646c0.847-0.508,1.498-1.312,1.804-2.27 c-0.793,0.47-1.671,0.812-2.606,0.996C18.324,4.498,17.257,4,16.077,4c-2.266,0-4.103,1.837-4.103,4.103 c0,0.322,0.036,0.635,0.106,0.935C8.67,8.867,5.647,7.234,3.623,4.751C3.27,5.357,3.067,6.062,3.067,6.814 c0,1.424,0.724,2.679,1.825,3.415c-0.673-0.021-1.305-0.206-1.859-0.513c0,0.017,0,0.034,0,0.052c0,1.988,1.414,3.647,3.292,4.023 c-0.344,0.094-0.707,0.144-1.081,0.144c-0.264,0-0.521-0.026-0.772-0.074c0.522,1.63,2.038,2.816,3.833,2.85 c-1.404,1.1-3.174,1.756-5.096,1.756c-0.331,0-0.658-0.019-0.979-0.057c1.816,1.164,3.973,1.843,6.29,1.843 c7.547,0,11.675-6.252,11.675-11.675c0-0.178-0.004-0.355-0.012-0.531C20.985,7.47,21.68,6.747,22.23,5.924z"></path>
                                     </svg>
                                 </a>
                             </li>
-                            
-                            <li id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21">
-                                <a href="https://www.tiktok.com"
-                                   style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
-                                   onmouseover="this.style.color = this.style.getPropertyValue('--link-hover-color');"
-                                   onmouseout="this.style.color = this.style.getPropertyValue('--link-color');">
-                                    <svg class="svg-icon" width="26" height="26" aria-hidden="true" role="img" focusable="false" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/>
-                                    </svg>
-                                </a>
-                            </li>
-
                             <li id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22">
-                                <a href="https://www.instagram.com/merrashyspaintegraldebelleza/" 
-                                style="--link-color: #000; --link-hover-color: #85CC36; color: #000;"
-                                onmouseover="this.style.color = this.style.getPropertyValue('--link-hover-color');"
-                                onmouseout="this.style.color = this.style.getPropertyValue('--link-color');">
+                                <a href="https://www.instagram.com/wordpressdotcom/">
                                     <span class="screen-reader-text">Instagram</span>
                                     <svg class="svg-icon" width="26" height="26" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <path d="M12,4.622c2.403,0,2.688,0.009,3.637,0.052c0.877,0.04,1.354,0.187,1.671,0.31c0.42,0.163,0.72,0.358,1.035,0.673 c0.315,0.315,0.51,0.615,0.673,1.035c0.123,0.317,0.27,0.794,0.31,1.671c0.043,0.949,0.052,1.234,0.052,3.637 s-0.009,2.688-0.052,3.637c-0.04,0.877-0.187,1.354-0.31,1.671c-0.163,0.42-0.358,0.72-0.673,1.035 c-0.315,0.315-0.615,0.51-1.035,0.673c-0.317,0.123-0.794,0.27-1.671,0.31c-0.949,0.043-1.233,0.052-3.637,0.052 s-2.688-0.009-3.637-0.052c-0.877-0.04-1.354-0.187-1.671-0.31c-0.42-0.163-0.72-0.358-1.035-0.673 c-0.315-0.315-0.51-0.615-0.673-1.035c-0.123-0.317-0.27-0.794-0.31-1.671C4.631,14.688,4.622,14.403,4.622,12 s0.009-2.688,0.052-3.637c0.04-0.877,0.187-1.354,0.31-1.671c0.163-0.42,0.358-0.72,0.673-1.035 c0.315-0.315,0.615-0.51,1.035-0.673c0.317-0.123,0.794-0.27,1.671-0.31C9.312,4.631,9.597,4.622,12,4.622 M12,3 C9.556,3,9.249,3.01,8.289,3.054C7.331,3.098,6.677,3.25,6.105,3.472C5.513,3.702,5.011,4.01,4.511,4.511 c-0.5,0.5-0.808,1.002-1.038,1.594C3.25,6.677,3.098,7.331,3.054,8.289C3.01,9.249,3,9.556,3,12c0,2.444,0.01,2.751,0.054,3.711 c0.044,0.958,0.196,1.612,0.418,2.185c0.23,0.592,0.538,1.094,1.038,1.594c0.5,0.5,1.002,0.808,1.594,1.038 c0.572,0.222,1.227,0.375,2.185,0.418C9.249,20.99,9.556,21,12,21s2.751-0.01,3.711-0.054c0.958-0.044,1.612-0.196,2.185-0.418 c0.592-0.23,1.094-0.538,1.594-1.038c0.5-0.5,0.808-1.002,1.038-1.594c0.222-0.572,0.375-1.227,0.418-2.185 C20.99,14.751,21,14.444,21,12s-0.01-2.751-0.054-3.711c-0.044-0.958-0.196-1.612-0.418-2.185c-0.23-0.592-0.538-1.094-1.038-1.594 c-0.5-0.5-1.002-0.808-1.594-1.038c-0.572-0.222-1.227-0.375-2.185-0.418C14.751,3.01,14.444,3,12,3L12,3z M12,7.378 c-2.552,0-4.622,2.069-4.622,4.622S9.448,16.622,12,16.622s4.622-2.069,4.622-4.622S14.552,7.378,12,7.378z M12,15 c-1.657,0-3-1.343-3-3s1.343-3,3-3s3,1.343,3,3S13.657,15,12,15z M16.804,6.116c-0.596,0-1.08,0.484-1.08,1.08 s0.484,1.08,1.08,1.08c0.596,0,1.08-0.484,1.08-1.08S17.401,6.116,16.804,6.116z"></path>
@@ -1399,9 +1354,9 @@
                 </nav>
                 <!-- .social-navigation -->
                 <div class="site-info">
-                    <a class="site-name" href="{{ route('welcome') }}" rel="home" style="color: #000000;">Copyright ©</a>
+                    <a class="site-name" href="{{ route('welcome') }}" rel="home">Merrash</a>
                     <span class="comma">,</span>
-                    <a href="https://wordpress.com/?ref=footer_website" rel="nofollow" style="color: #000000;">Merrash 2024</a>
+                    <a href="https://wordpress.com/?ref=footer_blog" rel="nofollow">Blog at WordPress.com.</a>
                 </div>
                 <!-- .site-info -->
             </footer>

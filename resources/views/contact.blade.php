@@ -290,13 +290,11 @@
 <style id='wpcom-admin-bar-inline-css'>
     @media screen {
         html {
-            margin-top: 32px !important;
         }
     }
 
     @media screen and (max-width: 782px) {
         html {
-            margin-top: 46px !important;
         }
     }
 
@@ -1125,7 +1123,7 @@
     content="Let&#039;s talk 👋 Don&#039;t hesitate to reach out with the contact information below, or send a message using the form. Get in Touch 10 Street RoadCity, 10100USA mail@example.com (555) 555 1234 Open Hours Send Us a Message" />
 </head>
 
-<body style="margin-top: -40px;"
+<body"
     class="page-template-default page page-id-7 logged-in admin-bar no-customize-support wp-embed-responsive customizer-styles-applied singular image-filters-enabled hide-homepage-title mobile-nav-side jetpack-reblog-enabled has-launch-banner">
     <script type="text/javascript">
         function hideBubble() {
@@ -1214,91 +1212,7 @@
         })();
     </script>
     <div id="page" class="site">
-
-        <header id="masthead" class="site-header responsive-max-width has-title-and-tagline has-menu"
-            role="banner">
-            <!-- .site-branding -->
-            <nav id="site-navigation" class="main-navigation" aria-label="Main Navigation">
-                <input type="checkbox" role="button" aria-haspopup="true" id="toggle" class="hide-visually">
-                <label for="toggle" id="toggle-menu" class="button">
-                    Menu <span class="dropdown-icon open"></span>
-                </label>
-                <div class="main-menu-container">
-                    <ul id="menu-primary-menu" class="main-menu" aria-label="submenu">
-
-                                                   <li class="mx-6">
-                                <a class="site-name"
-                                   href="{{ route('welcome') }}"
-                                   class="font-semibold py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96; display: flex; align-items: center;"
-                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
-                                   onmouseout="if (!this.classList.contains('selected')) { this.style.color=getComputedStyle(this).getPropertyValue('--link-color'); }"
-                                   onclick="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color'); this.classList.add('selected');">
-                                   
-                                   Inicio
-                                </a>
-                            </li>
-                            
-
-                            <li id="menu-item-16" class="mx-6">
-                            <a href="{{ route('about') }}"
-                                class="font-semibold py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
-                                onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
-                                onmouseout="if (!this.classList.contains('selected')) { this.style.color=getComputedStyle(this).getPropertyValue('--link-color'); }"
-                                onclick="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color'); this.classList.add('selected');">
-                               
-                                Acerca De Nosotros
-                            </a>
-                        </li>
-                            
-                            <li id="menu-item-17" class="mx-6">
-                                <a href="{{ route('services.available') }}"
-                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
-                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
-                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
-                                   
-                                   Servicios
-                                </a>
-                            </li>
-                            
-                            
-                            <li id="menu-item-20" class="mx-6">
-                                <a href="{{ route('contacto') }}"
-                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
-                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
-                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
-                                   Testimonios
-                                </a>
-                            </li>
-                            
-                        
-                            <li id="menu-item-19" class="mx-6">
-                                <a href="{{ route('contacto') }}"
-                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                    style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
-                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
-                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
-                                   Contacto
-                                </a>
-                            </li>
-                            
-                            <li class="menu-item-20">
-                                <a href="{{ route('login') }}"
-                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
-                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
-                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
-                                   Iniciar Sesión
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </nav>
-            <!-- #site-navigation -->
-        </header>
+        <x-navegacion/>
         <div id="content" class="site-content">
             <section id="primary" class="content-area">
                 <main id="main" class="site-main">

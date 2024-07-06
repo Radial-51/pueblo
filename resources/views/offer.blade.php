@@ -10,8 +10,6 @@
         <link rel='dns-prefetch' href='//wordpress.com'/>
         <link rel="alternate" type="application/rss+xml" title="Merrash &raquo; Feed" href="https://merrash-prubeas-production.up.railway.app/"/>
         <link rel="alternate" type="application/rss+xml" title="Merrash &raquo; Comments Feed" href="https://merrash-prubeas-production.up.railway.app/"/>
-         <!-- Bootstrap Icons CSS -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
         <script type="text/javascript">
             /* <![CDATA[ */
             function addLoadEvent(func) {
@@ -243,13 +241,11 @@
         <style id='wpcom-admin-bar-inline-css'>
             @media screen {
                 html {
-                    margin-top: 32px !important;
                 }
             }
 
             @media screen and ( max-width: 782px ) {
                 html {
-                    margin-top: 46px !important;
                 }
             }
 
@@ -280,698 +276,6 @@
                 }
             }
         </style>
-        <style id='global-styles-inline-css'>
-            :root {
-                --wp--preset--color--black: #000000;
-                --wp--preset--color--cyan-bluish-gray: #abb8c3;
-                --wp--preset--color--white: #ffffff;
-                --wp--preset--color--pale-pink: #f78da7;
-                --wp--preset--color--vivid-red: #cf2e2e;
-                --wp--preset--color--luminous-vivid-orange: #ff6900;
-                --wp--preset--color--luminous-vivid-amber: #fcb900;
-                --wp--preset--color--light-green-cyan: #7bdcb5;
-                --wp--preset--color--vivid-green-cyan: #00d084;
-                --wp--preset--color--pale-cyan-blue: #8ed1fc;
-                --wp--preset--color--vivid-cyan-blue: #0693e3;
-                --wp--preset--color--vivid-purple: #9b51e0;
-                --wp--preset--color--primary: #CAAB57;
-                --wp--preset--color--secondary: #EE4266;
-                --wp--preset--color--background: #060f29;
-                --wp--preset--color--foreground: #F2F2F2;
-                --wp--preset--color--foreground-light: #FFFFFF;
-                --wp--preset--color--foreground-dark: #8F8F8F;
-                --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);
-                --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);
-                --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);
-                --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);
-                --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);
-                --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);
-                --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);
-                --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);
-                --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);
-                --wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);
-                --wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);
-                --wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
-                --wp--preset--font-size--small: 13px;
-                --wp--preset--font-size--medium: 20px;
-                --wp--preset--font-size--large: 36px;
-                --wp--preset--font-size--x-large: 42px;
-                --wp--preset--font-size--normal: 18px;
-                --wp--preset--font-size--huge: 35.15px;
-                --wp--preset--font-family--albert-sans: 'Albert Sans', sans-serif;
-                --wp--preset--font-family--alegreya: Alegreya, serif;
-                --wp--preset--font-family--arvo: Arvo, serif;
-                --wp--preset--font-family--bodoni-moda: 'Bodoni Moda', serif;
-                --wp--preset--font-family--bricolage-grotesque: 'Bricolage Grotesque', sans-serif;
-                --wp--preset--font-family--cabin: Cabin, sans-serif;
-                --wp--preset--font-family--chivo: Chivo, sans-serif;
-                --wp--preset--font-family--commissioner: Commissioner, sans-serif;
-                --wp--preset--font-family--cormorant: Cormorant, serif;
-                --wp--preset--font-family--courier-prime: 'Courier Prime', monospace;
-                --wp--preset--font-family--crimson-pro: 'Crimson Pro', serif;
-                --wp--preset--font-family--dm-mono: 'DM Mono', monospace;
-                --wp--preset--font-family--dm-sans: 'DM Sans', sans-serif;
-                --wp--preset--font-family--dm-serif-display: 'DM Serif Display', serif;
-                --wp--preset--font-family--domine: Domine, serif;
-                --wp--preset--font-family--eb-garamond: 'EB Garamond', serif;
-                --wp--preset--font-family--epilogue: Epilogue, sans-serif;
-                --wp--preset--font-family--fahkwang: Fahkwang, sans-serif;
-                --wp--preset--font-family--figtree: Figtree, sans-serif;
-                --wp--preset--font-family--fira-sans: 'Fira Sans', sans-serif;
-                --wp--preset--font-family--fjalla-one: 'Fjalla One', sans-serif;
-                --wp--preset--font-family--fraunces: Fraunces, serif;
-                --wp--preset--font-family--gabarito: Gabarito, system-ui;
-                --wp--preset--font-family--ibm-plex-mono: 'IBM Plex Mono', monospace;
-                --wp--preset--font-family--ibm-plex-sans: 'IBM Plex Sans', sans-serif;
-                --wp--preset--font-family--ibarra-real-nova: 'Ibarra Real Nova', serif;
-                --wp--preset--font-family--instrument-serif: 'Instrument Serif', serif;
-                --wp--preset--font-family--inter: Inter, sans-serif;
-                --wp--preset--font-family--josefin-sans: 'Josefin Sans', sans-serif;
-                --wp--preset--font-family--jost: Jost, sans-serif;
-                --wp--preset--font-family--libre-baskerville: 'Libre Baskerville', serif;
-                --wp--preset--font-family--libre-franklin: 'Libre Franklin', sans-serif;
-                --wp--preset--font-family--literata: Literata, serif;
-                --wp--preset--font-family--lora: Lora, serif;
-                --wp--preset--font-family--merriweather: Merriweather, serif;
-                --wp--preset--font-family--montserrat: Montserrat, sans-serif;
-                --wp--preset--font-family--newsreader: Newsreader, serif;
-                --wp--preset--font-family--noto-sans-mono: 'Noto Sans Mono', sans-serif;
-                --wp--preset--font-family--nunito: Nunito, sans-serif;
-                --wp--preset--font-family--open-sans: 'Open Sans', sans-serif;
-                --wp--preset--font-family--overpass: Overpass, sans-serif;
-                --wp--preset--font-family--pt-serif: 'PT Serif', serif;
-                --wp--preset--font-family--petrona: Petrona, serif;
-                --wp--preset--font-family--piazzolla: Piazzolla, serif;
-                --wp--preset--font-family--playfair-display: 'Playfair Display', serif;
-                --wp--preset--font-family--plus-jakarta-sans: 'Plus Jakarta Sans', sans-serif;
-                --wp--preset--font-family--poppins: Poppins, sans-serif;
-                --wp--preset--font-family--raleway: Raleway, sans-serif;
-                --wp--preset--font-family--roboto: Roboto, sans-serif;
-                --wp--preset--font-family--roboto-slab: 'Roboto Slab', serif;
-                --wp--preset--font-family--rubik: Rubik, sans-serif;
-                --wp--preset--font-family--rufina: Rufina, serif;
-                --wp--preset--font-family--sora: Sora, sans-serif;
-                --wp--preset--font-family--source-sans-3: 'Source Sans 3', sans-serif;
-                --wp--preset--font-family--source-serif-4: 'Source Serif 4', serif;
-                --wp--preset--font-family--space-mono: 'Space Mono', monospace;
-                --wp--preset--font-family--syne: Syne, sans-serif;
-                --wp--preset--font-family--texturina: Texturina, serif;
-                --wp--preset--font-family--urbanist: Urbanist, sans-serif;
-                --wp--preset--font-family--work-sans: 'Work Sans', sans-serif;
-                --wp--preset--spacing--20: 0.44rem;
-                --wp--preset--spacing--30: 0.67rem;
-                --wp--preset--spacing--40: 1rem;
-                --wp--preset--spacing--50: 1.5rem;
-                --wp--preset--spacing--60: 2.25rem;
-                --wp--preset--spacing--70: 3.38rem;
-                --wp--preset--spacing--80: 5.06rem;
-                --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
-                --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
-                --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
-                --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
-                --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
-            }
-
-            :where(.is-layout-flow) > :first-child {
-                margin-block-start: 0;}
-
-            :where(.is-layout-flow) > :last-child {
-                margin-block-end: 0;}
-
-            :where(.is-layout-flow) > * {
-                margin-block-start: 24px;margin-block-end: 0;}
-
-            :where(.is-layout-constrained) > :first-child {
-                margin-block-start: 0;}
-
-            :where(.is-layout-constrained) > :last-child {
-                margin-block-end: 0;}
-
-            :where(.is-layout-constrained) > * {
-                margin-block-start: 24px;margin-block-end: 0;}
-
-            :where(.is-layout-flex) {
-                gap: 24px;
-            }
-
-            :where(.is-layout-grid) {
-                gap: 24px;
-            }
-
-            body .is-layout-flex {
-                display: flex;
-            }
-
-            .is-layout-flex {
-                flex-wrap: wrap;
-                align-items: center;
-            }
-
-            .is-layout-flex > :is(*, div) {
-                margin: 0;
-            }
-
-            body .is-layout-grid {
-                display: grid;
-            }
-
-            .is-layout-grid > :is(*, div) {
-                margin: 0;
-            }
-
-            .has-black-color {
-                color: var(--wp--preset--color--black) !important;
-            }
-
-            .has-cyan-bluish-gray-color {
-                color: var(--wp--preset--color--cyan-bluish-gray) !important;
-            }
-
-            .has-white-color {
-                color: var(--wp--preset--color--white) !important;
-            }
-
-            .has-pale-pink-color {
-                color: var(--wp--preset--color--pale-pink) !important;
-            }
-
-            .has-vivid-red-color {
-                color: var(--wp--preset--color--vivid-red) !important;
-            }
-
-            .has-luminous-vivid-orange-color {
-                color: var(--wp--preset--color--luminous-vivid-orange) !important;
-            }
-
-            .has-luminous-vivid-amber-color {
-                color: var(--wp--preset--color--luminous-vivid-amber) !important;
-            }
-
-            .has-light-green-cyan-color {
-                color: var(--wp--preset--color--light-green-cyan) !important;
-            }
-
-            .has-vivid-green-cyan-color {
-                color: var(--wp--preset--color--vivid-green-cyan) !important;
-            }
-
-            .has-pale-cyan-blue-color {
-                color: var(--wp--preset--color--pale-cyan-blue) !important;
-            }
-
-            .has-vivid-cyan-blue-color {
-                color: var(--wp--preset--color--vivid-cyan-blue) !important;
-            }
-
-            .has-vivid-purple-color {
-                color: var(--wp--preset--color--vivid-purple) !important;
-            }
-
-            .has-primary-color {
-                color: var(--wp--preset--color--primary) !important;
-            }
-
-            .has-secondary-color {
-                color: var(--wp--preset--color--secondary) !important;
-            }
-
-            .has-background-color {
-                color: var(--wp--preset--color--background) !important;
-            }
-
-            .has-foreground-color {
-                color: var(--wp--preset--color--foreground) !important;
-            }
-
-            .has-foreground-light-color {
-                color: var(--wp--preset--color--foreground-light) !important;
-            }
-
-            .has-foreground-dark-color {
-                color: var(--wp--preset--color--foreground-dark) !important;
-            }
-
-            .has-black-background-color {
-                background-color: var(--wp--preset--color--black) !important;
-            }
-
-            .has-cyan-bluish-gray-background-color {
-                background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
-            }
-
-            .has-white-background-color {
-                background-color: var(--wp--preset--color--white) !important;
-            }
-
-            .has-pale-pink-background-color {
-                background-color: var(--wp--preset--color--pale-pink) !important;
-            }
-
-            .has-vivid-red-background-color {
-                background-color: var(--wp--preset--color--vivid-red) !important;
-            }
-
-            .has-luminous-vivid-orange-background-color {
-                background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
-            }
-
-            .has-luminous-vivid-amber-background-color {
-                background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
-            }
-
-            .has-light-green-cyan-background-color {
-                background-color: var(--wp--preset--color--light-green-cyan) !important;
-            }
-
-            .has-vivid-green-cyan-background-color {
-                background-color: var(--wp--preset--color--vivid-green-cyan) !important;
-            }
-
-            .has-pale-cyan-blue-background-color {
-                background-color: var(--wp--preset--color--pale-cyan-blue) !important;
-            }
-
-            .has-vivid-cyan-blue-background-color {
-                background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
-            }
-
-            .has-vivid-purple-background-color {
-                background-color: var(--wp--preset--color--vivid-purple) !important;
-            }
-
-            .has-primary-background-color {
-                background-color: var(--wp--preset--color--primary) !important;
-            }
-
-            .has-secondary-background-color {
-                background-color: var(--wp--preset--color--secondary) !important;
-            }
-
-            .has-background-background-color {
-                background-color: var(--wp--preset--color--background) !important;
-            }
-
-            .has-foreground-background-color {
-                background-color: var(--wp--preset--color--foreground) !important;
-            }
-
-            .has-foreground-light-background-color {
-                background-color: var(--wp--preset--color--foreground-light) !important;
-            }
-
-            .has-foreground-dark-background-color {
-                background-color: var(--wp--preset--color--foreground-dark) !important;
-            }
-
-            .has-black-border-color {
-                border-color: var(--wp--preset--color--black) !important;
-            }
-
-            .has-cyan-bluish-gray-border-color {
-                border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
-            }
-
-            .has-white-border-color {
-                border-color: var(--wp--preset--color--white) !important;
-            }
-
-            .has-pale-pink-border-color {
-                border-color: var(--wp--preset--color--pale-pink) !important;
-            }
-
-            .has-vivid-red-border-color {
-                border-color: var(--wp--preset--color--vivid-red) !important;
-            }
-
-            .has-luminous-vivid-orange-border-color {
-                border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
-            }
-
-            .has-luminous-vivid-amber-border-color {
-                border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
-            }
-
-            .has-light-green-cyan-border-color {
-                border-color: var(--wp--preset--color--light-green-cyan) !important;
-            }
-
-            .has-vivid-green-cyan-border-color {
-                border-color: var(--wp--preset--color--vivid-green-cyan) !important;
-            }
-
-            .has-pale-cyan-blue-border-color {
-                border-color: var(--wp--preset--color--pale-cyan-blue) !important;
-            }
-
-            .has-vivid-cyan-blue-border-color {
-                border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
-            }
-
-            .has-vivid-purple-border-color {
-                border-color: var(--wp--preset--color--vivid-purple) !important;
-            }
-
-            .has-primary-border-color {
-                border-color: var(--wp--preset--color--primary) !important;
-            }
-
-            .has-secondary-border-color {
-                border-color: var(--wp--preset--color--secondary) !important;
-            }
-
-            .has-background-border-color {
-                border-color: var(--wp--preset--color--background) !important;
-            }
-
-            .has-foreground-border-color {
-                border-color: var(--wp--preset--color--foreground) !important;
-            }
-
-            .has-foreground-light-border-color {
-                border-color: var(--wp--preset--color--foreground-light) !important;
-            }
-
-            .has-foreground-dark-border-color {
-                border-color: var(--wp--preset--color--foreground-dark) !important;
-            }
-
-            .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
-                background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
-            }
-
-            .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
-                background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
-            }
-
-            .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
-                background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
-            }
-
-            .has-luminous-vivid-orange-to-vivid-red-gradient-background {
-                background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
-            }
-
-            .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
-                background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
-            }
-
-            .has-cool-to-warm-spectrum-gradient-background {
-                background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
-            }
-
-            .has-blush-light-purple-gradient-background {
-                background: var(--wp--preset--gradient--blush-light-purple) !important;
-            }
-
-            .has-blush-bordeaux-gradient-background {
-                background: var(--wp--preset--gradient--blush-bordeaux) !important;
-            }
-
-            .has-luminous-dusk-gradient-background {
-                background: var(--wp--preset--gradient--luminous-dusk) !important;
-            }
-
-            .has-pale-ocean-gradient-background {
-                background: var(--wp--preset--gradient--pale-ocean) !important;
-            }
-
-            .has-electric-grass-gradient-background {
-                background: var(--wp--preset--gradient--electric-grass) !important;
-            }
-
-            .has-midnight-gradient-background {
-                background: var(--wp--preset--gradient--midnight) !important;
-            }
-
-            .has-small-font-size {
-                font-size: var(--wp--preset--font-size--small) !important;
-            }
-
-            .has-medium-font-size {
-                font-size: var(--wp--preset--font-size--medium) !important;
-            }
-
-            .has-large-font-size {
-                font-size: var(--wp--preset--font-size--large) !important;
-            }
-
-            .has-x-large-font-size {
-                font-size: var(--wp--preset--font-size--x-large) !important;
-            }
-
-            .has-normal-font-size {
-                font-size: var(--wp--preset--font-size--normal) !important;
-            }
-
-            .has-huge-font-size {
-                font-size: var(--wp--preset--font-size--huge) !important;
-            }
-
-            .has-albert-sans-font-family {
-                font-family: var(--wp--preset--font-family--albert-sans) !important;
-            }
-
-            .has-alegreya-font-family {
-                font-family: var(--wp--preset--font-family--alegreya) !important;
-            }
-
-            .has-arvo-font-family {
-                font-family: var(--wp--preset--font-family--arvo) !important;
-            }
-
-            .has-bodoni-moda-font-family {
-                font-family: var(--wp--preset--font-family--bodoni-moda) !important;
-            }
-
-            .has-bricolage-grotesque-font-family {
-                font-family: var(--wp--preset--font-family--bricolage-grotesque) !important;
-            }
-
-            .has-cabin-font-family {
-                font-family: var(--wp--preset--font-family--cabin) !important;
-            }
-
-            .has-chivo-font-family {
-                font-family: var(--wp--preset--font-family--chivo) !important;
-            }
-
-            .has-commissioner-font-family {
-                font-family: var(--wp--preset--font-family--commissioner) !important;
-            }
-
-            .has-cormorant-font-family {
-                font-family: var(--wp--preset--font-family--cormorant) !important;
-            }
-
-            .has-courier-prime-font-family {
-                font-family: var(--wp--preset--font-family--courier-prime) !important;
-            }
-
-            .has-crimson-pro-font-family {
-                font-family: var(--wp--preset--font-family--crimson-pro) !important;
-            }
-
-            .has-dm-mono-font-family {
-                font-family: var(--wp--preset--font-family--dm-mono) !important;
-            }
-
-            .has-dm-sans-font-family {
-                font-family: var(--wp--preset--font-family--dm-sans) !important;
-            }
-
-            .has-dm-serif-display-font-family {
-                font-family: var(--wp--preset--font-family--dm-serif-display) !important;
-            }
-
-            .has-domine-font-family {
-                font-family: var(--wp--preset--font-family--domine) !important;
-            }
-
-            .has-eb-garamond-font-family {
-                font-family: var(--wp--preset--font-family--eb-garamond) !important;
-            }
-
-            .has-epilogue-font-family {
-                font-family: var(--wp--preset--font-family--epilogue) !important;
-            }
-
-            .has-fahkwang-font-family {
-                font-family: var(--wp--preset--font-family--fahkwang) !important;
-            }
-
-            .has-figtree-font-family {
-                font-family: var(--wp--preset--font-family--figtree) !important;
-            }
-
-            .has-fira-sans-font-family {
-                font-family: var(--wp--preset--font-family--fira-sans) !important;
-            }
-
-            .has-fjalla-one-font-family {
-                font-family: var(--wp--preset--font-family--fjalla-one) !important;
-            }
-
-            .has-fraunces-font-family {
-                font-family: var(--wp--preset--font-family--fraunces) !important;
-            }
-
-            .has-gabarito-font-family {
-                font-family: var(--wp--preset--font-family--gabarito) !important;
-            }
-
-            .has-ibm-plex-mono-font-family {
-                font-family: var(--wp--preset--font-family--ibm-plex-mono) !important;
-            }
-
-            .has-ibm-plex-sans-font-family {
-                font-family: var(--wp--preset--font-family--ibm-plex-sans) !important;
-            }
-
-            .has-ibarra-real-nova-font-family {
-                font-family: var(--wp--preset--font-family--ibarra-real-nova) !important;
-            }
-
-            .has-instrument-serif-font-family {
-                font-family: var(--wp--preset--font-family--instrument-serif) !important;
-            }
-
-            .has-inter-font-family {
-                font-family: var(--wp--preset--font-family--inter) !important;
-            }
-
-            .has-josefin-sans-font-family {
-                font-family: var(--wp--preset--font-family--josefin-sans) !important;
-            }
-
-            .has-jost-font-family {
-                font-family: var(--wp--preset--font-family--jost) !important;
-            }
-
-            .has-libre-baskerville-font-family {
-                font-family: var(--wp--preset--font-family--libre-baskerville) !important;
-            }
-
-            .has-libre-franklin-font-family {
-                font-family: var(--wp--preset--font-family--libre-franklin) !important;
-            }
-
-            .has-literata-font-family {
-                font-family: var(--wp--preset--font-family--literata) !important;
-            }
-
-            .has-lora-font-family {
-                font-family: var(--wp--preset--font-family--lora) !important;
-            }
-
-            .has-merriweather-font-family {
-                font-family: var(--wp--preset--font-family--merriweather) !important;
-            }
-
-            .has-montserrat-font-family {
-                font-family: var(--wp--preset--font-family--montserrat) !important;
-            }
-
-            .has-newsreader-font-family {
-                font-family: var(--wp--preset--font-family--newsreader) !important;
-            }
-
-            .has-noto-sans-mono-font-family {
-                font-family: var(--wp--preset--font-family--noto-sans-mono) !important;
-            }
-
-            .has-nunito-font-family {
-                font-family: var(--wp--preset--font-family--nunito) !important;
-            }
-
-            .has-open-sans-font-family {
-                font-family: var(--wp--preset--font-family--open-sans) !important;
-            }
-
-            .has-overpass-font-family {
-                font-family: var(--wp--preset--font-family--overpass) !important;
-            }
-
-            .has-pt-serif-font-family {
-                font-family: var(--wp--preset--font-family--pt-serif) !important;
-            }
-
-            .has-petrona-font-family {
-                font-family: var(--wp--preset--font-family--petrona) !important;
-            }
-
-            .has-piazzolla-font-family {
-                font-family: var(--wp--preset--font-family--piazzolla) !important;
-            }
-
-            .has-playfair-display-font-family {
-                font-family: var(--wp--preset--font-family--playfair-display) !important;
-            }
-
-            .has-plus-jakarta-sans-font-family {
-                font-family: var(--wp--preset--font-family--plus-jakarta-sans) !important;
-            }
-
-            .has-poppins-font-family {
-                font-family: var(--wp--preset--font-family--poppins) !important;
-            }
-
-            .has-raleway-font-family {
-                font-family: var(--wp--preset--font-family--raleway) !important;
-            }
-
-            .has-roboto-font-family {
-                font-family: var(--wp--preset--font-family--roboto) !important;
-            }
-
-            .has-roboto-slab-font-family {
-                font-family: var(--wp--preset--font-family--roboto-slab) !important;
-            }
-
-            .has-rubik-font-family {
-                font-family: var(--wp--preset--font-family--rubik) !important;
-            }
-
-            .has-rufina-font-family {
-                font-family: var(--wp--preset--font-family--rufina) !important;
-            }
-
-            .has-sora-font-family {
-                font-family: var(--wp--preset--font-family--sora) !important;
-            }
-
-            .has-source-sans-3-font-family {
-                font-family: var(--wp--preset--font-family--source-sans-3) !important;
-            }
-
-            .has-source-serif-4-font-family {
-                font-family: var(--wp--preset--font-family--source-serif-4) !important;
-            }
-
-            .has-space-mono-font-family {
-                font-family: var(--wp--preset--font-family--space-mono) !important;
-            }
-
-            .has-syne-font-family {
-                font-family: var(--wp--preset--font-family--syne) !important;
-            }
-
-            .has-texturina-font-family {
-                font-family: var(--wp--preset--font-family--texturina) !important;
-            }
-
-            .has-urbanist-font-family {
-                font-family: var(--wp--preset--font-family--urbanist) !important;
-            }
-
-            .has-work-sans-font-family {
-                font-family: var(--wp--preset--font-family--work-sans) !important;
-            }
-
-            :where(.wp-block-pullquote) {
-                font-size: 1.5em;
-                line-height: 1.6;
-            }
-        </style>
         <link crossorigin='anonymous' rel='stylesheet' id='all-css-12-1' href='https://s0.wp.com/wp-content/mu-plugins/comment-likes/css/comment-likes.css?m=1407378799i&cssminify=yes' type='text/css' media='all'/>
         <link crossorigin='anonymous' rel='stylesheet' id='print-css-13-1' href='https://s0.wp.com/wp-content/themes/pub/varia/print.css?m=1571655471i&cssminify=yes' type='text/css' media='print'/>
         <link crossorigin='anonymous' rel='stylesheet' id='all-css-14-1' href='https://s0.wp.com/_static/??-eJyFj+EKwjAMhF/IGlaU/RKfpauxRtq0pNmGb2+HMAbK/JcL311yMBfjMyuygj4wYYUyDiA0EQfNDFVfEY++1gP8Ricn5IDYf1AzF5/TlyGNpsQxEFcImE3M3im1+K0w9+hI9qyctV11t0RsBidmsnu04BBzaGOARm3kXp1/zTf56x+QXFWU5aM8oQjdWti6WyKu6dL1ne3OJ2v75xv+tYt+&cssminify=yes' type='text/css' media='all'/>
@@ -982,10 +286,11 @@
                 --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
                 --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
             }
-                body {
-        background-color: #fbfbfb;
-        /* Cambia esto al color que desees */
-    }
+            /* Añadir el color de fondo */
+            body {
+                background-color: #fbfbfb;
+                /* Cambia esto al color que desees */
+            }
         </style>
         <link crossorigin='anonymous' rel='stylesheet' id='all-css-16-1' href='https://s0.wp.com/wp-content/themes/h4/global.css?m=1420737423i&cssminify=yes' type='text/css' media='all'/>
         <script type="text/javascript" id="notes-common-lite-js-extra">
@@ -999,26 +304,8 @@
             };
             /* ]]> */
         </script>
-        <script type="text/javascript" id="media-video-jwt-bridge-js-extra">
-            /* <![CDATA[ */
-            var videopressAjax = {
-                "ajaxUrl": "https:\/\/radial51.wordpress.com\/wp-admin\/admin-ajax.php",
-                "bridgeUrl": "\/wp-content\/mu-plugins\/jetpack-plugin\/sun\/jetpack_vendor\/automattic\/jetpack-videopress\/build\/lib\/token-bridge.js",
-                "post_id": "6"
-            };
-            /* ]]> */
-        </script>
-        <script crossorigin='anonymous' type='text/javascript' src='https://s0.wp.com/_static/??-eJyFjcEOwjAMQ3+IEg1pMA6IT0HdGqZsbVK16YC/p4eBBAe4WLL9LMMtmkFYkRWmDEF68mhKxmTHmhniq2ynvIFPLnk1Mcn98d2FYqIvI3EGFsVVax2CsPGkuA3Ef1fWVcr0Npll9wOeUKMd5tVDLvyKLguykwS2qASrSsMbXsihxIQ5Q1/IO/DUg8qM9TCRG7EensOpOTRt13bHfTs9AVG4bRA='></script>
-        <script type="text/javascript" id="rlt-proxy-js-after">
-            /* <![CDATA[ */
-            window.addEventListener('DOMContentLoaded', function() {
-                rltInitialize({
-                    "token": "rlt-MnxIUVpyOWNvVVpwenIwbitiVXBvSFRnZ3puK051YzN2bk00cE9hZE5XdGowc0s4MVpwU3N3bFoxMG8weGpJU2prNEJQNER3ZEhyazVNc2hyMkltQ2NZM1kwRHBPOWVkZVIvUmJpN3FrdDFnZytpZUFDMkp5eFNNVDk2RXVGQlNYSlhyVklId3NrUm43MzFuQ3BLaTRsL3dLZ3FHY0dFOWJ1RUkrc0RlMk1kd0VrTkhYT1h4VjFTU0M3d0lweXVFY09lWVRTdlZ5Nys4d1dOd1lTQkp0R3ZuQmFZaGJCWlM2aXdUMXRXQTVOM2RqdzQ0VUlhUjlUbFI5TVZjc1FGaE9LRlVNazZWWkk4UHNQOVhVVmdtM0phRUd2WjNYbDJsZ2VoMkZuZ1d5ampsZz18OGJmNDJmN2VjNzdjZDNkYzYxNTRhNTUxYjg3YjU3NjkwY2I4Njk5MzczNGY1NzM0fDI1YjVlOTFjNTA4MTFmYWRiYjViNGE2M2JhNTM4MTk1YjQwZTIwZDE2MDEyM2Q4NmIyMzBlNjM4MzYwNDU3ODc0OTJkZDdlYTEzYTU4YzQ3M2NmN2ZkYjJjMmQ0MmViMmZjY2FjNjhjMmUwZGNiMzJjMTY2MDg4ZDM5NTRlMmVi",
-                    "iframeOrigins": ["https:\/\/widgets.wp.com"]
-                });
-            });
-            /* ]]> */
-        </script>
+
+
         <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://radial51.wordpress.com/xmlrpc.php?rsd"/>
         <meta name="generator" content="WordPress.com"/>
         <link rel="canonical" href="{{ route('services.available') }}"/>
@@ -1050,77 +337,64 @@
         <meta name="msapplication-tooltip" content="Author posts, manage comments, and manage Site Title."/>
         <meta name="description" content="Ofrecemos una variedad de servicios diseñados para ayudarte a alcanzar los resultados que buscas. ¿No estás seguro de lo que necesitas o de cuánto cuesta? Podemos explicarte qué servicios son los más adecuados para ti y darte más información sobre nuestras tarifas. Ponte en contacto con nosotros a continuación. Interior Design A short description of your company and the services you&hellip;"/>
     </head>
-    <body style="margin-top: -30px;" class="page-template-default page page-id-6 logged-in admin-bar no-customize-support wp-embed-responsive customizer-styles-applied singular image-filters-enabled hide-homepage-title mobile-nav-side jetpack-reblog-enabled has-launch-banner">
-        <script type="text/javascript">
-            /* <![CDATA[ */
-            (function() {
-                function init() {
-                    document.addEventListener('load', function() {
-                        // hack to hide the gravatar hovercard
-                        document.querySelectorAll('#wpadminbar img.grav-hashed').forEach(function(el) {
-                            el.classList.remove('grav-hashed');
-                        });
-                    })
-
-                    // debug bar extra
-                    window.clickDebugLink = function(parentId, obj) {
-                        if (!window.jQuery) {
-                            return;
-                        }
-                        var $ = window.jQuery;
-
-                        $('#' + parentId).children('div').hide();
-
-                        document.getElementById(obj.href.substr(obj.href.indexOf('#') + 1)).style.display = 'block';
-                        $(obj.href.substr(obj.href.indexOf('#'))).show()
-
-                        $(obj).parent().addClass('current').siblings('li').removeClass('current');
-
-                        return false;
-                    }
-                    ;
-                }
-
-                if (document.readyState !== 'loading') {
-                    init();
-                } else {
-                    document.addEventListener('DOMContentLoaded', init);
-                }
-            }
-            )();
-            /* ]]> */
-        </script>        </style>
+    <body class="page-template-default page page-id-6 logged-in admin-bar no-customize-support wp-embed-responsive customizer-styles-applied singular image-filters-enabled hide-homepage-title mobile-nav-side jetpack-reblog-enabled has-launch-banner">
+                </style>
+                        <style>
+                            * {
+                                margin: 0;
+                                padding: 0;
+                                border: 0;
+                                box-sizing: border-box;
+                            }
+                        
+                            .btn-wsp {
+                                position: fixed;
+                                width: 55px;
+                                height: 55px;
+                                line-height: 55px;
+                                bottom: 30px;
+                                right: 30px; 
+                                background: #25d366;
+                                color: #FFF;
+                                border-radius: 50px;
+                                text-align: center;
+                                font-size: 35px;
+                                box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+                                z-index: 100;
+                                transition: all 300ms ease;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                text-decoration: none; 
+                            }
+                        
+                            .btn-wsp i {
+                                margin-left: 5px; 
+                            }
+                        
+                            .btn-wsp:hover {
+                                background: #20ba5a;
+                            }
+                        
+                            @media only screen and (min-width: 320px) and (max-width: 768px) {
+                                .btn-wsp {
+                                    width: 63px;
+                                    height: 63px;
+                                    line-height: 66px; 
+                                    right: 20px; 
+                                    
+                                }
+                            }
+                        </style>
                         </head>
                         <body>
-                              <div style="position: fixed; top: 95%; right: 5%; transform: translateY(-100%); z-index: 1000; text-align: center; padding: 5px; border-radius: 50%;">
-                                <a class="btn btn-dark btn-social mx-2" 
-                                   style="background-color: rgb(102, 224, 64); color: rgb(78, 253, 9); text-decoration: none; display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; border-radius: 50%; box-shadow: 0px 4px 8px rgb(78, 253, 9); border: 2px solid rgb(102, 224, 64);"
-                                   href="https://api.whatsapp.com/send?phone=7224958550&text=Me%20gustaría%20saber%20más%20sobre%20los%20servicios." aria-label="WhatsApp" target="_blank">
-                                   <i class="bi bi-whatsapp" style="color:rgb(255, 255, 255); font-size: 18px;"></i> <!-- Tamaño ajustado -->
-                                </a>
-                            </div>
+                        
+                            <a href="https://wa.me/7224958550?text=Hola%20quisiera%20más%20información" class="btn-wsp" target="_blank">
+                                <img src="https://cdn-icons-png.flaticon.com/128/15707/15707820.png" alt="WhatsApp icon">
+                            </a>
                         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
                         
                         </body>
-
-        <div class="wpcom-bubble action-bubble">
-            <div class="bubble-txt"></div>
-        </div>
-        <script type="text/javascript">
-            function hideBubble() {
-                var bubble = document.querySelector('div.wpcom-bubble');
-                if (!bubble) {
-                    return;
-                }
-                bubble.parentElement.removeChild(bubble);
-
-                bubble = document.createElement('div');
-                bubble.classList.add('wpcom-bubble');
-                bubble.classList.add('action-bubble');
-                bubble.innerHTML = '<div class="bubble-txt"></div>';
-                document.body.appendChild(bubble);
-            }
-        </script>
         <script type="text/javascript">
             (function() {
                 'use strict';
@@ -1194,99 +468,13 @@
         </script>
         <div id="page" class="site">
             <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-            <header id="masthead" class="site-header responsive-max-width has-title-and-tagline has-menu" role="banner">
-                <div style="text-align: center;">
-                    <!-- .cambio de fondo izquierdo merrash-->
-                    <img src="img/brand/FONDO-1.png" alt="Merrash Logo" style="vertical-align: middle; width: 90px; transform: translateX(-80px);" />
-                </div>
-                <!-- .site-branding -->
-                <nav id="site-navigation" class="main-navigation" aria-label="Main Navigation">
-                    <input type="checkbox" role="button" aria-haspopup="true" id="toggle" class="hide-visually">
-                    <label for="toggle" id="toggle-menu" class="button">
-                        Menu			<span class="dropdown-icon open">+</span>
-                        <span class="dropdown-icon close">&times;</span>
-                        <span class="hide-visually expanded-text">expanded</span>
-                        <span class="hide-visually collapsed-text">collapsed</span>
-                    </label>
-                    <div class="main-menu-container">
-                                               <ul id="menu-primary-menu" class="main-menu" aria-label="submenu">
-                        
-                            <li class="mx-6">
-                                <a class="site-name"
-                                   href="{{ route('welcome') }}"
-                                   class="font-semibold py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                    style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
-                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
-                                   onmouseout="if (!this.classList.contains('selected')) { this.style.color=getComputedStyle(this).getPropertyValue('--link-color'); }"
-                                   onclick="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color'); this.classList.add('selected');">
-                                   Inicio
-                                </a>
-                            </li>
-                            
-                            <li id="menu-item-16" class="mx-6">
-                                <a href="{{ route('about') }}"
-                                   class="font-semibold py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                    style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
-                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
-                                   onmouseout="if (!this.classList.contains('selected')) { this.style.color=getComputedStyle(this).getPropertyValue('--link-color'); }"
-                                   onclick="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color'); this.classList.add('selected');">
-                                   Acerca De Nosotros
-                                </a>
-                            </li>
-
-                                                        
-                            <li id="menu-item-17" class="mx-6">
-                                <a href="{{ route('services.available') }}"
-                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                    style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
-                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
-                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
-                                   Servicios
-                                </a>
-                            </li>
-                            
-                            <li id="menu-item-20" class="mx-6"> 
-                                <a href="{{ route('contacto') }}"
-                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                    style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
-                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
-                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
-                                   Testimonios
-                                </a>
-                            </li>
-                            
-                        
-                            <li id="menu-item-19" class="mx-6">
-                                <a href="{{ route('contacto') }}"
-                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                    style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
-                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
-                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
-                                   Contacto
-                                </a>
-                            </li>
-                            
-                            <li class="menu-item-20">
-                                <a href="{{ route('login') }}"
-                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                    style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
-                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
-                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
-                                   Iniciar Sesión
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <!-- #site-navigation -->
-            </header>
-            <!-- #masthead -->
+            <x-navegacion/>
             <div id="content" class="site-content">
                 <section id="primary" class="content-area">
                     <main id="main" class="site-main">
                         <article id="post-6" class="post-6 page type-page status-publish hentry entry">
                             <header class="entry-header responsive-max-width">
-                                <h1 class="entry-title" style="color: #784F96">Ofertas Disponibles</h1>
+                                <h1 class="entry-title" style="color: purple; margin 0px 0;">Ofertas Disponibles</h1>
                             </header>
                             <div class="entry-content">                                
                                 </div>
@@ -1314,19 +502,18 @@
                                 
                                 
                                 
+
                                 <div style="height:32px" aria-hidden="true" class="wp-block-spacer desktop-only"></div>
                                 <hr class="wp-block-separator is-style-wide"/>
                                 <div style="height:32px" aria-hidden="true" class="wp-block-spacer desktop-only"></div>
-                                <h2 class="has-text-align-center wp-block-heading" style="color: #784F96">Quieres seguir viendo nuestros servicios?</h2>
-                                <div style="display: flex; justify-content: center;">
-                                    <div class="wp-block-button">
-                                        <a class="wp-block-button__link" href="{{ route('services.available') }}" style="background-color: #784F96; color: white; padding: 10px 20px; text-align: center;">Servicios</a>
-                                    </div>
+                                <h2 class="has-text-align-center wp-block-heading">Quieres seguir viendo nuestros servicios?</h2>
+                                <div class="wp-block-button aligncenter">
+                                    <a class="wp-block-button__link" href="{{ route('services.available') }}">Servicios</a>
                                 </div>
                                 <div style="height:32px" aria-hidden="true" class="wp-block-spacer desktop-only"></div>
                                 <hr class="wp-block-separator is-style-wide"/>
-                                </div>
-                            
+                            </div>
+
                             <!-- .entry-footer -->
                         </article>
                         <!-- #post-6 -->
@@ -1394,9 +581,9 @@
                 </nav>
                 <!-- .social-navigation -->
                <div class="site-info">
-                    <a class="site-name" href="{{ route('welcome') }}" rel="home" style="color: #000000;">Copyright ©</a>
+                    <a class="site-name" href="{{ route('welcome') }}" rel="home" style="color: #ffffff;">Copyright ©</a>
                     <span class="comma">,</span>
-                    <a href="https://wordpress.com/?ref=footer_website" rel="nofollow" style="color: #000000;">Merrash 2024</a>
+                    <a href="https://wordpress.com/?ref=footer_website" rel="nofollow" style="color: #ffffff;">Merrash 2024</a>
                 </div>
                 <!-- .site-info -->
             </footer> 

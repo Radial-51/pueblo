@@ -5,17 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="profile" href="https://gmpg.org/xfn/11"/>
         <title>Acerca De &#8211;Nosotros</title>
-        <link rel="shortcut icon" type="image/x-icon" href="/img/brand/Spa-1.jpg" sizes="16x16 24x24 32x32 48x48"/>
-        <link rel="icon" type="image/x-icon" href="/img/brand/Spa-1.jpg" sizes="16x16 24x24 32x32 48x48"/>
-        <link rel="apple-touch-icon" href="/img/brand/Spa-1.jpg"/> 
         <meta name='robots' content='noindex, nofollow'/>
         <link rel='dns-prefetch' href='//s0.wp.com'/>
         <link rel='dns-prefetch' href='//wordpress.com'/>
         <link rel="alternate" type="application/rss+xml" title="Site Title &raquo; Feed" href="{{ route('welcome') }}"/>
         <link rel="alternate" type="application/rss+xml" title="Site Title &raquo; Comments Feed" href="{{ route('welcome') }}"/>
         <link rel="stylesheet" href="public/css/styles.css">
-        <!-- Bootstrap Icons CSS -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
         
         <script type="text/javascript">
             /* <![CDATA[ */
@@ -173,16 +168,65 @@
                 padding: 0 !important;
             }
         </style>
+                        <style>
+                            * {
+                                margin: 0;
+                                padding: 0;
+                                border: 0;
+                                box-sizing: border-box;
+                            }
+                        
+                            .btn-wsp {
+                                position: fixed;
+                                width: 55px;
+                                height: 55px;
+                                line-height: 55px;
+                                bottom: 30px;
+                                right: 30px; 
+                                background: #25d366;
+                                color: #FFF;
+                                border-radius: 50px;
+                                text-align: center;
+                                font-size: 35px;
+                                box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+                                z-index: 100;
+                                transition: all 300ms ease;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                text-decoration: none; 
+                            }
+                        
+                            .btn-wsp i {
+                                margin-left: 5px; 
+                            }
+                        
+                            .btn-wsp:hover {
+                                background: #20ba5a;
+                            }
+                        
+                            @media only screen and (min-width: 320px) and (max-width: 768px) {
+                                .btn-wsp {
+                                    width: 63px;
+                                    height: 63px;
+                                    line-height: 66px; 
+                                    right: 20px; 
+                                    
+                                }
+                            }
+                        </style>
                         </head>
                         <body>
-                            <div style="position: fixed; top: 95%; right: 5%; transform: translateY(-100%); z-index: 1000; text-align: center; padding: 5px; border-radius: 50%;">
-                                <a class="btn btn-dark btn-social mx-2" 
-                                   style="background-color: rgb(102, 224, 64); color: rgb(78, 253, 9); text-decoration: none; display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; border-radius: 50%; box-shadow: 0px 4px 8px rgb(78, 253, 9); border: 2px solid rgb(102, 224, 64);"
-                                   href="https://api.whatsapp.com/send?phone=7224958550&text=Me%20gustaría%20saber%20más%20sobre%20los%20servicios." aria-label="WhatsApp" target="_blank">
-                                   <i class="bi bi-whatsapp" style="color:rgb(255, 255, 255); font-size: 18px;"></i> <!-- Tamaño ajustado -->
-                                </a>
-                            </div>
-
+                        
+                            <a href="https://wa.me/7224958550?text=Hola%20quisiera%20más%20información" class="btn-wsp" target="_blank">
+                                <img src="https://cdn-icons-png.flaticon.com/128/15707/15707820.png" alt="WhatsApp icon">
+                            </a>
+                            
+                            
+                            
+                            
+                        
+                       
                         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
                         
                         </body>
@@ -261,13 +305,11 @@
         <style id='wpcom-admin-bar-inline-css'>
             @media screen {
                 html {
-                    margin-top: 32px !important;
                 }
             }
 
             @media screen and ( max-width: 782px ) {
                 html {
-                    margin-top: 46px !important;
                 }
             }
 
@@ -1001,7 +1043,7 @@
                 --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
             }
             body {
-                background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255)); 
+                background: linear-gradient(to right, rgb(255, 255, 255), rgb(130, 99, 140)); 
                color: rgb(0, 0, 0); 
           }
 
@@ -1069,7 +1111,7 @@
         <meta name="msapplication-tooltip" content="Author posts, manage comments, and manage Site Title."/>
         <meta name="description" content="Visitors will want to know who is on the other side of the page. Use this space to write about yourself, your site, your business, or anything you want. Use the testimonials below to quote others, talking about the same thing – in their own words. This is sample content, included with the template to&hellip;"/>
     </head>
-    <body class="page-template-default page page-id-2 logged-in admin-bar no-customize-support wp-embed-responsive customizer-styles-applied singular image-filters-enabled hide-homepage-title mobile-nav-side jetpack-reblog-enabled has-launch-banner" style="margin-top: -40px;">
+    <body class="page-template-default page page-id-2 logged-in admin-bar no-customize-support wp-embed-responsive customizer-styles-applied singular image-filters-enabled hide-homepage-title mobile-nav-side jetpack-reblog-enabled has-launch-banner">
         <script type="text/javascript">
             /* <![CDATA[ */
             (function() {
@@ -1200,98 +1242,7 @@
         </script>
 
 <div id="page" class="site">
-    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-    <header id="masthead" class="site-header responsive-max-width has-title-and-tagline has-menu" role="banner">
-        <div class="site-branding">
-            <p class="site-title">
-                <a href="{{ route('welcome') }}" rel="home" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 30px; color: #7D47C1; display: inline-block;">
-                    <img src="img/brand/FONDO-1.png" alt="Merrash Logo" style="vertical-align: middle; width: 90px; transform: translateX( 32px);" />
-                </a>
-            </p>
-        </div>
-                <!-- .site-branding -->
-                <nav id="site-navigation" class="main-navigation" aria-label="Main Navigation">
-                    <input type="checkbox" role="button" aria-haspopup="true" id="toggle" class="hide-visually">
-                    <label for="toggle" id="toggle-menu" class="button">
-                        Menu<span class="dropdown-icon open"></span>
-                        <span class="dropdown-icon close">&times;</span>
-                        <span class="hide-visually expanded-text">expanded</span>
-                        <span class="hide-visually collapsed-text">collapsed</span>
-                    </label>
-                    <div class="main-menu-container">
-                        <ul id="menu-primary-menu" class="main-menu" aria-label="submenu">
-                        
-                            <li class="mx-6">
-                                <a class="site-name"
-                                   href="{{ route('welcome') }}"
-                                   class="font-semibold py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96; display: flex; align-items: center;"
-                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
-                                   onmouseout="if (!this.classList.contains('selected')) { this.style.color=getComputedStyle(this).getPropertyValue('--link-color'); }"
-                                   onclick="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color'); this.classList.add('selected');">
-                                   Inicio
-                                </a>
-                            </li>
-                            
-
-                            <li id="menu-item-16" class="mx-6">
-                            <a href="{{ route('about') }}"
-                                class="font-semibold py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
-                                onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
-                                onmouseout="if (!this.classList.contains('selected')) { this.style.color=getComputedStyle(this).getPropertyValue('--link-color'); }"
-                                onclick="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color'); this.classList.add('selected');">
-                                Acerca De Nosotros
-                            </a>
-                        </li>
-                            
-                            <li id="menu-item-17" class="mx-6">
-                                <a href="{{ route('services.available') }}"
-                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
-                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
-                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
-                                   Servicios
-                                </a>
-                            </li>
-                            
-                            
-                            <li id="menu-item-20" class="mx-6">
-                                <a href="{{ route('contacto') }}"
-                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
-                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
-                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
-                                   Testimonios
-                                </a>
-                            </li>
-                            
-                        
-                            <li id="menu-item-19" class="mx-6">
-                                <a href="{{ route('contacto') }}"
-                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                    style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
-                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
-                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
-                                   Contacto
-                                </a>
-                            </li>
-                            
-                            <li class="menu-item-20">
-                                <a href="{{ route('login') }}"
-                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
-                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
-                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
-                                   Iniciar Sesión
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <!-- #site-navigation -->
-            </header>
-            <!-- #masthead -->
+           <x-navegacion/>
             <div id="content" class="site-content">
                 <section id="primary" class="content-area">
                     <main id="main" class="site-main">
@@ -1305,7 +1256,7 @@
                                         <!-- El contenido del SVG aquí -->
                                         <path d="M448 256A192 192 0 1 0 64 256a192 192 0 1 0 384 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 80a80 80 0 1 0 0-160 80 80 0 1 0 0 160zm0-224a144 144 0 1 1 0 288 144 144 0 1 1 0-288zM224 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/>
                                     </svg>
-                                    <h1 style="margin-bottom: 0; color: #784F96;">Mision</h1>
+                                    <h1 style="margin-bottom: 0;">Mision</h1>
                                 </div>
                                 <p style="text-align:left">Nuestra empresa tiene el compromiso de ayudar a la autosanación a través del conocimiento y la autoconciencia;
                                     brindando salud, bienestar y satisfacción personal a nuestros pacientes mediante los servicios 
@@ -1316,7 +1267,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="width: 50pxpx; height: 50px; margin-right: 10px;">
                                       <path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"/>
                                     </svg>
-                                    <h1 style="margin-bottom: 0; color: #784F96;">Visión</h1>
+                                    <h1 style="margin-bottom: 0;">Visión</h1>
                                   </div>
                                   <p style="text-align:left">Consolidarnos como el mejor servicio que se puede ofrecer a aquellas personas que buscan su bienestar, 
                                     aspiramos a formar parte del cambio personal de manera integral con dedicación y constancia para lograr una armonización de la mente,
@@ -1325,7 +1276,7 @@
                                 <div style="height:32px" aria-hidden="true" class="wp-block-spacer desktop-only"></div>
                                 <hr class="wp-block-separator is-style-wide"/>
                                 <center>
-                                    <h3 class="has-text-align-center wp-block-heading" style="display: flex; align-items: center; justify-content: center; color:#784F96">
+                                    <h3 class="has-text-align-center wp-block-heading" style="display: flex; align-items: center; justify-content: center;">
                                         Valores
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 24px; height: 24px; margin-left: 8px;"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
                                     </h3>
@@ -1334,7 +1285,7 @@
                                     <blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
                                         <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
                                             <img src="https://cdn-icons-png.flaticon.com/128/5805/5805761.png" alt="Imagen" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            <h1 style="margin-bottom: 0; color: #784F96;">Honestidad</h1>
+                                            <h1 style="margin: 0;">Honestidad</h1>
                                         </div>
                                         <p>
                                             Como valor más importante en la empresa ya que establece las bases para crear una cultura de trabajo idónea que genere comportamiento de confianza en los pacientes.
@@ -1346,7 +1297,7 @@
                                     <blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow" style="padding: 1px;">
                                         <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
                                             <img src="https://cdn-icons-png.flaticon.com/128/796/796503.png" alt="Imagen" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            <h1 style="margin-bottom: 0; color: #784F96;">Transparencia</h1>
+                                            <h1 style="margin: 0; line-height: 30px;">Transparencia</h1>
                                         </div>
                                         <p>Implica compartir información relacionada con productos y servicios así como procesos internos, precios y verdad absoluta.</p>
                                         <cite></cite>
@@ -1357,7 +1308,7 @@
                                     <blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow" style="padding: 10px;">
                                         <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
                                             <img src="https://cdn-icons-png.flaticon.com/128/4264/4264425.png" alt="Imagen" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            <h1 style="margin-bottom: 0; color: #784F96;">Pasión</h1>
+                                            <h1 style="margin: 0; line-height: 30px;">Pasión</h1>
                                         </div>
                                         <p>Equipo multidisciplinario apasionado por lo que hace y responde a la constancia y excelencia de su preparación.</p>
                                         <cite></cite>
@@ -1422,7 +1373,6 @@
 
                     </div>
                 </nav>
-              
                 <!-- .social-navigation -->
                 <div class="site-info">
                     <a class="site-name" href="{{ route('welcome') }}" rel="home" style="color: #121212;">Copyright ©</a>

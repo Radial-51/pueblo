@@ -7,6 +7,7 @@
 @stop
 
 @section('content')
+<link rel="icon" type="image/x-icon" href="/img/brand/Spa-1.jpg" sizes="16x16 24x24 32x32 48x48"/>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -19,8 +20,10 @@
                             {{ session('status') }}
                         </div>
                     @endif
+                        <div style="height: 100px;">
+                        <x-carusel/>
 
-                    {{ __('You are logged in!') }}
+                        </div>
                 </div>
             </div>
         </div>
