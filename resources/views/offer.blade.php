@@ -1084,59 +1084,15 @@
             )();
             /* ]]> */
         </script>        </style>
-                        <style>
-                            * {
-                                margin: 0;
-                                padding: 0;
-                                border: 0;
-                                box-sizing: border-box;
-                            }
-                        
-                            .btn-wsp {
-                                position: fixed;
-                                width: 55px;
-                                height: 55px;
-                                line-height: 55px;
-                                bottom: 30px;
-                                right: 30px; 
-                                background: #25d366;
-                                color: #FFF;
-                                border-radius: 50px;
-                                text-align: center;
-                                font-size: 35px;
-                                box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-                                z-index: 100;
-                                transition: all 300ms ease;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                text-decoration: none; 
-                            }
-                        
-                            .btn-wsp i {
-                                margin-left: 5px; 
-                            }
-                        
-                            .btn-wsp:hover {
-                                background: #20ba5a;
-                            }
-                        
-                            @media only screen and (min-width: 320px) and (max-width: 768px) {
-                                .btn-wsp {
-                                    width: 63px;
-                                    height: 63px;
-                                    line-height: 66px; 
-                                    right: 20px; 
-                                    
-                                }
-                            }
-                        </style>
                         </head>
                         <body>
-                        
-                            <a href="https://wa.me/7224958550?text=Hola%20quisiera%20más%20información" class="btn-wsp" target="_blank">
-                                <img src="https://cdn-icons-png.flaticon.com/128/15707/15707820.png" alt="WhatsApp icon">
-                            </a>
+                              <div style="position: fixed; top: 95%; right: 5%; transform: translateY(-100%); z-index: 1000; text-align: center; padding: 5px; border-radius: 50%;">
+                                <a class="btn btn-dark btn-social mx-2" 
+                                   style="background-color: rgb(102, 224, 64); color: rgb(78, 253, 9); text-decoration: none; display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; border-radius: 50%; box-shadow: 0px 4px 8px rgb(78, 253, 9); border: 2px solid rgb(102, 224, 64);"
+                                   href="https://api.whatsapp.com/send?phone=7224958550&text=Me%20gustaría%20saber%20más%20sobre%20los%20servicios." aria-label="WhatsApp" target="_blank">
+                                   <i class="bi bi-whatsapp" style="color:rgb(255, 255, 255); font-size: 18px;"></i> <!-- Tamaño ajustado -->
+                                </a>
+                            </div>
                         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
                         
                         </body>
@@ -1248,13 +1204,13 @@
                         <span class="hide-visually collapsed-text">collapsed</span>
                     </label>
                     <div class="main-menu-container">
-                        <ul id="menu-primary-menu" class="main-menu" aria-label="submenu">
+                                               <ul id="menu-primary-menu" class="main-menu" aria-label="submenu">
                         
                             <li class="mx-6">
                                 <a class="site-name"
                                    href="{{ route('welcome') }}"
                                    class="font-semibold py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
+                                    style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
                                    onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                    onmouseout="if (!this.classList.contains('selected')) { this.style.color=getComputedStyle(this).getPropertyValue('--link-color'); }"
                                    onclick="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color'); this.classList.add('selected');">
@@ -1262,20 +1218,10 @@
                                 </a>
                             </li>
                             
-                            <li id="menu-item-17" class="mx-6">
-                                <a href="{{ route('services.available') }}"
-                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
-                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
-                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
-                                   Servicios
-                                </a>
-                            </li>
-                            
                             <li id="menu-item-16" class="mx-6">
                                 <a href="{{ route('about') }}"
                                    class="font-semibold py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
+                                    style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
                                    onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                    onmouseout="if (!this.classList.contains('selected')) { this.style.color=getComputedStyle(this).getPropertyValue('--link-color'); }"
                                    onclick="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color'); this.classList.add('selected');">
@@ -1283,11 +1229,21 @@
                                 </a>
                             </li>
 
+                                                        
+                            <li id="menu-item-17" class="mx-6">
+                                <a href="{{ route('services.available') }}"
+                                   class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
+                                    style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
+                                   onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
+                                   onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
+                                   Servicios
+                                </a>
+                            </li>
                             
-                            <li id="menu-item-20" class="mx-6">
+                            <li id="menu-item-20" class="mx-6"> 
                                 <a href="{{ route('contacto') }}"
                                    class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
+                                    style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
                                    onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                    onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
                                    Testimonios
@@ -1298,7 +1254,7 @@
                             <li id="menu-item-19" class="mx-6">
                                 <a href="{{ route('contacto') }}"
                                    class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
+                                    style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
                                    onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                    onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
                                    Contacto
@@ -1308,7 +1264,7 @@
                             <li class="menu-item-20">
                                 <a href="{{ route('login') }}"
                                    class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md text-black transition-colors duration-300"
-                                   style="--link-color: #7D47C1; --link-hover-color: #85CC36; color: #7D47C1;"
+                                    style="--link-color: #784F96; --link-hover-color: #85CC36; color: #784F96;"
                                    onmouseover="this.style.color=getComputedStyle(this).getPropertyValue('--link-hover-color');"
                                    onmouseout="this.style.color=getComputedStyle(this).getPropertyValue('--link-color');">
                                    Iniciar Sesión
@@ -1325,7 +1281,7 @@
                     <main id="main" class="site-main">
                         <article id="post-6" class="post-6 page type-page status-publish hentry entry">
                             <header class="entry-header responsive-max-width">
-                                <h1 class="entry-title">Ofertas Disponibles</h1>
+                                <h1 class="entry-title" style="color: #784F96">Ofertas Disponibles</h1>
                             </header>
                             <div class="entry-content">                                
                                 </div>
@@ -1353,18 +1309,19 @@
                                 
                                 
                                 
-
                                 <div style="height:32px" aria-hidden="true" class="wp-block-spacer desktop-only"></div>
                                 <hr class="wp-block-separator is-style-wide"/>
                                 <div style="height:32px" aria-hidden="true" class="wp-block-spacer desktop-only"></div>
-                                <h2 class="has-text-align-center wp-block-heading">Quieres seguir viendo nuestros servicios?</h2>
-                                <div class="wp-block-button aligncenter">
-                                    <a class="wp-block-button__link" href="{{ route('services.available') }}">Servicios</a>
+                                <h2 class="has-text-align-center wp-block-heading" style="color: #784F96">Quieres seguir viendo nuestros servicios?</h2>
+                                <div style="display: flex; justify-content: center;">
+                                    <div class="wp-block-button">
+                                        <a class="wp-block-button__link" href="{{ route('services.available') }}" style="background-color: #784F96; color: white; padding: 10px 20px; text-align: center;">Servicios</a>
+                                    </div>
                                 </div>
                                 <div style="height:32px" aria-hidden="true" class="wp-block-spacer desktop-only"></div>
                                 <hr class="wp-block-separator is-style-wide"/>
-                            </div>
-
+                                </div>
+                            
                             <!-- .entry-footer -->
                         </article>
                         <!-- #post-6 -->
@@ -1432,9 +1389,9 @@
                 </nav>
                 <!-- .social-navigation -->
                <div class="site-info">
-                    <a class="site-name" href="{{ route('welcome') }}" rel="home" style="color: #ffffff;">Copyright ©</a>
+                    <a class="site-name" href="{{ route('welcome') }}" rel="home" style="color: #000000;">Copyright ©</a>
                     <span class="comma">,</span>
-                    <a href="https://wordpress.com/?ref=footer_website" rel="nofollow" style="color: #ffffff;">Merrash 2024</a>
+                    <a href="https://wordpress.com/?ref=footer_website" rel="nofollow" style="color: #000000;">Merrash 2024</a>
                 </div>
                 <!-- .site-info -->
             </footer> 
