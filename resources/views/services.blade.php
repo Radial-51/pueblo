@@ -15,6 +15,8 @@
         <link rel="shortcut icon" type="image/x-icon" href="/img/brand/Spa-1.jpg" sizes="16x16 24x24 32x32 48x48"/>
         <link rel="icon" type="image/x-icon" href="/img/brand/Spa-1.jpg" sizes="16x16 24x24 32x32 48x48"/>
         <link rel="apple-touch-icon" href="/img/brand/Spa-1.jpg"/>
+         <!-- Bootstrap Icons CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
         <script type="text/javascript">
             /* <![CDATA[ */
             function addLoadEvent(func) {
