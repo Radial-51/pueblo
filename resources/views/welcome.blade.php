@@ -2,6 +2,8 @@
 <html lang="en">
     @component('navegacion')
     @component('cuadricula')
+    @component('carusel')
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
