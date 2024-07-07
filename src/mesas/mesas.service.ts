@@ -32,7 +32,7 @@ export class MesasService {
   async update(id: number, updateMesaDto: UpdateMesaDto) {
     const existingMesa = await this.mesaRepository.findOne({ where: { id } });
     if (!existingMesa) {
-      throw new NotFoundException(`Mesa with id ${id} not found`);
+      throw new NotFoundException(`Mesa with id ${id} no found`);
     }
     await this.mesaRepository.update(id, updateMesaDto);
     return await this.findOne(id);
