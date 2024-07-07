@@ -9,6 +9,9 @@ export class RondasController {
 
   @Post()
   create(@Body() createRondaDto: CreateRondaDto) {
+    // Sobrescribir el timestamp con la hora actual de la computadora
+    createRondaDto.timestamp = new Date().toISOString();
+
     return this.rondasService.create(createRondaDto);
   }
 

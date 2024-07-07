@@ -12,8 +12,11 @@ export class RondasService {
     private readonly rondaRepository: Repository<Ronda>,
   ){}
 
-  async create(createRondaDto: CreateRondaDto) {
-    const ronda = this.rondaRepository.create(createRondaDto); 
+  async create(createRondaDto: CreateRondaDto): Promise<Ronda> {
+    // Sobrescribir el timestamp con la hora actual de la computadora
+    createRondaDto.timestamp = new Date().toISOString();
+
+    const ronda = this.rondaRepository.create(createRondaDto);
     return await this.rondaRepository.save(ronda);
   }
 
