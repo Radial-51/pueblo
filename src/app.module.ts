@@ -11,11 +11,11 @@ import { ProductosModule } from './productos/productos.module';
     RondasModule,
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: 'localhost',
-      port: 3309,
-      username: 'aldair',
-      password: 'root',
-      database: 'pueblodb',
+      host: 'reliable-dedication.production.pueblo.railway.app',  // Host proporcionado por Railway
+      port: 3306,  // Puerto predeterminado de MySQL
+      username: 'pueblo',  // Usuario proporcionado por Railway
+      password: 'e36b5467-5866-4aeb-b078-a3487786165f',  // Contraseña proporcionada por Railway
+      database: 'pueblodb',  // Nombre de la base de datos
       autoLoadEntities: true,
       synchronize: true,
     }),

@@ -6,11 +6,11 @@ services:
     container_name: pueblo
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root  # Ajusta según tus necesidades locales
       MYSQL_DATABASE: pueblodb
-      MYSQL_USER: aldair
-      MYSQL_PASSWORD: root
+      MYSQL_USER: pueblo  # Usuario proporcionado por Railway
+      MYSQL_PASSWORD: e36b5467-5866-4aeb-b078-a3487786165f  # Contraseña proporcionada por Railway
     volumes:
       - ./mysql:/var/lib/mysql
     ports:
-      - "3309:3306"  # Cambiado el puerto del host a 3309
+      - "3309:3306"  # Puerto del host ajustado según tus necesidades locales o de desarrollo
